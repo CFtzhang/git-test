@@ -1,3 +1,8 @@
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
 .navbar-class {
   display: flex;
   justify-content: space-between;
@@ -17,4 +22,9 @@
 
 .navbar-logo {
   height: 50px;
+}
+
+.navbar-border {
+  height: 6px;
+  background: linear-gradient(90deg, #041661 0%, #2FBBE6 50%, #29B07A 100%), #C4C4C4;
 }
