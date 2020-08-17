@@ -1,0 +1,25 @@
+.content-card {
+  display: flex;
+  max-height: 500px;
+  box-sizing: border-box;
+}
+
+.card-text {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.card-text div {
+  margin: 6em;
+}
+
+.card-img {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

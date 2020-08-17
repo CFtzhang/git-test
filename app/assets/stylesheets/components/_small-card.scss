@@ -1,0 +1,31 @@
+.small-container {
+  margin-top: 6vh;
+  display: flex;
+  max-height: 500px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.small-card-container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-card-container h3 {
+  width: 100%;
+}
+
+.small-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-card img {
+  height: 250px;
+}
+
+.small-card .small-card-text {
+
+}
