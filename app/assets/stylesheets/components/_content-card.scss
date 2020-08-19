@@ -4,21 +4,21 @@
   box-sizing: border-box;
 }
 
-.card-text {
+.card-text-area {
   width: 50%;
   flex-grow: 1;
 }
 
-.card-text div {
+.card-text {
   margin: 6em;
 }
 
-.card-img {
+.card-img-area {
   width: 50%;
   flex-grow: 1;
 }
 
-.card-img img {
+.card-img {
   object-fit: cover;
   width: 100%;
   height: 100%;

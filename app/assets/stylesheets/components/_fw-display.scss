@@ -1,0 +1,45 @@
+.fw-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+  grid-auto-rows: 1fr;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 3em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  box-sizing: border-box;
+}
+
+.fw-display-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fw-display-card-header {
+  min-height: 60px;
+  color: white;
+  background-color: #041661;
+}
+
+.fw-display-card-header h4 {
+  text-align: center;
+}
+
+.fw-display-card-body {
+  background-color: #2fbbe6;
+  height: 100%;
+}
+
+.fw-display-card-body ul {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fw-display-card-footer {
+  margin-left: 2em;
+  margin-right: 2em;
+}
