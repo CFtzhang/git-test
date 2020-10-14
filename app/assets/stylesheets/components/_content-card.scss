@@ -23,3 +23,28 @@
   width: 100%;
   height: 100%;
 }
+
+.big-gradient-text {
+  font-size: 2.5em;
+  background: -webkit-linear-gradient(left top, #29b07a, #086eba, #2fbbe6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-card h3 {
+  font-size: 2em;
+}
+
+.btn-flat {
+  margin-top: 2em;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: #00db82;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}

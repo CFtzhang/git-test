@@ -1,15 +1,28 @@
 .homepage-banner {
   display: flex;
   width: 100%;
-  height: 70vh;
+  height: 55vh;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url(https://res.cloudinary.com/tichel/image/upload/v1597397247/gary-scott-nkCA4va-6k0-unsplash_szlu4i.jpg);
+  background-image: url(https://res.cloudinary.com/tichel/image/upload/v1602492454/CF%20Website/Original%20Pictures/IMG_4428_q1ajhx.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 40%;
+  color: #2a2e2f;
 }
 
 .homepage-banner h1 {
-  justify-content: center;
+  font-size: 4em;
+  margin: 0;
+}
+
+.homepage-banner h3 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.banner-text {
+  position: relative;
+  bottom: 16px;
+  z-index: 0;
 }
