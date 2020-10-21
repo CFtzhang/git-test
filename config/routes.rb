@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'about-us', to: 'pages#about_us'
   get 'work-with-us', to: 'pages#work_with_us'
   get 'research-and-development-platform', to: 'pages#research_and_development_platform'
+  get 'products', to: 'pages#products'
 end
