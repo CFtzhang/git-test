@@ -7,8 +7,18 @@
   justify-content: center;
   background-size: cover;
   background-position: 50% 60%;
+  position: relative;
 }
 
 .info-banner h1 {
   color: white;
+}
+
+.info-banner-title-blue {
+  position: absolute;
+  background: #086eba;
+  bottom: 15%;
+  left: 0%;
+  padding-left: 200px;
+  padding-right: 2em;
 }
