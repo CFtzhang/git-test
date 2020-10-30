@@ -15,6 +15,7 @@ class PagesController < ApplicationController
   end
 
   def products
+    @products = Product.all
   end
 
 end
