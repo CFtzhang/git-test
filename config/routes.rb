@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get 'work-with-us', to: 'pages#work_with_us'
   get 'research-and-development-platform', to: 'pages#research_and_development_platform'
   get 'products', to: 'pages#products'
+  get 'generic-drug-products', to: 'pages#generic_drug_products'
+  get 'new-drug-products', to: 'pages#new_drug_products'
   resources :products, only: [:show]
 end
