@@ -4,13 +4,19 @@
     <h1>Products</h1>
   </div>
 </div>
-<div class="container">
+<div class="container bg-white">
+  <h3>Introduction</h3>
+  <p>Adhering to the concept of "focusing on the respiratory drug delivery products", CF PharmTech is committed to the development of high-level inhaled generic drugs for the treatment of COPD, asthma, rhinitis and other respiratory diseases, and our products are aimed at the global market. We also focus on the development of innovative technologies and novel inhaled products with new chemical entities (NCEs), have invented a number of novel products with new compounds and new devices.</p>
   <div class="product-category-title">
     <h3>Pharmaceutical Products</h3>
+    <p>CF PharmTech focuses on the development of inhaled products for generic products and new drug products, include dosage forms: Metered Dose Inhaler (MDI), Dry Powder Inhaler (DPI), Nebulizer and Nasal Spray, and Soft Mist Inhaler.</p>
+    <p>Several generic drug products developed by CF PharmTech mainly have been filed in China. (read more 1).</p>
+    <p>New drug development, including New Chemical Entity (NCE), new device technology, new fixed combination products. (read more 2)</p>
   </div>
   <div class="product-category-title">
     <h3>Consumer Products</h3>
-    <% @products.each do |e| %>
+    <p>CF PharmTech can provide professional and practical medical care products for consumers. The AuroAir family TM, our medical care brand, has a full range of products, which can fully meet the market demand.</p>
+    <% @consumer_products.each do |e| %>
       <div class="card-product">
         <img src=<%= e.imgurl %> />
         <div class="card-product-infos">
@@ -24,18 +30,5 @@
         </div>
       </div>
     <% end %>
-    <div class="card-product">
-      <img src="https://res.cloudinary.com/tichel/image/upload/v1598851063/CF%20Website/Product/Consumer/Product_Consumer_AuroAir_physiological_seawater_nasal_spray_aluminum_pot_100_ml_f4z7eo.jpg" />
-      <div class="card-product-infos">
-        <h2>AuroAir Physiological seawater nasal spray</h2>
-        <p>Rhinitis care, daily care, relieve nasal congestion, reconstruct nasal environment</p>
-        <div class="btn-area">
-          <a class="btn btn-flat btn-product" href="https://cfair.jd.com/">See More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="product-category-title">
-    <h3>Personal Care Products</h3>
   </div>
 </div>

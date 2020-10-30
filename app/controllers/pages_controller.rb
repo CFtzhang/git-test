@@ -15,7 +15,6 @@ class PagesController < ApplicationController
   end
 
   def products
-    @products = Product.all
+    @consumer_products = Product.where(product_type: 'Consumer')
   end
-
 end
