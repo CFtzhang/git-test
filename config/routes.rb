@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get 'products', to: 'pages#products'
   get 'generic-drug-products', to: 'pages#generic_drug_products'
   get 'new-drug-products', to: 'pages#new_drug_products'
+  get 'consumer-products', to: 'pages#consumer_products'
   resources :products, only: [:show]
 end

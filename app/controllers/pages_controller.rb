@@ -15,12 +15,15 @@ class PagesController < ApplicationController
   end
 
   def products
-    @consumer_products = Product.where(product_type: 'Consumer')
   end
 
   def generic_drug_products
   end
 
   def new_drug_products
+  end
+
+  def consumer_products
+    @consumer_products = Product.where(product_type: 'Consumer')
   end
 end

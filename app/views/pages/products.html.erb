@@ -22,19 +22,6 @@
   <div class="product-category-title">
     <h3>Consumer Products</h3>
     <p>CF PharmTech can provide professional and practical medical care products for consumers. The AuroAir family TM, our medical care brand, has a full range of products, which can fully meet the market demand.</p>
-    <% @consumer_products.each do |e| %>
-      <div class="card-product">
-        <img src=<%= e.imgurl %> />
-        <div class="card-product-infos">
-          <h2><%= "#{e.product_family} #{e.product_name}" %></h2>
-          <p><%= e.short_description %></p>
-          <div class="btn-area">
-            <%= link_to product_path(e) do %>
-              <div class="btn btn-flat btn-product">See More</div>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    <% end %>
+    <%= link_to "Read More", consumer_products_path, class: "btn btn-flat" %>
   </div>
 </div>
