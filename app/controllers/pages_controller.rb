@@ -26,4 +26,13 @@ class PagesController < ApplicationController
   def consumer_products
     @consumer_products = Product.where(product_type: 'Consumer')
   end
+
+  def therapeutic_areas
+  end
+
+  def dosage_forms
+  end
+
+  def advanced_facilities
+  end
 end

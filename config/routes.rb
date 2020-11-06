@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   get 'generic-drug-products', to: 'pages#generic_drug_products'
   get 'new-drug-products', to: 'pages#new_drug_products'
   get 'consumer-products', to: 'pages#consumer_products'
+  get 'therapeutic-areas', to: 'pages#therapeutic_areas'
+  get 'dosage-forms', to: 'pages#dosage_forms'
+  get 'advanced-facilities', to: 'pages#advanced_facilities'
   resources :products, only: [:show]
 end
