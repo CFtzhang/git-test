@@ -1,7 +1,6 @@
 .content-card {
   display: flex;
   min-height: 300px;
-  box-sizing: border-box;
 }
 
 .card-text-area {
@@ -10,7 +9,10 @@
 }
 
 .card-text {
-  margin: 6em;
+  min-width: 300px;
+  width: 80%;
+  margin: auto;
+  padding-top: 1em;
 }
 
 .card-img-area {
