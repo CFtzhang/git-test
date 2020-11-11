@@ -1,38 +1,46 @@
-<div class="navigationbar">
-  <div class="navigationbar-class">
-    <div class="navigationbar-list">
-      <%= link_to (image_tag "cf-logo-rough.png", class: "navigationbar-logo"), root_path %>
-    </div>
-    <div class="navigationbar-list">
-      <%= link_to ("Home"), root_path %>
-    </div>
-    <div class="navigationbar-list">
-      <%= link_to ("Products"), products_path  %>
-    </div>
-    <div class="navigationbar-list">
-      <%= link_to ("Partnerships"), work_with_us_path  %>
-    </div>
-    <div class="navigationbar-list">
-      <%= link_to ("R&D Platform"), research_and_development_platform_path  %>
-    </div>
-    <div class="navigationbar-list">
-      <%= link_to ("About Us"), about_us_path %>
-    </div>
-    <div class="navigationbar-list">
-      Media
-    </div>
-    <div class="navigationbar-list">
-      Investor Relations
-    </div>
-    <div class="navigationbar-list">
-      Career
-    </div>
-    <div class="navigationbar-list">
-      <%= link_to ("Contact Us"), contact_us_path %>
-    </div>
-    <div class="navigationbar-list">
-      Search
+<div class="container-fluid sticky-top" style="background-color: white;">
+  <div class="row">
+    <div class="fullwidth" onclick="navExtend()">
+      <div id="nav" class="navigationbar navigationbar-hidden">
+        <div class="navigationbar-class">
+          <%= link_to (image_tag "cf-logo-rough.png", class: "navigationbar-logo"), root_path %>
+          <div class="navigationbar-list-header"><%= link_to ("Home"), root_path %></div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("Products"), products_path  %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Pharmaceutical Products"), generic_drug_products_path %></div>
+            <div class="navigationbar-list-item"><%= link_to "Consumer Products", consumer_products_path %></div>
+          </div>
+          <div class="navigation-list">
+            <div class="navigationbar-list-header"><%= link_to ("Partnerships"), work_with_us_path  %></div>
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("R&D Platform"), research_and_development_platform_path  %></div>
+            <div class="navigationbar-list-item"><%= link_to "Therapeutic Areas", therapeutic_areas_path %></div>
+            <div class="navigationbar-list-item"><%= link_to "Dosage Forms", dosage_forms_path %></div>
+            <div class="navigationbar-list-item"><%= link_to "Advanced Facilities", advanced_facilities_path %></div>
+          </div>
+          <div class="navigation-list">
+            <div class="navigationbar-list-header">
+              <%= link_to ("About Us"), about_us_path %>
+            </div>
+            <div class="navigationbar-list-item"><%= link_to ("About Us"), "#{about_us_path}#About-Us" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Our Mission"), "#{about_us_path}#Our-Mission" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Our Values"), "#{about_us_path}#Our-Values" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Company History"), "#{about_us_path}#History" %></div>
+          </div>
+          <div class="navigationbar-list-header">
+            Career
+          </div>
+          <div class="navigationbar-list-header">
+            <%= link_to ("Contact Us"), contact_us_path %>
+          </div>
+          <div class="navigationbar-list-header">
+            Search
+          </div>
+        </div>
+      </div>
+      <div class="nav-down-arrow material-icons">keyboard_arrow_down</div>
+      <div class="navigationbar-border"></div>
     </div>
   </div>
-  <div class="navigationbar-border"></div>
 </div>
