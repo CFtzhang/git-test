@@ -1,31 +1,31 @@
-.navbar {
+.navigationbar {
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-.navbar-class {
+.navigationbar-class {
   display: flex;
   justify-content: space-between;
   background: white;
   width: 100%;
 }
 
-.navbar-list {
+.navigationbar-list {
   text-align: center;
   margin: auto;
 }
 
 
-.navbar-class {
+.navigationbar-class {
   flex-grow: 0;
 }
 
-.navbar-logo {
+.navigationbar-logo {
   height: 50px;
 }
 
-.navbar-border {
+.navigationbar-border {
   height: 6px;
   background: linear-gradient(90deg, #041661 0%, #2FBBE6 50%, #29B07A 100%), #C4C4C4;
 }
