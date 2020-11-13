@@ -5,10 +5,10 @@
 hello = (x) -> x*2
 
 @navExtend = (e) ->
-  navbar = document.getElementById('nav')
-  if navbar.getAttribute("class") == "navigationbar navigationbar-hidden"
-    navbar.setAttribute("class", "navigationbar navigationbar-extend")
-  else
-    navbar.setAttribute("class", "navigationbar navigationbar-hidden")
+  expandingNavbar = document.getElementById('expanding-nav')
+  navArrow = document.getElementById('nav-arrow')
 
-  console.log 1
+  expandingNavbar.classList.toggle("navigationbar-extend")
+  expandingNavbar.classList.toggle("navigationbar-hidden")
+  navArrow.classList.toggle("rotate-around")
+

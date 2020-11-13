@@ -3,9 +3,6 @@
   max-width: 1376px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.navigationbar-class {
   display: flex;
   justify-content: space-between;
   background: white;
@@ -16,14 +13,8 @@
 .navigationbar-list-header {
   display: flex;
   flex-direction: column;
-  z-index: 2;
   padding-top: 1.5em;
   padding-bottom: 1em;
-}
-
-
-.navigationbar-class {
-  flex-grow: 0;
 }
 
 .navigationbar-logo {
@@ -38,7 +29,7 @@
   background: linear-gradient(90deg, #041661 0%, #2FBBE6 50%, #29B07A 100%), #C4C4C4;
 }
 
-.nav-down-arrow {
+.nav-down-arrow-container {
   display: flex;
   justify-content: center;
   background-color: white;
@@ -53,12 +44,44 @@
   height: 50px;
 }
 
-.navigationbar-hidden {
+.navigationbar-list-item{
+  display: none;
+}
+
+.navigationbar-extend {
   .navigationbar-list-item{
-    display: none;
+    display: block;
   }
 }
 
+.navigationbar-extend {
+  .nav-down-arrow {
+    // transform: rotate(90deg);
+  }
+}
+
+.navigationbar-hidden {
+  .nav-down-arrow {
+  }
+}
+
+
 .navigationbar-list-item a {
   font-size: 14px;
+}
+
+.flag-container {
+}
+
+.flag-container img {
+  width: 16px;
+}
+
+.rotate-around {
+  transform: rotate(180deg);
+}
+
+.jump-anchor {
+  position: relative;
+  top: -80px;
 }
