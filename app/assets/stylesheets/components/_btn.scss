@@ -4,7 +4,6 @@
   border-radius: 50px;
   background: #00db82;
   transition: background 0.3s ease;
-  margin-bottom: 20px;
 }
 
 .btn-flat:hover {
@@ -21,4 +20,8 @@
   position: absolute;
   bottom: 8%;
   right: 5%;
+}
+
+.bot-margin-small {
+  margin-bottom: 20px;
 }
