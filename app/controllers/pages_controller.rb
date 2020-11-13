@@ -17,6 +17,9 @@ class PagesController < ApplicationController
   def products
   end
 
+  def careers
+  end
+
   def generic_drug_products
   end
 

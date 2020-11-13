@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   get 'therapeutic-areas', to: 'pages#therapeutic_areas'
   get 'dosage-forms', to: 'pages#dosage_forms'
   get 'advanced-facilities', to: 'pages#advanced_facilities'
+  get 'careers', to: 'pages#careers'
   resources :products, only: [:show]
 end
