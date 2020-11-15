@@ -1,42 +1,45 @@
 <div class="container-fluid sticky-top" style="background-color: white;">
   <div class="row">
-    <div id="fullnav" class="fullwidth" onclick="navExtend()">
+    <div id="fullnav" class="fullwidth fullnav" onclick="navExtend()">
       <div id="expanding-nav" class="navigationbar navigationbar-hidden">
         <%= link_to (image_tag "cf-logo-rough.png", class: "navigationbar-logo"), root_path %>
-        <div class="navigationbar-list-header"><%= link_to ("Home"), root_path %></div>
         <div class="navigationbar-list">
-          <div class="navigationbar-list-header"><%= link_to ("Products"), products_path  %></div>
-          <div class="navigationbar-list-item"><%= link_to ("Pharmaceutical Products"), generic_drug_products_path %></div>
-          <div class="navigationbar-list-item"><%= link_to "Consumer Products", consumer_products_path %></div>
+          <div class="navigationbar-list-header"><%= link_to ("Home"), root_path, class: "navigationbar-link" %></div>
+          <div class="navigationbar-list-item"><%= link_to ("News"), root_path %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Investors"), root_path %></div>
+        </div>
+        <div class="navigationbar-list">
+          <div class="navigationbar-list-header"><%= link_to ("Products"), products_path, class: "navigationbar-link"  %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Medicines"), generic_drug_products_path %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Consumer Healthcare"), consumer_products_path %></div>
         </div>
         <div class="navigation-list">
           <div class="navigationbar-list-header"><%= link_to ("Partnerships"), work_with_us_path  %></div>
-          <div class="navigationbar-list-item"><%= link_to "NCE Codevelopment", work_with_us_path %></div>
-          <div class="navigationbar-list-item"><%= link_to "CDMO Services", work_with_us_path %></div>
-          <div class="navigationbar-list-item"><%= link_to "Investment", work_with_us_path %></div>
+          <div class="navigationbar-list-item"><%= link_to ("NCE Development"), work_with_us_path %></div>
+          <div class="navigationbar-list-item"><%= link_to ("CDMO Services"), work_with_us_path %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Investment"), work_with_us_path %></div>
         </div>
         <div class="navigationbar-list">
           <div class="navigationbar-list-header"><%= link_to ("R&D Platform"), research_and_development_platform_path  %></div>
-          <div class="navigationbar-list-item"><%= link_to "Therapeutic Areas", therapeutic_areas_path %></div>
-          <div class="navigationbar-list-item"><%= link_to "Dosage Forms", dosage_forms_path %></div>
-          <div class="navigationbar-list-item"><%= link_to "Advanced Facilities", advanced_facilities_path %></div>
+          <div class="navigationbar-list-item"><%= link_to ("R&D Team"), advanced_facilities_path %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Therapeutic Areas"), therapeutic_areas_path %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Dosage Forms"), dosage_forms_path %></div>
         </div>
         <div class="navigation-list">
           <div class="navigationbar-list-header"><%= link_to ("About Us"), about_us_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("Our Mission"), "#{about_us_path}#Our-Mission" %></div>
-          <div class="navigationbar-list-item"><%= link_to ("Our Values"), "#{about_us_path}#Our-Values" %></div>
-          <div class="navigationbar-list-item"><%= link_to ("Company History"), "#{about_us_path}#History" %></div>
+          <div class="navigationbar-list-item"><%= link_to ("What We Do"), "#{about_us_path}" %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Mission"), "#{about_us_path}#Our-Mission" %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Values"), "#{about_us_path}#Our-Values" %></div>
+          <div class="navigationbar-list-item"><%= link_to ("History"), "#{about_us_path}#History" %></div>
         </div>
         <div class="navigation-list">
           <div class="navigationbar-list-header"><%= link_to ("Careers"), careers_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("Work at CF Pharmtech"), "#{careers_path}#work-at-cf" %></div>
           <div class="navigationbar-list-item"><%= link_to ("Life at CF Pharmtech"), "#{careers_path}#life-at-cf" %></div>
+          <div class="navigationbar-list-item"><%= link_to ("Meet Us"), "#{careers_path}" %></div>
           <div class="navigationbar-list-item"><%= link_to ("Career Opportunities"), "#{careers_path}#opportunities" %></div>
         </div>
         <div class="navigation-list">
-          <div class="navigationbar-list-header"><%= link_to ("Contact Us"), contact_us_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("China"), contact_us_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("USA"), contact_us_path %></div>
+          <div class="navigationbar-list-header"><%= link_to ("Contact"), contact_us_path %></div>
         </div>
         <div class="navigationbar-list-header">
           <%= image_tag "china-flag.png", alt: "alttext" %>

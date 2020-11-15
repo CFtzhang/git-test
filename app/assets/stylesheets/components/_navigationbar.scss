@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   background: white;
-  width: 100%;
   height: 100%;
 }
 
@@ -37,7 +36,7 @@
 }
 
 .navigationbar-extend {
-  height: 100%;
+  height: max-content;
 }
 
 .navigationbar-hidden {
@@ -54,14 +53,16 @@
   }
 }
 
-.navigationbar-extend {
-  .nav-down-arrow {
-    // transform: rotate(90deg);
+.fullnav:hover {
+  height: max-content;
+  .navigationbar {
+    height: 100%;
+    .navigationbar-list-item {
+      display: block;
+    }
   }
-}
-
-.navigationbar-hidden {
-  .nav-down-arrow {
+  #nav-arrow {
+    transform: rotate(180deg);
   }
 }
 
@@ -84,4 +85,8 @@
 .jump-anchor {
   position: relative;
   top: -80px;
+}
+
+.navigationbar-link {
+  display: inline-block;
 }
