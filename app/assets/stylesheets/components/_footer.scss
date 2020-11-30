@@ -3,6 +3,10 @@
   background-color: #EBEBEB;
 }
 
-.footer ul {
-  list-style-type: none;
+.footer-list-container {
+  display: flex;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
 }
