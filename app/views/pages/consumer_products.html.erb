@@ -8,7 +8,7 @@
           Choose a product
         </div>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#"></a>
+          <a class="dropdown-item">Choose a product</a>
           <% @consumer_products.each do |e| %>
             <a class="dropdown-item" href=<%= "products/#{e.id}" %>><%= "#{e.product_family} #{e.product_name}" %></a>
           <% end %>
