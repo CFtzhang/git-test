@@ -38,4 +38,7 @@ class PagesController < ApplicationController
 
   def advanced_facilities
   end
+
+  def services
+  end
 end

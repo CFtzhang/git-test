@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   get 'dosage-forms', to: 'pages#dosage_forms'
   get 'advanced-facilities', to: 'pages#advanced_facilities'
   get 'careers', to: 'pages#careers'
+  get 'services', to: 'pages#services'
   resources :products, only: [:show]
 end
