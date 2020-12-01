@@ -19,7 +19,7 @@ WORKDIR /tmp
 RUN gem install bundler -v 2.0.2
 RUN bundle install --jobs 5 --retry 5 --without development test
 
-RUN yarn install
+# RUN yarn install
 RUN mkdir /app
 WORKDIR /app
 COPY . /app
@@ -27,4 +27,4 @@ ENV RAILS_ENV production
 ENV RACK_ENV production
 
 # Execute the Procfile
-CMD ["/bin/run-dev.sh"]
+CMD ["bin/run-dev.sh"]
