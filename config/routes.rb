@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get 'zh/about-us', to: 'zh_pages#about_us'
   get 'zh/work-with-us', to: 'zh_pages#work_with_us'
   get 'zh/research-and-development-platform', to: 'zh_pages#research_and_development_platform'
-  get 'zh/products', to: 'zh_pages#zh_products'
+  get 'zh/products', to: 'zh_pages#products'
   get 'zh/generic-drug-products', to: 'zh_pages#generic_drug_products'
   get 'zh/new-drug-products', to: 'zh_pages#new_drug_products'
   get 'zh/consumer-products', to: 'zh_pages#consumer_products'
