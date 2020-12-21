@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="info-container bg-white">
+    <h3>Consumer Healthcare Products</h3>
+    <p><strong>CF PharmTech</strong> provides professional and practical consumer healthcare products for daily care of your respiratory system. The <strong>AuroAir family</strong><sup>TM</sup>, our consumer healthcare brand has many products to meet your health needs.</p>
+    <div>
+      <div class="dropdown show">
+        <div class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Choose a product
+        </div>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item">Choose a product</a>
+          <% @consumer_products.each do |e| %>
+            <a class="dropdown-item" href=<%= "products/#{e.id}" %>><%= "#{e.product_family} #{e.product_name}" %></a>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <% @consumer_products.each do |e| %>
+        <div class="card-product">
+          <img src=<%= e.imgurl %> />
+          <div class="card-product-infos">
+            <h2><%= "#{e.product_family} #{e.product_name}" %></h2>
+            <p><%= e.short_description %></p>
+            <div class="btn-area">
+              <%= link_to product_path(e) do %>
+                <div class="btn-flat btn-product">See More</div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>
