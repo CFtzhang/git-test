@@ -19,8 +19,9 @@
 }
 
 .navigationbar-logo {
-  height: 58px;
-  margin-top: 0.5rem;
+  height: 54px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .navigationbar-border {
@@ -42,7 +43,7 @@
 }
 
 .navigationbar-hidden {
-  height: 50px;
+  height: min-content;
 }
 
 .navigationbar-list-item{
@@ -88,4 +89,16 @@
 
 .navigationbar-link {
   display: inline-block;
+}
+
+.navigationbar a {
+  height: max-content;
+}
+
+.navigation-list {
+  padding-bottom: 0.5rem;
+}
+
+.flag-icon {
+  width: 32px;
 }

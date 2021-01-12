@@ -41,13 +41,13 @@
           <div class="navigationbar-list-header"><%= link_to ("Contact"), contact_us_path %></div>
         </div>
         <div class="navigationbar-list-header">
-          <%= link_to (image_tag "china-flag.png"), zh_path %>
+          <%= link_to (image_tag "china-flag.svg", class: "flag-icon"), "#{zh_path + request.original_fullpath}" %>
         </div>
         <div class="navigationbar-list-header">
           <a class="material-icons" href="#">search</a>
         </div>
       </div>
-      <div class="nav-down-arrow-container"><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div></div>
+      <!-- <div class="nav-down-arrow-container"><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div></div> -->
       <div class="navigationbar-border"></div>
     </div>
   </div>

@@ -41,13 +41,15 @@
           <div class="navigationbar-list-header"><%= link_to ("Contact"), zh_contact_us_path %></div>
         </div>
         <div class="navigationbar-list-header">
-          <%= link_to (image_tag "china-flag.png"), root_path %>
+          <% eng_page = request.original_fullpath.delete_prefix("/zh") %>
+          <% eng_page = root_path if request.original_fullpath.delete_prefix("/zh") == "" %>
+          <%= link_to (image_tag "us-flag.svg", class: "flag-icon"), "#{eng_page}" %>
         </div>
         <div class="navigationbar-list-header">
           <a class="material-icons" href="#">search</a>
         </div>
       </div>
-      <div class="nav-down-arrow-container"><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div></div>
+      <!-- <div class="nav-down-arrow-container"><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div></div> -->
       <div class="navigationbar-border"></div>
     </div>
   </div>
