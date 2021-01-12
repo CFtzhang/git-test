@@ -4,9 +4,9 @@
 
 @navExtend = (e) ->
   expandingNavbar = document.getElementById('expanding-nav')
-  navArrow = document.getElementById('nav-arrow')
+#  navArrow = document.getElementById('nav-arrow')
 
   expandingNavbar.classList.toggle("navigationbar-extend")
   expandingNavbar.classList.toggle("navigationbar-hidden")
-  navArrow.classList.toggle("rotate-around")
+#  navArrow.classList.toggle("rotate-around")
 
