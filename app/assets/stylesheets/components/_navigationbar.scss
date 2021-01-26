@@ -3,7 +3,8 @@
   max-width: 1376px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr) 1.2fr 0.4fr 0.4fr;
   justify-content: space-between;
   background: white;
   height: 100%;
@@ -16,6 +17,7 @@
   flex-direction: column;
   padding-top: 1.5em;
   padding-bottom: 1em;
+  align-items: center;
 }
 
 .navigationbar-list-header a {
@@ -51,6 +53,7 @@
 
 .navigationbar-list-item{
   display: none;
+  justify-content: center;
 }
 
 .navigationbar-list-item a {
@@ -109,8 +112,9 @@
   height: max-content;
 }
 
-.navigation-list {
+.navigationbar-list {
   padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 .flag-icon {
