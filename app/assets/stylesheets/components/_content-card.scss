@@ -15,15 +15,32 @@
   padding-top: 2em;
 }
 
+.card-text-narrow {
+  min-width: 300px;
+  width: 60%;
+  margin: auto;
+  padding-top: 5rem;
+}
+
 .card-img-area {
   width: 50%;
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.card-img-narrow {
+  object-fit: cover;
+  width: 75%;
+  height: 75%;
+  min-height: 200px;
 }
 
 .big-gradient-text {
