@@ -63,6 +63,13 @@
   }
 }
 
+.fullnav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
 .fullnav:hover {
   height: max-content;
   .navigationbar {
@@ -108,4 +115,8 @@
 
 .flag-icon {
   width: 32px;
+}
+
+.fixed-nav-padding {
+  padding-top: 78px;
 }
