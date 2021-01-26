@@ -1,8 +1,8 @@
 <!-- banner -->
-<div class="homepage-banner">
+<div class="homepage-banner" style="background: url('assets/home/home-banner') no-repeat 50% 50%; background-size: cover;">
   <div class="banner-text">
     <h1 class="banner-title">CF Pharmtech</h1>
-    <h3 class="banner-subtitle">Breathe easier, live better</h3>
+    <h2 class="banner-subtitle">Breathe easier, live better</h2>
   </div>
 </div>
 <!-- content -->
@@ -19,12 +19,12 @@
         <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850977/CF%20Website/Home%20page/Home_page_no_copyright4_i8sc01.jpg" alt="">
       </div> -->
     </div>
-    <div class="content-card margin-top">
+    <div class="content-card">
       <div class="card-img-area">
-        <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850969/CF%20Website/Home%20page/Home_page_20200507-DSC_6910_y7hmcl.jpg" alt="">
+        <%= image_tag "home/inhalation-product-technology", alt: "alttext", class: "card-img-narrow" %>
       </div>
       <div class="card-text-area">
-        <div class="card-text">
+        <div class="card-text-narrow">
           <p>长风药业专注于呼吸系统治疗领域产品的开发，包括：</p>
           <ul class="bulleted-list">
             <li><%= link_to "哮喘", "#{zh_therapeutic_areas_path}#Asthma" %></li>
@@ -38,9 +38,9 @@
         </div>
       </div>
     </div>
-    <div class="content-card">
+    <div class="content-card bg-blue">
       <div class="card-text-area">
-        <div class="card-text">
+        <div class="card-text-narrow">
           <p>根据全球市场需求，长风有20多个吸入仿制药正在开发中，还有多个护理产品可供消费者选择。</p>
           <div class="btn-area">
             <%= link_to "更多", zh_products_path, class: "btn btn-flat" %>
@@ -48,15 +48,15 @@
         </div>
       </div>
       <div class="card-img-area">
-        <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1603423118/CF%20Website/Home%20page/New/DSC_0375_pisgg3.jpg" alt="">
+        <%= image_tag "home/generics", alt: "alttext", class: "card-img-narrow" %>
       </div>
     </div>
     <div class="content-card">
       <div class="card-img-area">
-        <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850973/CF%20Website/Home%20page/Home_page_no_copyright2_g165lc.jpg" alt="">
+        <img class="card-img-narrow" src="https://res.cloudinary.com/tichel/image/upload/v1598850973/CF%20Website/Home%20page/Home_page_no_copyright2_g165lc.jpg" alt="">
       </div>
       <div class="card-text-area">
-        <div class="card-text">
+        <div class="card-text-narrow">
           <p>长风药业已与多家公司建立了合作伙伴关系，将共同努力为全球市场开发新化合物创新技术和新型吸入制剂产品。此外，我们还为合作伙伴提供开发解决方案和服务，以支持您的技术和产品开发。</p>
           <div class="btn-area">
             <%= link_to "更多", zh_work_with_us_path, class: "btn btn-flat" %>
@@ -66,18 +66,20 @@
     </div>
     <div class="small-container bg-grey-green margin-top">
       <div class="small-card-container">
-        <h2>Find Out More</h2>
+        <h2>了解更多</h2>
       </div>
      <div class="small-card-container">
-      <div class="small-card">
-        <img src="https://res.cloudinary.com/tichel/image/upload/v1598850971/CF%20Website/Home%20page/Home_page_CF_building_drfmbh.jpg" alt="">
-        <div class="small-card-text">
-          <h4>职业发展</h4>
+      <%= link_to zh_careers_path do %>
+        <div class="small-card">
+          <img src="https://res.cloudinary.com/tichel/image/upload/v1598850971/CF%20Website/Home%20page/Home_page_CF_building_drfmbh.jpg" alt="">
+          <div class="small-card-text white-text">
+            <h4>职业发展</h4>
+          </div>
         </div>
-      </div>
+      <% end %>
       <div class="small-card">
         <img src="https://res.cloudinary.com/tichel/image/upload/v1597397247/gary-scott-nkCA4va-6k0-unsplash_szlu4i.jpg" alt="">
-        <div class="small-card-text">
+        <div class="small-card-text white-text">
           <h4>新闻</h4>
         </div>
       </div>
