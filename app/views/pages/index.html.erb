@@ -1,8 +1,8 @@
 <!-- banner -->
-<div class="homepage-banner">
+<div class="homepage-banner" style="background: url('assets/home/home-banner') no-repeat 50% 50%; background-size: cover;">
   <div class="banner-text">
     <h1 class="banner-title">CF Pharmtech</h1>
-    <h3 class="banner-subtitle">Breathe easier, live better</h3>
+    <h2 class="banner-subtitle">Breathe easier, live better</h2>
   </div>
 </div>
 <!-- content -->
@@ -19,12 +19,12 @@
         <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850977/CF%20Website/Home%20page/Home_page_no_copyright4_i8sc01.jpg" alt="">
       </div> -->
     </div>
-    <div class="content-card margin-top">
+    <div class="content-card">
       <div class="card-img-area">
-        <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850969/CF%20Website/Home%20page/Home_page_20200507-DSC_6910_y7hmcl.jpg" alt="">
+        <%= image_tag "home/inhalation-product-technology", alt: "alttext", class: "card-img-narrow" %>
       </div>
       <div class="card-text-area">
-        <div class="card-text">
+        <div class="card-text-narrow">
           <p><strong>CF PharmTech</strong> focuses on the development of products for respiratory treatment, including:</p>
           <ul class="bulleted-list">
             <li><%= link_to "Asthma", "#{therapeutic_areas_path}#Asthma" %></li>
@@ -38,9 +38,9 @@
         </div>
       </div>
     </div>
-    <div class="content-card">
+    <div class="content-card bg-blue">
       <div class="card-text-area">
-        <div class="card-text">
+        <div class="card-text-narrow">
           <p>Based on the global market needs, 20+ inhaled generic products are under development, and 5+ consumer healthcare products are available. </p>
           <div class="btn-area">
             <%= link_to "Read More", products_path, class: "btn btn-flat" %>
@@ -48,15 +48,15 @@
         </div>
       </div>
       <div class="card-img-area">
-        <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1603423118/CF%20Website/Home%20page/New/DSC_0375_pisgg3.jpg" alt="">
+        <%= image_tag "home/generics", alt: "alttext", class: "card-img-narrow" %>
       </div>
     </div>
     <div class="content-card">
       <div class="card-img-area">
-        <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850973/CF%20Website/Home%20page/Home_page_no_copyright2_g165lc.jpg" alt="">
+        <img class="card-img-narrow" src="https://res.cloudinary.com/tichel/image/upload/v1598850973/CF%20Website/Home%20page/Home_page_no_copyright2_g165lc.jpg" alt="">
       </div>
       <div class="card-text-area">
-        <div class="card-text">
+        <div class="card-text-narrow">
           <p><strong>CF PharmTech</strong> has been building partnerships to develop innovative technologies and novel inhaled products with new chemical entities (NCEs) for the global market. In addition to codevelopment, we also provide development solutions and services to our partners to support your technology and product development programs.</p>
           <div class="btn-area">
             <%= link_to "Read More", work_with_us_path, class: "btn btn-flat" %>
@@ -69,15 +69,17 @@
         <h2>Find Out More</h2>
       </div>
      <div class="small-card-container">
-      <div class="small-card">
-        <img src="https://res.cloudinary.com/tichel/image/upload/v1598850971/CF%20Website/Home%20page/Home_page_CF_building_drfmbh.jpg" alt="">
-        <div class="small-card-text">
-          <h4>Careers</h4>
+      <%= link_to careers_path do %>
+        <div class="small-card">
+          <img src="https://res.cloudinary.com/tichel/image/upload/v1598850971/CF%20Website/Home%20page/Home_page_CF_building_drfmbh.jpg" alt="">
+          <div class="small-card-text white-text">
+            <h4>Careers</h4>
+          </div>
         </div>
-      </div>
+      <% end %>
       <div class="small-card">
         <img src="https://res.cloudinary.com/tichel/image/upload/v1597397247/gary-scott-nkCA4va-6k0-unsplash_szlu4i.jpg" alt="">
-        <div class="small-card-text">
+        <div class="small-card-text white-text">
           <h4>News</h4>
         </div>
       </div>
