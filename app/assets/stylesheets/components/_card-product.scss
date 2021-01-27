@@ -37,5 +37,14 @@
 }
 
 .bulleted-list {
-  list-style-type: circle;
+  list-style-type: none;
+}
+
+ul.bulleted-list > li {
+  text-indent: -7px;
+}
+
+ul.bulleted-list > li:before {
+  content: "-";
+  text-indent: -7px;
 }
