@@ -41,4 +41,17 @@ class PagesController < ApplicationController
 
   def services
   end
+
+  def jean_marc_interview
+  end
+
+  def gao_interview
+  end
+
+  def kira_interview
+  end
+
+  def yiming_interview
+  end
+
 end

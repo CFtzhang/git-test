@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   get 'dosage-forms', to: 'pages#dosage_forms'
   get 'advanced-facilities', to: 'pages#advanced_facilities'
   get 'careers', to: 'pages#careers'
+  get 'careers/jean-marc-interview', to: 'pages#jean_marc_interview'
+  get 'careers/gao-interview', to: 'pages#gao_interview'
+  get 'careers/kira-interview', to: 'pages#kira_interview'
+  get 'careers/yiming-interview', to: 'pages#yiming_interview'
   get 'services', to: 'pages#services'
 
   get 'zh/contact-us', to: 'zh_pages#contact_us'
@@ -28,6 +32,10 @@ Rails.application.routes.draw do
   get 'zh/dosage-forms', to: 'zh_pages#dosage_forms'
   get 'zh/advanced-facilities', to: 'zh_pages#advanced_facilities'
   get 'zh/careers', to: 'zh_pages#careers'
+  get 'zh/careers/jean-marc-interview', to: 'zh_pages#jean_marc_interview'
+  get 'zh/careers/gao-interview', to: 'zh_pages#gao_interview'
+  get 'zh/careers/kira-interview', to: 'zh_pages#kira_interview'
+  get 'zh/careers/yiming-interview', to: 'zh_pages#yiming_interview'
   get 'zh/services', to: 'zh_pages#services'
 
   resources :products, only: [:show]
