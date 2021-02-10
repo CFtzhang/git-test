@@ -3,7 +3,8 @@
   "scripts": {
     "dokku": {
       "predeploy": "bundle exec rake assets:precompile",
-      "postdeploy": "bundle exec rake db:migrate"
+      "postdeploy": "bundle exec rake db:migrate",
+      "postdeploy": "bundle exec rake db:seed"
     }
   }
 }
