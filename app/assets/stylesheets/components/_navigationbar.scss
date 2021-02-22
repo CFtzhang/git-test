@@ -75,11 +75,8 @@
 
 .fullnav:hover {
   height: max-content;
-  .navigationbar {
-    height: 100%;
-    .navigationbar-list-item {
-      display: block;
-    }
+  .navigationbar-list-item {
+    display: block;
   }
 }
 
