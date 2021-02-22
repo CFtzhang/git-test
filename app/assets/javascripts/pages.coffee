@@ -14,4 +14,21 @@
   expandingFlag = document.getElementById('flag-selector')
 
   expandingFlag.classList.toggle("flag-selector-extend")
-  console.log("extended")
+
+@mapShowSuzhou = (e) ->
+  suzhouCard = document.getElementById('cf-suzhou')
+  suzhouMap = document.getElementById('cf-suzhou-map')
+  wuxiMap = document.getElementById('cf-wuxi-map')
+
+  if ('contact-map-toggle') in wuxiMap.classList then wuxiMap.classList.toggle('contact-map-toggle')
+
+  suzhouMap.classList.toggle('contact-map-toggle')
+
+@mapShowWuxi = (e) ->
+  wuxiCard = document.getElementById('cf-wuxi')
+  wuxiMap = document.getElementById('cf-wuxi-map')
+  suzhouMap = document.getElementById('cf-suzhou-map')
+
+  if ('contact-map-toggle') in suzhouMap.classList then suzhouMap.classList.toggle('contact-map-toggle')
+
+  wuxiMap.classList.toggle('contact-map-toggle')
