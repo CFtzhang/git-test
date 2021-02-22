@@ -41,7 +41,12 @@
           <div class="navigationbar-list-header"><%= link_to ("Contact"), contact_us_path %></div>
         </div>
         <div class="navigationbar-list-header">
-          <%= link_to (image_tag "china-flag.svg", class: "flag-icon"), "#{zh_path + request.original_fullpath}" %>
+          <div class="menu-dropdown" id="flag-selector" onclick="flagExtend()">
+            <div class="menu-dropdown-container">
+              <%= image_tag "us-flag.svg", class: "flag-icon"%><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div><span class="blur-white"></span>
+            </div>
+            <div class="menu-dropdown-content"><%= link_to (image_tag "china-flag.svg", class: "flag-icon"), "#{zh_path + request.original_fullpath}" %></div>
+          </div>
         </div>
         <div class="navigationbar-list-header">
           <a class="material-icons" href="#">search</a>

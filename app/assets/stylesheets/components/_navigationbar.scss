@@ -80,7 +80,6 @@
   }
 }
 
-
 .navigationbar-list-item a {
   font-size: 14px;
 }
@@ -106,6 +105,7 @@
 }
 
 .navigationbar a {
+  color: black;
   height: max-content;
 }
 
@@ -120,4 +120,12 @@
 
 .fixed-nav-padding {
   padding-top: 78px;
+}
+
+.navigationbar a:hover{
+  color: #00c8b8;
+}
+
+.navigationbar #nav-arrow:hover{
+  color: #00c8b8;
 }

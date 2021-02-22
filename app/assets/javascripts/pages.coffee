@@ -10,3 +10,8 @@
   expandingNavbar.classList.toggle("navigationbar-hidden")
 #  navArrow.classList.toggle("rotate-around")
 
+@flagExtend = (e) ->
+  expandingFlag = document.getElementById('flag-selector')
+
+  expandingFlag.classList.toggle("flag-selector-extend")
+  console.log("extended")
