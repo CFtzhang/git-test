@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background-color: #EBEBEB;
+  background-color: white;
 }
 
 .footer-list-container {
@@ -9,4 +9,12 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer a:hover{
+  color: #00c8b8;
 }
