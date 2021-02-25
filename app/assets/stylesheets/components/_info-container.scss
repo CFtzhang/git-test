@@ -3,7 +3,10 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  padding: 4em;
 }
 
-
+@media (min-width: 968px) {
+  .info-container {
+    padding: 4em;
+  }
+}
