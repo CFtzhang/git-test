@@ -1,3 +1,15 @@
 a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
+
+a {
+  color: black;
+}
+
+a:hover{
+  color: #00c8b8;
+}
+
+p a {
+  color: #086eba;
+}

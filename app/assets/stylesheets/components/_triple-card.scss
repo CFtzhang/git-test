@@ -1,13 +1,17 @@
 .triple-card-container{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
   margin: 1em 0 1em 0;
 }
 
 .triple-card {
   width: 35%;
+  min-width: 180px;
   margin-left: 1em;
   margin-right: 1em;
+  margin-bottom: 1em;
   padding: 1em;
   height: 350px;
   background-size: cover;
