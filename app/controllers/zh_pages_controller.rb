@@ -36,7 +36,7 @@ class ZhPagesController < ApplicationController
   def dosage_forms
   end
 
-  def advanced_facilities
+  def quality_system
   end
 
   def services
