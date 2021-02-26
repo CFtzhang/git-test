@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'pages#index'
   get 'contact-us', to: 'pages#contact_us'
-  get 'about-us', to: 'pages#about_us'
-  get 'work-with-us', to: 'pages#work_with_us'
+  get 'company', to: 'pages#company'
+  get 'partnership', to: 'pages#partnership'
   get 'research-and-development-platform', to: 'pages#research_and_development_platform'
   get 'products', to: 'pages#products'
   get 'generic-drug-products', to: 'pages#generic_drug_products'
@@ -21,8 +21,8 @@ Rails.application.routes.draw do
 
   get 'zh/contact-us', to: 'zh_pages#contact_us'
   get 'zh/', to: 'zh_pages#index'
-  get 'zh/about-us', to: 'zh_pages#about_us'
-  get 'zh/work-with-us', to: 'zh_pages#work_with_us'
+  get 'zh/company', to: 'zh_pages#company'
+  get 'zh/partnership', to: 'zh_pages#partnership'
   get 'zh/research-and-development-platform', to: 'zh_pages#research_and_development_platform'
   get 'zh/products', to: 'zh_pages#products'
   get 'zh/generic-drug-products', to: 'zh_pages#generic_drug_products'

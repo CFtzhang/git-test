@@ -2,13 +2,13 @@ class PagesController < ApplicationController
   def index
   end
 
-  def work_with_us
+  def partnership
   end
 
   def reasearch_and_development
   end
 
-  def about_us
+  def company
   end
 
   def contact_us
