@@ -22,6 +22,8 @@
   min-width: 240px;
   margin: auto;
   padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .card-img-area {
@@ -44,6 +46,8 @@
   width: 75%;
   height: 75%;
   min-height: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .big-gradient-text {
@@ -78,5 +82,17 @@
 @media (min-width: 968px) {
   .card-img {
     height: 100%;
+  }
+
+  .card-img-narrow {
+    object-fit: cover;
+    width: 75%;
+    height: 75%;
+    min-height: 200px;
+    padding-bottom: 0;
+  }
+
+  .flex-reverse {
+    flex-direction: row;
   }
 }
