@@ -1,5 +1,4 @@
 .menu-dropdown {
-  display: inline-block;
   z-index: 1;
   text-align: center;
 }
@@ -21,8 +20,6 @@
 .menu-dropdown:hover {
   .menu-dropdown-content {
     display: block;
-  }
-  .menu-dropdown-container {
   }
 }
 
