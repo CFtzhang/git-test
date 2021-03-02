@@ -7,7 +7,6 @@
   grid-template-columns: repeat(7, 1fr) 1.2fr 0.4fr 0.4fr;
   justify-content: space-between;
   background: white;
-  max-height:146px;
   height: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -75,7 +74,7 @@
 }
 
 .fullnav:hover {
-  height: max-content;
+  max-height: max-content;
   .navigationbar-list-item {
     display: block;
   }
@@ -86,6 +85,7 @@
 }
 
 .flag-container {
+  max-height: 78px;
 }
 
 .flag-container img {
