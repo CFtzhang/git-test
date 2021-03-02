@@ -1,5 +1,4 @@
 .menu-dropdown {
-  position: relative;
   display: inline-block;
   z-index: 1;
   text-align: center;
@@ -7,14 +6,14 @@
 
 .menu-dropdown-content {
   display: none;
-  top: 32px;
-  position: absolute;
+  padding-top: 8px;
   min-width: 40px;
   z-index: 1;
 }
 
 .menu-dropdown-container {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   cursor: pointer;
 }
@@ -24,7 +23,6 @@
     display: block;
   }
   .menu-dropdown-container {
-    height: 60px;
   }
 }
 
