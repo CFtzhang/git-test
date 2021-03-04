@@ -9,18 +9,21 @@
 }
 
 .homepage-banner h1 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 800;
   margin: 0;
 }
 
 .homepage-banner h3 {
-  font-size: 1.5em;
+  position: relative;
+  line-height: 100%;
   margin: 0;
+  z-index: 10;
 }
 
-.banner-text {
-  position: relative;
-  bottom: 5.5rem;
-  z-index: 0;
+.homepage-banner-logo {
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  z-index: 1;
 }

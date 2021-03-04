@@ -5,3 +5,33 @@
 .blue-text {
   color: #086eba;
 }
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.text-largest {
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .text-largest {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 968px) {
+  .text-largest {
+    font-size: 6rem;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+

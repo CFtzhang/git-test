@@ -15,7 +15,7 @@
   min-width: 240px;
   width: 80%;
   margin: auto;
-  padding-top: 2em;
+  padding-top: 2rem;
 }
 
 .card-text-narrow {
@@ -38,7 +38,7 @@
 .card-img {
   object-fit: cover;
   width: 100%;
-  height: calc(100% - 2em);
+  height: calc(100% - 2rem);
 }
 
 .card-img-narrow {
@@ -51,14 +51,14 @@
 }
 
 .big-gradient-text {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   background: -webkit-linear-gradient(left top, #29b07a, #086eba, #2fbbe6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .content-card h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
