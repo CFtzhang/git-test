@@ -1,26 +1,29 @@
 <div class="footer">
-  <div class="footer-list-container">
-    <div>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Products", products_path %></li>
-        <li><%= link_to "Partnership", partnership_path %></li>
-      </ul>
+  <div class="footer-container">
+    <div class="footer-list-container">
+      <div>
+        <ul>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Products", products_path %></li>
+          <li><%= link_to "Partnership", partnership_path %></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><%= link_to "R&D", research_and_development_platform_path %></li>
+          <li><%= link_to "Company", company_path %></li>
+          <li><%= link_to "Career", careers_path %></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <%= link_to "Contact", contact_us_path %>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <ul>
-        <li><%= link_to "R&D", research_and_development_platform_path %></li>
-        <li><%= link_to "Company", company_path %></li>
-        <li><%= link_to "Career", careers_path %></li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li>
-          <%= link_to "Contact", contact_us_path %>
-        </li>
-      </ul>
-    </div>
+    <hr>
+    <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo"), root_path %>
   </div>
-  <p>ICP Beian</p>
 </div>

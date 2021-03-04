@@ -23,6 +23,7 @@
       </div>
       <div class="card-text-area">
         <div class="card-text">
+          <p class="text-larger text-bold">我们所做的</p>
           <p>长风药业专注于呼吸系统治疗领域产品的开发，包括：</p>
           <ul class="bulleted-list">
             <li><%= link_to "哮喘", "#{zh_therapeutic_areas_path}#Asthma" %></li>
@@ -31,57 +32,60 @@
             <li><%= link_to "其他呼吸系统疾病", "#{zh_therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
           </ul>
           <div class="btn-area">
-              <%= link_to "更多", zh_research_and_development_platform_path, class: "btn btn-flat" %>
+              <%= link_to "更多", zh_company_path, class: "btn btn-flat" %>
           </div>
         </div>
       </div>
     </div>
-    <div class="content-card bg-blue">
+    <div class="content-card bg-trans-white-green card-reverse">
       <div class="card-text-area">
-        <div class="card-text-narrow">
+        <div class="card-text">
+          <p class="text-larger text-bold">研发平台</p>
           <p>根据全球市场需求，长风有20多个吸入仿制药正在开发中，还有多个护理产品可供消费者选择。</p>
+          <ul class="bulleted-list">
+            <li><%= link_to "气雾剂", "#{dosage_forms_path}#MDI" %></li>
+            <li><%= link_to "鼻喷剂", "#{dosage_forms_path}#Nasal-Spray" %></li>
+            <li><%= link_to "雾化剂", "#{dosage_forms_path}#Nebulizer" %></li>
+            <li><%= link_to "干粉剂", "#{dosage_forms_path}#DPI" %></li>
+          </ul>
           <div class="btn-area">
-            <%= link_to "更多", zh_products_path, class: "btn btn-flat" %>
+            <%= link_to "更多", zh_research_and_development_platform_path, class: "btn btn-flat" %>
           </div>
         </div>
       </div>
-      <div class="card-img-area">
-        <%= image_tag "home/generics", alt: "alttext", class: "card-img-narrow" %>
+      <div class="card-image-area">
+        <%= image_tag "home/research-and-development", alt: "alttext", class: "card-image" %>
       </div>
     </div>
-    <div class="content-card">
-      <div class="card-img-area">
-        <img class="card-img-narrow" src="https://res.cloudinary.com/tichel/image/upload/v1598850973/CF%20Website/Home%20page/Home_page_no_copyright2_g165lc.jpg" alt="">
+    <div class="home-products content-card ta-center flex-wrap justify-content-center align-items-center">
+      <div class="home-products-text-area">
+        <p class="text-larger text-bold">产品</p>
+        <p>长风药业专注于为非专利产品和新药产品开发吸入产品，以及为消费者提供专业和实用的医疗产品。</p>
       </div>
+      <div class="products-container">
+        <%= link_to zh_generic_drug_products_path, :class=>"home-product-card bg-light-green" do %>
+          <p class="text-large text-bold ta-left">医药产品</p>
+          <div class="btn-hollow-white home-product-card-btn">更多</div>
+        <% end %>
+        <%= link_to zh_consumer_products_path, :class=>"home-product-card bg-light-blue" do %>
+          <p class="text-large text-bold ta-left">护理产品</p>
+          <div class="btn-hollow-white home-product-card-btn">更多</div>
+        <% end %>
+      </div>
+    </div>
+    <div class="content-card bg-trans-white-green card-reverse">
       <div class="card-text-area">
-        <div class="card-text-narrow">
+        <div class="card-text">
+          <p class="text-larger text-bold">合作</p>
           <p>长风药业已与多家公司建立了合作伙伴关系，将共同努力为全球市场开发新化合物创新技术和新型吸入制剂产品。此外，我们还为合作伙伴提供开发解决方案和服务，以支持您的技术和产品开发。</p>
           <div class="btn-area">
             <%= link_to "更多", zh_partnership_path, class: "btn btn-flat" %>
           </div>
         </div>
       </div>
-    </div>
-    <div class="small-container bg-grey-green margin-top">
-      <div class="small-card-container">
-        <h2>了解更多</h2>
+      <div class="card-image-area">
+        <%= image_tag "home/partnership", alt: "alttext", class: "card-image" %>
       </div>
-     <div class="small-card-container">
-      <%= link_to zh_careers_path do %>
-        <div class="small-card">
-          <img src="https://res.cloudinary.com/tichel/image/upload/v1598850971/CF%20Website/Home%20page/Home_page_CF_building_drfmbh.jpg" alt="">
-          <div class="small-card-text white-text">
-            <h4>职业发展</h4>
-          </div>
-        </div>
-      <% end %>
-      <div class="small-card">
-        <img src="https://res.cloudinary.com/tichel/image/upload/v1597397247/gary-scott-nkCA4va-6k0-unsplash_szlu4i.jpg" alt="">
-        <div class="small-card-text white-text">
-          <h4>新闻</h4>
-        </div>
-      </div>
-     </div>
     </div>
   </div>
 </div>

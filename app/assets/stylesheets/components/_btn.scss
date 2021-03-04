@@ -25,3 +25,14 @@
 .bot-margin-small {
   margin-bottom: 20px;
 }
+
+.btn-hollow-white {
+  display: inline-block;
+  color: white;
+  border-color: white;
+  padding: 8px 24px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: background 0.3s ease;
+}

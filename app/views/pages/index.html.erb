@@ -32,7 +32,7 @@
             <li><%= link_to "Other Respiratory Diseases", "#{therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
           </ul>
           <div class="btn-area">
-              <%= link_to "Read More", research_and_development_platform_path, class: "btn btn-flat" %>
+              <%= link_to "Read More", company_path, class: "btn btn-flat" %>
           </div>
         </div>
       </div>
@@ -42,48 +42,50 @@
         <div class="card-text">
           <p class="text-larger text-bold">Research & Development</p>
           <p>Based on global market needs, 20+ inhaled generic products are under development, and 5+ consumer healthcare products are available. </p>
+          <ul class="bulleted-list">
+            <li><%= link_to "MDI", "#{dosage_forms_path}#MDI" %></li>
+            <li><%= link_to "Nasal Spray", "#{dosage_forms_path}#Nasal-Spray" %></li>
+            <li><%= link_to "Nebulizer", "#{dosage_forms_path}#Nebulizer" %></li>
+            <li><%= link_to "Dry Powder Inhaler", "#{dosage_forms_path}#DPI" %></li>
+          </ul>
           <div class="btn-area">
-            <%= link_to "Read More", products_path, class: "btn btn-flat" %>
+            <%= link_to "Read More", research_and_development_platform_path, class: "btn btn-flat" %>
           </div>
         </div>
       </div>
       <div class="card-image-area">
-        <%= image_tag "home/generics", alt: "alttext", class: "card-img-narrow" %>
+        <%= image_tag "home/research-and-development", alt: "alttext", class: "card-image" %>
       </div>
     </div>
-    <div class="content-card">
-      <div class="card-image-area">
-        <img class="card-img-narrow" src="https://res.cloudinary.com/tichel/image/upload/v1598850973/CF%20Website/Home%20page/Home_page_no_copyright2_g165lc.jpg" alt="">
+    <div class="home-products content-card ta-center flex-wrap justify-content-center align-items-center">
+      <div class="home-products-text-area">
+        <p class="text-larger text-bold">Our Products</p>
+        <p>CF PharmTech focuses on the development of inhaled products for generic products and new drug products, as well as professional and practical medical care products for consumers.</p>
       </div>
+      <div class="products-container">
+        <%= link_to generic_drug_products_path, :class=>"home-product-card bg-light-green" do %>
+          <p class="text-large text-bold ta-left">Pharmaceutical <br> Products</p>
+          <div class="btn-hollow-white home-product-card-btn">Read More</div>
+        <% end %>
+        <%= link_to consumer_products_path, :class=>"home-product-card bg-light-blue" do %>
+          <p class="text-large text-bold ta-left">Consumer <br> Products</p>
+          <div class="btn-hollow-white home-product-card-btn">Read More</div>
+        <% end %>
+      </div>
+    </div>
+    <div class="content-card bg-trans-white-green card-reverse">
       <div class="card-text-area">
-        <div class="card-text-narrow">
-          <p><strong>CF PharmTech</strong> has been building partnerships to develop innovative technologies and novel inhaled products with new chemical entities (NCEs) for the global market. In addition to codevelopment, we also provide development solutions and services to our partners to support your technology and product development programs.</p>
+        <div class="card-text">
+          <p class="text-larger text-bold">Partnership</p>
+          <p>CF PharmTech has been building partnerships to develop innovative technologies and novel inhaled products with new chemical entities (NCEs) for the global market. In addition to codevelopment, we also provide development solutions and services to our partners to support your technology and product development programs.</p>
           <div class="btn-area">
             <%= link_to "Read More", partnership_path, class: "btn btn-flat" %>
           </div>
         </div>
       </div>
-    </div>
-    <div class="small-container bg-grey-green margin-top">
-      <div class="small-card-container">
-        <h2>Find Out More</h2>
+      <div class="card-image-area">
+        <%= image_tag "home/partnership", alt: "alttext", class: "card-image" %>
       </div>
-     <div class="small-card-container">
-      <%= link_to careers_path do %>
-        <div class="small-card">
-          <img src="https://res.cloudinary.com/tichel/image/upload/v1598850971/CF%20Website/Home%20page/Home_page_CF_building_drfmbh.jpg" alt="">
-          <div class="small-card-text white-text">
-            <h4>Careers</h4>
-          </div>
-        </div>
-      <% end %>
-      <div class="small-card">
-        <img src="https://res.cloudinary.com/tichel/image/upload/v1597397247/gary-scott-nkCA4va-6k0-unsplash_szlu4i.jpg" alt="">
-        <div class="small-card-text white-text">
-          <h4>News</h4>
-        </div>
-      </div>
-     </div>
     </div>
   </div>
 </div>
