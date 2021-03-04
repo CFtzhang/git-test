@@ -26,3 +26,15 @@
   background-color: #00c8b8;
   color: white;
 }
+
+.bg-trans {
+  background-color: transparent;
+}
+
+.offset-30-bg {
+  position: absolute;
+  left: -30%;
+  height: 100%;
+  width: 66%;
+  z-index: 0;
+}
