@@ -1,6 +1,6 @@
 <!-- Info banner-->
-<div class="info-banner partnership-banner-bg">
-  <div class="info-banner-title-blue">
+<div class="info-banner info-banner-bg">
+  <div class="info-banner-title">
     <h1>Partnership</h1>
   </div>
 </div>
@@ -9,7 +9,7 @@
     <div class="content-card">
       <div class="card-text-area">
         <div class="card-text">
-          <h4>Collaborations</h4>
+          <h4 class="text-larger text-bold">Collaborations</h4>
           <p>In addition to our generic product development teams, we have dedicated experts and advanced inhaled product development capability to support your New Drug Product Development programs, including New Chemical Entities or New Devices, from the early stages, to manufacturing, and all of the way to market. </p>
           <p>We welcome many forms of collaborations, from coinvestment, codevelopment, or CDMO <%= link_to "services", services_path %>. </p>
           <p>If you are interested in partnering with us, feel free to <%= link_to "contact us", contact_us_path %>.</p>
@@ -20,17 +20,25 @@
           <p>3. Competitive price and high standards that provide significant cost saving and high quality.</p>
         </div> -->
       </div>
-      <div class="card-img-area">
-        <%= image_tag "partnership/collaboration", alt: "alttext", class: "card-img" %>
+      <div class="card-image-area">
+        <%= image_tag "partnership/collaboration", alt: "alttext", class: "card-image" %>
+      </div>
+    </div>
+    <div class="card-narrow bg-trans-white-green">
+      <div class="d-flex mb-2 px-4 flex-wrap align-items-center">
+        <%= image_tag "partnership/doodles", alt: "alttext", class: "doodles" %>
+        <%= image_tag "partnership/work-with-us", alt: "alttext" %>
+        <p class="text-large">If you are interested in partnering with us, feel free to <strong><%= link_to "contact us", contact_us_path %></strong>.</p>
       </div>
     </div>
     <!-- Table -->
     <div class="content-card">
       <div class="card-text-area">
         <div class="card-text">
-          <h4>Service Scope</h4>
+          <h4 class="text-larger text-bold ta-center">Service Scope</h4>
           <div class="fw-display">
             <div class="fw-display-card">
+              <%= image_tag "partnership/cro", alt: "alttext", class: "fw-pin" %>
               <div class="fw-display-card-header">
                 <h4>CRO service</h4>
               </div>
@@ -45,6 +53,7 @@
               </div>
             </div>
             <div class="fw-display-card">
+              <%= image_tag "partnership/cmo", alt: "alttext", class: "fw-pin" %>
               <div class="fw-display-card-header">
                 <h4>CMO service</h4>
               </div>
@@ -58,6 +67,7 @@
               </div>
             </div>
             <div class="fw-display-card">
+              <%= image_tag "partnership/other-services", alt: "alttext", class: "fw-pin" %>
               <div class="fw-display-card-header">
                 <h4>Other services</h4>
               </div>

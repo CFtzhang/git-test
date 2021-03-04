@@ -1,6 +1,6 @@
 <!-- Info banner-->
-<div class="info-banner partnership-banner-bg">
-  <div class="info-banner-title-blue">
+<div class="info-banner info-banner-bg">
+  <div class="info-banner-title">
     <h1>合作</h1>
   </div>
 </div>
@@ -20,8 +20,15 @@
           <p>3. Competitive price and high standards that provide significant cost saving and high quality.</p>
         </div> -->
       </div>
-      <div class="card-img-area">
-        <%= image_tag "partnership/collaboration", alt: "alttext", class: "card-img" %>
+      <div class="card-image-area">
+        <%= image_tag "partnership/collaboration", alt: "alttext", class: "card-image" %>
+      </div>
+    </div>
+    <div class="card-narrow bg-trans-white-green">
+      <div class="d-flex mb-2 px-4 flex-wrap align-items-center">
+        <%= image_tag "partnership/doodles", alt: "alttext", class: "doodles" %>
+        <%= image_tag "partnership/work-with-us", alt: "alttext" %>
+        <p class="text-large">如果您有兴趣与我们合作，请随时与 <strong><%= link_to "我们联系", contact_us_path %></strong>.</p>
       </div>
     </div>
     <!-- Table -->
@@ -32,6 +39,7 @@
           <p>长风药业致力于打造一个综合性的研发技术平台，为合作伙伴提供吸入制剂产品开发的全方位服务。</p>
           <div class="fw-display">
             <div class="fw-display-card">
+              <%= image_tag "partnership/cro", alt: "alttext", class: "fw-pin" %>
               <div class="fw-display-card-header">
                 <h4>研发</h4>
               </div>
@@ -46,6 +54,7 @@
               </div>
             </div>
             <div class="fw-display-card">
+              <%= image_tag "partnership/cmo", alt: "alttext", class: "fw-pin" %>
               <div class="fw-display-card-header">
                 <h4>CMO服务</h4>
               </div>
@@ -59,6 +68,7 @@
               </div>
             </div>
             <div class="fw-display-card">
+              <%= image_tag "partnership/other-services", alt: "alttext", class: "fw-pin" %>
               <div class="fw-display-card-header">
                 <h4>其他服务</h4>
               </div>
