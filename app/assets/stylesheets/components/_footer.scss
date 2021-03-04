@@ -5,7 +5,7 @@
 
 .footer-list-container {
   display: flex;
-  max-width: 500px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -20,8 +20,16 @@
 }
 
 .footer-container {
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-list-container {
+    max-width: 500px;
+  }
+  .footer-container {
+    width: 70%;
+  }
 }
