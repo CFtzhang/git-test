@@ -38,6 +38,14 @@ ul {
   z-index: 1;
 }
 
+.min-width {
+  width: min-content;
+}
+
+.full-height {
+  height: 96vh;
+}
+
 // Graphical variables
 // @import "config/fonts";
 // @import "config/colors";

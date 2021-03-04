@@ -2,27 +2,29 @@
 <div class="homepage-banner home-banner-bg">
   <div class="pr">
     <%= image_tag "home/simple-logo", alt: "alttext", class: "homepage-banner-logo" %>
-    <h3 class="text-largest text-bold">Breathe easier,<br>live better</h3>
+    <h3 class="text-very-large text-bold">Breathe easier,<br>live better</h3>
   </div>
 </div>
 <!-- content -->
 <div class="">
   <div class="">
-    <div class="color-block bg-trans-white-green ta-left pad-tb-em4">
+    <div class="color-block bg-trans-white-green ta-left pad-tb-rem4">
+      <%= image_tag "home/lungs", alt: "alttext", class: "color-block-bg-image" %>
       <div class="color-block-text">
-        <p><strong>CF PharmTech</strong> is an integrated specialty pharmaceutical company dedicated to providing high-quality respiratory drugs for the global market. Managed by a high-caliber team with extensive experience in the industry, the company focuses on the development of drugs for the treatment of respiratory diseases in its state-of-the-art facilities.</p>
+        <p class="text-large">CF PharmTech is an integrated specialty pharmaceutical company dedicated to providing <span class="text-bold">high-quality respiratory drugs</span> for the global market.</p><p class="color-block-smaller-text">Managed by a high-caliber team with extensive experience in the industry, the company focuses on the development of drugs for the treatment of respiratory diseases in its state-of-the-art facilities.</p>
       </div>
-      <!-- <div class="card-img-area">
+      <!-- <div class="card-image-area">
         <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850977/CF%20Website/Home%20page/Home_page_no_copyright4_i8sc01.jpg" alt="">
       </div> -->
     </div>
     <div class="content-card">
-      <div class="card-img-area">
-        <%= image_tag "home/inhalation-product-technology", alt: "alttext", class: "card-img-narrow" %>
+      <div class="card-image-area">
+        <%= image_tag "home/inhalation-product-technology", alt: "alttext", class: "card-image" %>
       </div>
       <div class="card-text-area">
-        <div class="card-text-narrow">
-          <p><strong>CF PharmTech</strong> focuses on the development of products for respiratory treatment, including:</p>
+        <div class="card-text">
+          <p class="text-larger text-bold">What We Do</p>
+          <p>CF PharmTech focuses on the development of products for respiratory treatment, including:</p>
           <ul class="bulleted-list">
             <li><%= link_to "Asthma", "#{therapeutic_areas_path}#Asthma" %></li>
             <li><%= link_to "COPD", "#{therapeutic_areas_path}#COPD" %></li>
@@ -35,21 +37,22 @@
         </div>
       </div>
     </div>
-    <div class="content-card bg-blue">
+    <div class="content-card bg-trans-white-green card-reverse">
       <div class="card-text-area">
-        <div class="card-text-narrow">
-          <p>Based on the global market needs, 20+ inhaled generic products are under development, and 5+ consumer healthcare products are available. </p>
+        <div class="card-text">
+          <p class="text-larger text-bold">Research & Development</p>
+          <p>Based on global market needs, 20+ inhaled generic products are under development, and 5+ consumer healthcare products are available. </p>
           <div class="btn-area">
             <%= link_to "Read More", products_path, class: "btn btn-flat" %>
           </div>
         </div>
       </div>
-      <div class="card-img-area">
+      <div class="card-image-area">
         <%= image_tag "home/generics", alt: "alttext", class: "card-img-narrow" %>
       </div>
     </div>
     <div class="content-card">
-      <div class="card-img-area">
+      <div class="card-image-area">
         <img class="card-img-narrow" src="https://res.cloudinary.com/tichel/image/upload/v1598850973/CF%20Website/Home%20page/Home_page_no_copyright2_g165lc.jpg" alt="">
       </div>
       <div class="card-text-area">

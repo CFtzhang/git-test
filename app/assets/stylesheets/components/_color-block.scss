@@ -1,11 +1,30 @@
 .color-block {
   display: flex;
   min-height: 150px;
+  position: relative;
 }
 
 .color-block-text {
   min-width: 300px;
-  max-width: 1200px;
-  width: 70%;
+  max-width: 1400px;
+  width: 80%;
   margin: auto;
+}
+
+.color-block-smaller-text {
+  width: 85%;
+  margin-right: auto;
+}
+
+.color-block-bg-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .color-block-bg-image {
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
 }

@@ -4,23 +4,24 @@
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(7, 1fr) 1.2fr 0.4fr 0.4fr;
-  justify-content: space-between;
+  grid-template-columns: 0.6fr repeat(7, 1fr) 0.4fr;
   background: white;
   height: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 0.8rem;
 }
 
 .navigationbar-list-header {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  // display: flex;
+  // flex-direction: column;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
   align-items: center;
 }
 
 .navigationbar-list-header a {
+  font-size: 1rem;
 }
 
 .navigationbar-logo {
@@ -52,7 +53,9 @@
 }
 
 .navigationbar-list-item{
-  display: none;
+  height: 0;
+  width: 0;
+  overflow: hidden;
   justify-content: center;
 }
 
@@ -62,7 +65,9 @@
 
 .navigationbar-extend {
   .navigationbar-list-item{
-    display: block;
+    height: inherit;
+    width: inherit;
+    overflow: wrap;
   }
 }
 
@@ -76,12 +81,13 @@
 .fullnav:hover {
   max-height: max-content;
   .navigationbar-list-item {
-    display: block;
+    height: inherit;
+    width: inherit;
+    overflow: wrap;
   }
 }
 
 .navigationbar-list-item a {
-  font-size: 14px;
 }
 
 .flag-container {
@@ -107,12 +113,12 @@
 }
 
 .navigationbar-list {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
   text-align: center;
 }
 
 .flag-icon {
-  width: 40px;
+  width: 36px;
   max-height: 28px;
 }
 

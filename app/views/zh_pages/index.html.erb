@@ -1,30 +1,28 @@
 <!-- banner -->
 <div class="homepage-banner home-banner-bg">
-  <div class="banner-text">
-    <h1 class="banner-title">长风药业</h1>
-    <h2 class="banner-subtitle">关注呼吸，关爱生命</h2>
+  <div class="pr">
+    <%= image_tag "home/simple-logo", alt: "alttext", class: "homepage-banner-logo" %>
+    <h3 class="text-very-large text-bold">关注呼吸,<br>关爱生命</h3>
   </div>
 </div>
 <!-- content -->
 <div class="">
   <div class="">
-    <div class="color-block bg-grey-green">
+    <div class="color-block bg-trans-white-green ta-left pad-tb-rem4">
+      <%= image_tag "home/lungs", alt: "alttext", class: "color-block-bg-image" %>
       <div class="color-block-text">
-        <p>长风药业是一家致力于为全球市场提供高品质吸入类药物的综合性专业制药公司。在拥有丰富行业经验的高素质团队的管理下，公司专注于在最先进的设备中开发治疗呼吸系统疾病的药物。</p>
-        <div class="btn-area">
-          <%= link_to "更多", zh_company_path, class: "btn btn-flat" %>
-        </div>
+        <p class="text-large">长风药业是一家致力于为全球市场提供高品质吸入类药物的综合性专业制药公司。</p><p>在拥有丰富行业经验的高素质团队的管理下，公司专注于在最先进的设备中开发治疗呼吸系统疾病的药物。</p>
       </div>
       <!-- <div class="card-img-area">
         <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850977/CF%20Website/Home%20page/Home_page_no_copyright4_i8sc01.jpg" alt="">
       </div> -->
     </div>
     <div class="content-card">
-      <div class="card-img-area">
-        <%= image_tag "home/inhalation-product-technology", alt: "alttext", class: "card-img-narrow" %>
+      <div class="card-image-area">
+        <%= image_tag "home/inhalation-product-technology", alt: "alttext", class: "card-image" %>
       </div>
       <div class="card-text-area">
-        <div class="card-text-narrow">
+        <div class="card-text">
           <p>长风药业专注于呼吸系统治疗领域产品的开发，包括：</p>
           <ul class="bulleted-list">
             <li><%= link_to "哮喘", "#{zh_therapeutic_areas_path}#Asthma" %></li>

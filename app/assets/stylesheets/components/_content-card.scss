@@ -1,44 +1,58 @@
 .content-card {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   max-width: 100vw;
+  max-height: 200vh;
   min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+@media (min-width: 768px) {
+  .content-card{
+    height: 96vh;
+  }
+}
+
 
 .card-text-area {
   width: 50%;
-  min-width: 300px;
+  min-width: 240px;
   flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .card-text {
+  display: block;
   min-width: 240px;
   width: 80%;
-  margin: auto;
-  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-text-narrow {
   min-width: 240px;
-  margin: auto;
   padding-top: 5rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.card-img-area {
+.card-image-area {
+  display: flex;
+  align-items: center;
   width: 50%;
   min-width: 300px;
   flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.card-img {
+.card-image {
+  display: block;
   object-fit: cover;
-  width: 100%;
-  height: calc(100% - 2rem);
+  max-height: calc(100% - 2rem);
+  max-width: calc(100% - 2rem);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-img-narrow {
@@ -79,20 +93,12 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 968px) {
-  .card-img {
-    height: 100%;
-  }
+.card-reverse {
+  flex-direction: column-reverse;
+}
 
-  .card-img-narrow {
-    object-fit: cover;
-    width: 75%;
-    height: 75%;
-    min-height: 200px;
-    padding-bottom: 0;
-  }
-
-  .flex-reverse {
+@media (min-width: 768px) {
+  .card-reverse{
     flex-direction: row;
   }
 }
