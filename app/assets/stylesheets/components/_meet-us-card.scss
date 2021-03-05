@@ -1,0 +1,68 @@
+.meet-us-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1rem 1rem 1rem 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meet-us-card {
+  width: 35%;
+  min-width: 200px;
+  width: 230px;
+  min-height: 360px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  background-size: cover;
+  position: relative;
+  color: black;
+  box-shadow: 1px 1px 1rem silver;
+  border-radius: 16px;
+}
+
+.bottom-right-btn {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.meet-us-nameplate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 0.2rem;
+  padding-top: 0.6rem;
+  border-radius: 0 0 16px 16px;
+}
+
+.meet-us-jean-marc {
+  background: url('career/meet-us-jean-marc') no-repeat 50% 50%; background-size: cover;
+}
+
+.meet-us-gao {
+  background: url('career/meet-us-gao') no-repeat 50% 50%; background-size: cover;
+}
+
+.meet-us-kira {
+  background: url('career/meet-us-kira') no-repeat 50% 50%; background-size: cover;
+}
+
+.meet-us-yiming {
+  background: url('career/meet-us-yiming') no-repeat 50% 50%; background-size: cover;
+}
+
+.subtext {
+  margin-top: 0.2rem;
+  color: gray;
+  font-size: 0.8rem;
+}

@@ -1,20 +1,20 @@
-<div class="info-banner career-banner-bg">
-  <div class="info-banner-title-blue">
+<div class="info-banner info-banner-bg">
+  <div class="info-banner-title">
     <h1>职业发展</h1>
   </div>
 </div>
 <div class="container">
   <div class="info-container bg-white">
     <div id="life-at-cf" class="jump-anchor"></div>
-    <div class="content-card">
+    <div class="content-card card-reverse">
       <div class="card-text-area">
         <div class="card-text">
-          <h4>加入长风</h4>
+          <h4 class="text-larger text-bold">加入长风</h4>
           <p>长风药业是一家充满活力、高速发展的公司，拥有一支经验丰富的国际团队，致力于在全球范围内提供吸入制剂产品。公司总部设在中国，在美国有分公司。我们鼓励公司各级员工全方位多样性的发展，同时相信个人的成功取决于态度、行为和表现，并致力于为员工提供职业发展机会。</p>
           <p>在长风工作，你不仅能够有机会充分展示才华，实现你的个人价值，还可以结交朋友，与团队一起成长。</p>
         </div>
       </div>
-      <div class="card-img-area">
+      <div class="card-image-area">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -41,44 +41,62 @@
         </div>
       </div>
     </div>
-    <div class="content-card margin-top margin-bot">
-      <div class="card-text-area color-block bg-grey-green">
-        <div class="card-text">
-          <h4>遇见我们</h4>
-          <div class="triple-card-container">
-            <div class="triple-card meet-us-jean-marc">
-              <h5>Jean-Marc -首席技术官</h5>
-<!--               <p>Asthma and COPD are the most common respiratory diseases which affect human health. After working in the respiratory area for about 20 years, I know the pain brought with the disease. So when I was invited to CF PharmTech, a company which focuses on inhalation products, I was very excited.</p>
-              <p>In CF, you can feel the spirit and potential of a new startup company. Step by step, it developed from a lab which only owns several personnel, to a company which has its own factories, four advanced production lines, here, I felt very proud.</p>
-              <p>“CF focuses on building the employees capabilities, and aims to support and empower them to be the best they can be.” If you want to make a career in the inhalation area, welcome!</p> -->
-              <p><%= link_to "更多", zh_careers_jean_marc_interview_path, class: "btn-flat bottom-right-btn" %></p>
+    <div class="career-quote h300 d-flex align-items-center card-text pr bg-trans">
+      <%= image_tag "partnership/doodles", alt: "alttext", class: "doodles" %>
+      <div class="offset-30-bg bg-trans-white-green z0"></div>
+      <div class="pr mr-w80 ml-auto mr-auto margin-bot">
+        <%= image_tag "company/quotation-marks", alt: "alttext", class: "quotation-marks" %>
+        <p class="ml-auto mr-auto text-large bg-trans z1 ta-center pr">致力于为员工提供职业发展机会。.</p>
+      </div>
+    </div>
+    <div class="meet-us margin-top">
+      <div>
+        <h4 class="text-larger text-bold ta-center margin-bot ml-auto mr-auto">遇见我们</h4>
+        <div class="meet-us-card-container ml-auto mr-auto">
+          <%= link_to careers_jean_marc_interview_path, class: "meet-us-card meet-us-jean-marc" do %>
+            <div class="meet-us-nameplate">
+              <div>
+                <p class="text-bold">Jean-Marc</p>
+                <p class="subtext">首席技术官</p>
+              </div>
             </div>
-            <div class="triple-card meet-us-gao">
-              <h5>药物研究院-高老师</h5>
-              <p><%= link_to "更多", zh_careers_gao_interview_path, class: "btn-flat bottom-right-btn" %></p>
+          <% end %>
+          <%= link_to careers_gao_interview_path, class: "meet-us-card meet-us-gao" do %>
+            <div class="meet-us-nameplate">
+              <div>
+                <p class="text-bold">药物研究院</p>
+                <p class="subtext">高老师</p>
+              </div>
             </div>
-            <div class="triple-card meet-us-kira">
-              <h5>商务部-致惺</h5>
-              <p><%= link_to "更多", zh_careers_kira_interview_path, class: "btn-flat bottom-right-btn" %></p>
+          <% end %>
+          <%= link_to careers_kira_interview_path, class: "meet-us-card meet-us-kira" do %>
+            <div class="meet-us-nameplate">
+              <div>
+                <p class="text-bold">商务部</p>
+                <p class="subtext">致惺</p>
+              </div>
             </div>
-            <div class="triple-card meet-us-yiming">
-              <h5>一鸣</h5>
-              <p><%= link_to "更多", zh_careers_yiming_interview_path, class: "btn-flat bottom-right-btn" %></p>
+          <% end %>
+          <%= link_to careers_yiming_interview_path, class: "meet-us-card meet-us-yiming" do %>
+            <div class="meet-us-nameplate">
+              <div>
+                <p class="text-bold">一鸣</p>
+              </div>
             </div>
-          </div>
+          <% end %>
         </div>
       </div>
     </div>
     <div id="opportunities" class="jump-anchor"></div>
-    <div class="content-card">
+    <div class="content-card card-reverse bg-trans-white-green">
       <div class="card-text-area">
         <div class="card-text">
-          <h4>成长机会</h4>
+          <p class="text-larger text-bold">成长机会</p>
           <p>我们致力于为每一位员工创造一个专业、友好的工作环境，让他们有自我成长的机会，并为公司的发展做出贡献。我们欢迎你的加入。如果您有兴趣加入长风团队，请将您的联系方式或简历投递至 hr@cfpharmtech.com 或点击下方链接。<%= link_to "Contact Us", zh_contact_us_path %></p>
         </div>
       </div>
-      <div class="card-img-area">
-        <%= image_tag "career/opportunity", alt: "alttext", class: "card-img" %>
+      <div class="card-image-area">
+        <%= image_tag "career/opportunity", alt: "alttext", class: "card-image" %>
       </div>
     </div>
   </div>
