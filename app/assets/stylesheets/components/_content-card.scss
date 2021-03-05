@@ -10,7 +10,7 @@
 
 @media (min-width: 768px) {
   .content-card {
-    height: 96vh;
+    min-height: 80vh;
   }
 }
 
@@ -184,4 +184,8 @@
 
 .career-quote {
   margin-top: 3rem;
+}
+
+.rounded-corners {
+  border-radius: 50px 0px;
 }
