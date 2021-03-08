@@ -4,7 +4,8 @@
 }
 
 .footer-list-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -25,11 +26,22 @@
   padding-bottom: 1rem;
 }
 
+footer ul {
+  margin: 1rem;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .footer-list-container {
     max-width: 500px;
   }
   .footer-container {
     width: 70%;
+  }
+}
+
+@media (max-width: 280px) {
+  .footer-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
 }
