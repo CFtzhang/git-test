@@ -6,8 +6,15 @@
   display: none;
 }
 
+.navigationbar-spacer {
+  display: block;
+  height: 2.8rem;
+}
+
 .navigationbar-list-header a {
   font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .navigationbar-logo {
@@ -30,6 +37,12 @@
   cursor: pointer;
 }
 
+.mobile-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start
+}
+
 .mobile-navigationbar-extend {
   height: max-content;
 }
@@ -37,12 +50,8 @@
 .mobile-navigationbar-extend {
   .navigationbar-list{
     display: block;
-  }
-  .navigationbar-list-item{
-    display: block;
-    height: inherit;
-    width: inherit;
-    overflow: wrap;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -50,21 +59,11 @@
   height: min-content;
 }
 
-.navigationbar-list-item{
+.navigationbar-list-item {
   height: 0;
   width: 0;
   overflow: hidden;
   justify-content: center;
-}
-
-.navigationbar-list-item a {
-  // color: #086eba;
-}
-
-.mobile-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start
 }
 
 .menu-icon:hover {
@@ -72,9 +71,6 @@
   .navigationbar-list {
     display: block;
   }
-}
-
-.navigationbar-list-item a {
 }
 
 .flag-container {
@@ -91,10 +87,6 @@
 .jump-anchor {
   position: relative;
   top: -80px;
-}
-
-.navigationbar-link {
-  display: inline-block;
 }
 
 .navigationbar a {
@@ -152,12 +144,14 @@
     padding-right: 1rem;
     font-size: 0.8rem;
   }
+
   .fullnav {
     position: fixed;
     top: 0;
     background-color: white;
     z-index: 100;
   }
+
   .fullnav:hover {
     max-height: max-content;
     .navigationbar-list-item {
@@ -167,6 +161,7 @@
       overflow: wrap;
     }
   }
+
   .navigationbar-extend {
     height: max-content;
   }
@@ -182,13 +177,16 @@
       overflow: wrap;
     }
   }
+
   .navigationbar-list-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr)
   }
+
   .navigationbar-list {
     display: block;
   }
+
   .navigationbar-list-header {
     display: block;
     max-height: 70px;
@@ -196,14 +194,35 @@
     padding-bottom: 1em;
     align-items: center;
   }
+
   .fixed-nav-padding {
     display: block;
     padding-top: 78px;
   }
+
   .menu-icon {
     display: none;
   }
+
   .flag-icon {
     height: 30px;
+  }
+
+  .hamburger-container {
+    margin-top: 0;
+  }
+
+  .navigationbar-spacer {
+    display: none;
+  }
+}
+
+
+@media (max-height: 400px) {
+  .fullnav {
+    position: static;
+  }
+  .fixed-nav-padding {
+    display: none;
   }
 }

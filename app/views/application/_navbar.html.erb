@@ -2,13 +2,15 @@
   <div class="row">
     <span id="fullnav" class="fullwidth fullnav" onclick="navExtend()">
       <div id="expanding-nav" class="navigationbar navigationbar-hidden mobile-navbar">
-        <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo"), root_path %>
+        <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo", alt: "CF Logo"), root_path %>
         <div id="mobile-navbar-list" class="navigationbar-list-container">
-          <div class="navigationbar-list">
-            <div class="navigationbar-list-header"><%= link_to ("Home"), root_path, class: "navigationbar-link" %></div>
+          <div class="navigationbar-spacer">
           </div>
           <div class="navigationbar-list">
-            <div class="navigationbar-list-header"><%= link_to ("Products"), products_path, class: "navigationbar-link"  %></div>
+            <div class="navigationbar-list-header"><%= link_to ("Home"), root_path %></div>
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("Products"), products_path  %></div>
             <div class="navigationbar-list-item"><%= link_to ("Pharmaceutical Products"), generic_drug_products_path %></div>
             <div class="navigationbar-list-item"><%= link_to ("Consumer Healthcare"), consumer_products_path %></div>
           </div>

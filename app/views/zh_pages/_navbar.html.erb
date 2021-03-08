@@ -1,44 +1,48 @@
 <div class="container-fluid" style="background-color: white;">
   <div class="row">
     <span id="fullnav" class="fullwidth fullnav" onclick="navExtend()">
-      <div id="expanding-nav" class="navigationbar navigationbar-hidden">
-        <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo"), zh_path %>
-        <div class="navigationbar-list">
-          <div class="navigationbar-list-header"><%= link_to ("主页"), zh_path, class: "navigationbar-link" %></div>
+      <div id="expanding-nav" class="navigationbar navigationbar-hidden mobile-navbar">
+        <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo", alt: "CF Logo"), zh_path %>
+        <div id="mobile-navbar-list" class="navigationbar-list-container">
+          <div class="navigationbar-spacer">
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("主页"), zh_path %></div>
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("产品"), zh_products_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("医药产品"), zh_generic_drug_products_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("护理产品"), zh_consumer_products_path %></div>
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("合作"), zh_partnership_path  %></div>
+            <div class="navigationbar-list-item"><%= link_to ("协作"), zh_partnership_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("服务"), zh_partnership_path %></div>
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("研发平台"), zh_research_and_development_platform_path  %></div>
+            <div class="navigationbar-list-item"><%= link_to ("治疗领域"), zh_therapeutic_areas_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("剂型研发"), zh_dosage_forms_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("质量系统"), zh_research_and_development_quality_system_path %></div>
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("公司介绍"), zh_company_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("公司简介"), "#{zh_company_path}" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("公司使命"), "#{zh_company_path}#Our-Mission" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("公司价值观"), "#{zh_company_path}#Our-Values" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("发展历程"), "#{zh_company_path}#History" %></div>
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("职业发展"), zh_careers_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("加入长风"), "#{zh_careers_path}#life-at-cf" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("遇见我们"), "#{zh_careers_path}" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("成长机会"), "#{zh_careers_path}#opportunities" %></div>
+          </div>
+          <div class="navigationbar-list">
+            <div class="navigationbar-list-header"><%= link_to ("联系我们"), zh_contact_us_path %></div>
+          </div>
         </div>
-        <div class="navigationbar-list">
-          <div class="navigationbar-list-header"><%= link_to ("产品"), zh_products_path, class: "navigationbar-link"  %></div>
-          <div class="navigationbar-list-item"><%= link_to ("医药产品"), zh_generic_drug_products_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("护理产品"), zh_consumer_products_path %></div>
-        </div>
-        <div class="navigationbar-list">
-          <div class="navigationbar-list-header"><%= link_to ("合作"), zh_partnership_path  %></div>
-          <div class="navigationbar-list-item"><%= link_to ("协作"), zh_partnership_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("服务"), zh_partnership_path %></div>
-        </div>
-        <div class="navigationbar-list">
-          <div class="navigationbar-list-header"><%= link_to ("研发平台"), zh_research_and_development_platform_path  %></div>
-          <div class="navigationbar-list-item"><%= link_to ("治疗领域"), zh_therapeutic_areas_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("剂型研发"), zh_dosage_forms_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("质量系统"), zh_research_and_development_quality_system_path %></div>
-        </div>
-        <div class="navigationbar-list">
-          <div class="navigationbar-list-header"><%= link_to ("公司介绍"), zh_company_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("公司简介"), "#{zh_company_path}" %></div>
-          <div class="navigationbar-list-item"><%= link_to ("公司使命"), "#{zh_company_path}#Our-Mission" %></div>
-          <div class="navigationbar-list-item"><%= link_to ("公司价值观"), "#{zh_company_path}#Our-Values" %></div>
-          <div class="navigationbar-list-item"><%= link_to ("发展历程"), "#{zh_company_path}#History" %></div>
-        </div>
-        <div class="navigationbar-list">
-          <div class="navigationbar-list-header"><%= link_to ("职业发展"), zh_careers_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("加入长风"), "#{zh_careers_path}#life-at-cf" %></div>
-          <div class="navigationbar-list-item"><%= link_to ("遇见我们"), "#{zh_careers_path}" %></div>
-          <div class="navigationbar-list-item"><%= link_to ("成长机会"), "#{zh_careers_path}#opportunities" %></div>
-        </div>
-        <div class="navigationbar-list">
-          <div class="navigationbar-list-header"><%= link_to ("联系我们"), zh_contact_us_path %></div>
-        </div>
-        <div class="navigationbar-list-header min-width">
+        <div class="navigationbar-list-header min-width hamburger-container">
           <div class="menu-dropdown flag-container" id="flag-selector" onclick="flagExtend()">
             <div class="menu-dropdown-container">
               <span class="menu-dropdown-arrow-container">
@@ -51,6 +55,7 @@
               </div>
             </div>
           </div>
+          <div id="menuIcon"><%= image_tag "menu", alt: "menu", class: "menu-icon" %></div>
         </div>
       </div>
       <!-- <div class="nav-down-arrow-container"><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div></div> -->

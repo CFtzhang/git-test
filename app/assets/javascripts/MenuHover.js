@@ -8,7 +8,7 @@ const MenuHover = function(e){
 
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("hello")
-  MenuHover();
-});
+document.addEventListener("turbolinks:load", function() {
+  console.log("hello");
+  MenuHover()
+})
