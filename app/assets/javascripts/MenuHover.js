@@ -8,17 +8,6 @@ const MenuHover = function(e){
 
 };
 
-
-
-// const menuHover = () => {
-
-//   console.log("hello")
-//   const menu = document.getElementById('menuIcon')
-//   if(typeof menu !== 'undefined' && menu !== null) {
-//     menu.addEventListener("mouseover", () => console.log("hello"));
-//   }
-// };
-
 document.addEventListener("DOMContentLoaded", () => {
   console.log("hello")
   MenuHover();
