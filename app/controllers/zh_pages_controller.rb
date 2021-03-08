@@ -53,4 +53,8 @@ class ZhPagesController < ApplicationController
 
   def yiming_interview
   end
+
+  def zh_show
+    @product = Product.where(zh_product_type: 'Consumer').find(params[:id])
+  end
 end

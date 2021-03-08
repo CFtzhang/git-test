@@ -38,5 +38,6 @@ Rails.application.routes.draw do
   get 'zh/careers/yiming-interview', to: 'zh_pages#yiming_interview'
   get 'zh/services', to: 'zh_pages#services'
 
+  get 'zh/products/:id', to: 'zh_pages#zh_show', as: 'zh_product'
   resources :products, only: [:show]
 end

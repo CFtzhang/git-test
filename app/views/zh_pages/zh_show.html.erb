@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="content-card">
+    <div class="card-img-area product-img">
+      <%= image_tag @product.imgurl, crop: :fill %>
+    </div>
+    <div class="card-text-area">
+      <div class="card-text">
+        <h3><%= @product.zh_product_name %></h3>
+        <p><%= @product.zh_short_description %></p>
+      </div>
+    </div>
+  </div>
+</div>
