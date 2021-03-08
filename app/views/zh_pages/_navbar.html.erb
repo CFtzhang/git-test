@@ -5,8 +5,6 @@
         <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo"), zh_path %>
         <div class="navigationbar-list">
           <div class="navigationbar-list-header"><%= link_to ("主页"), zh_path, class: "navigationbar-link" %></div>
-          <div class="navigationbar-list-item"><%= link_to ("新闻动态"), zh_path %></div>
-          <div class="navigationbar-list-item"><%= link_to ("投资者关系"), zh_path %></div>
         </div>
         <div class="navigationbar-list">
           <div class="navigationbar-list-header"><%= link_to ("产品"), zh_products_path, class: "navigationbar-link"  %></div>
@@ -43,9 +41,9 @@
         <div class="navigationbar-list-header min-width">
           <div class="menu-dropdown flag-container" id="flag-selector" onclick="flagExtend()">
             <div class="menu-dropdown-container">
-              <div class="menu-dropdown-arrow-container">
+              <span class="menu-dropdown-arrow-container">
                 <%= image_tag "china-flag.svg", class: "flag-icon"%><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div>
-              </div>
+              </span>
               <div class="menu-dropdown-content">
                 <% eng_page = request.original_fullpath.delete_prefix("/zh") %>
                 <% eng_page = root_path if request.original_fullpath.delete_prefix("/zh") == "" %>
