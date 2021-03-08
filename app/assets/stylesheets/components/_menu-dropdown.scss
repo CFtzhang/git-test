@@ -5,29 +5,31 @@
 
 .menu-dropdown-content {
   display: none;
-  padding-top: 2px;
   min-width: 36px;
+  height: max-content;
   z-index: 1;
 }
 
 .menu-dropdown-container {
-  max-height: 30px;
   overflow: visible;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  display: block;
+  position: relative;
 }
 
 .menu-dropdown:hover {
   cursor: pointer;
   .menu-dropdown-content {
     display: block;
+    position: absolute;
+    top: 30px;
   }
 }
 
 .flag-selector-extend {
   .menu-dropdown-content {
     display: block;
+    position: absolute;
+    top: 30px;
   }
 }
 
@@ -42,7 +44,6 @@
 @media (min-width: 968px) {
   .menu-dropdown-content {
     display: none;
-    padding-top: 4px;
     min-width: 36px;
     z-index: 1;
   }
