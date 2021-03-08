@@ -14,7 +14,7 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <a class="dropdown-item">Choose a product</a>
           <% @consumer_products.each do |e| %>
-            <a class="dropdown-item" href=<%= "products/#{e.id}" %>><%= "#{e.product_family} #{e.product_name}" %></a>
+            <a class="dropdown-item" href=<%= "products/#{e.id}" %>><%= "#{e.zh_product_name}" %></a>
           <% end %>
         </div>
       </div>
@@ -23,11 +23,11 @@
         <div class="card-product">
           <img src=<%= e.imgurl %> />
           <div class="card-product-infos">
-            <h2><%= "#{e.product_family} #{e.product_name}" %></h2>
-            <p><%= e.short_description %></p>
+            <h2><%= "#{e.zh_product_name}" %></h2>
+            <p><%= e.zh_short_description %></p>
             <div class="btn-area">
-              <%= link_to product_path(e) do %>
-                <div class="btn-flat btn-product">See More</div>
+              <%= link_to zh_product_path(e) do %>
+                <div class="btn-flat btn-product">更多</div>
               <% end %>
             </div>
           </div>
