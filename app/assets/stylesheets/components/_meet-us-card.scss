@@ -8,6 +8,17 @@
   margin-right: auto;
 }
 
+.meet-us-card-block {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .meet-us-card-block {
+    flex-direction: row;
+  }
+}
+
 .meet-us-card {
   width: 35%;
   min-width: 200px;
