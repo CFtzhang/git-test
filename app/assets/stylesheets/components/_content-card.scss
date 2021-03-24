@@ -189,3 +189,11 @@
 .rounded-corners {
   border-radius: 50px 0px;
 }
+
+.history-section {
+  display: grid;
+  grid-template-columns: 4rem auto;
+  p {
+    margin-bottom: 0.4rem;
+  }
+}
