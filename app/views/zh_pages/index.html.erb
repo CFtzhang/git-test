@@ -1,15 +1,13 @@
 <!-- banner -->
-<div class="homepage-banner home-banner-bg">
+<div class="homepage-banner home-banner-bg zh-text">
   <div class="pr">
-    <%= image_tag "home/simple-logo", alt: "alttext", class: "homepage-banner-logo" %>
     <h3 class="text-very-large text-bold">关注呼吸,<br>关爱生命</h3>
   </div>
 </div>
 <!-- content -->
-<div class="">
+<div class="zh-text">
   <div class="">
     <div class="color-block bg-trans-white-green ta-left pad-tb-rem4">
-      <%= image_tag "home/lungs", alt: "alttext", class: "color-block-bg-image" %>
       <div class="color-block-text">
         <p class="text-large">长风药业是一家致力于为全球市场提供高品质吸入类药物的综合性专业制药公司。</p><p>在拥有丰富行业经验的高素质团队的管理下，公司专注于在最先进的设备中开发治疗呼吸系统疾病的药物。</p>
       </div>
@@ -63,7 +61,7 @@
         <p>长风药业专注于为非专利产品和新药产品开发吸入产品，以及为消费者提供专业和实用的医疗产品。</p>
       </div>
       <div class="products-container">
-        <%= link_to zh_generic_drug_products_path, :class=>"home-product-card bg-light-green" do %>
+        <%= link_to zh_products_path, :class=>"home-product-card bg-light-green" do %>
           <p class="text-large text-bold ta-left">医药产品</p>
           <div class="btn-hollow-white home-product-card-btn">更多</div>
         <% end %>

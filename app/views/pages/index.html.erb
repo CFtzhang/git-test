@@ -1,7 +1,6 @@
 <!-- banner -->
 <div class="homepage-banner home-banner-bg">
   <div class="pr">
-    <%= image_tag "home/simple-logo", alt: "alttext", class: "homepage-banner-logo" %>
     <h3 class="text-very-large text-bold">Breathe easier,<br>live better</h3>
   </div>
 </div>
@@ -9,9 +8,9 @@
 <div class="">
   <div class="">
     <div class="color-block bg-trans-white-green ta-left pad-tb-rem4">
-      <%= image_tag "home/lungs", alt: "alttext", class: "color-block-bg-image" %>
       <div class="color-block-text">
-        <p class="text-large">CF PharmTech is an integrated specialty pharmaceutical company dedicated to providing <span class="text-bold">high-quality respiratory drugs</span> for the global market.</p><p class="color-block-smaller-text">Managed by a high-caliber team with extensive experience in the industry, the company focuses on the development of drugs for the treatment of respiratory diseases in its state-of-the-art facilities.</p>
+        <p class="text-medium">CF PharmTech is an integrated specialty pharmaceutical company dedicated to providing <span class="text-bold">high-quality respiratory drugs</span> for the global market.</p>
+        <p class="text-medium">Managed by a high-caliber team with extensive experience in the industry, the company focuses on the development of drugs for the treatment of respiratory diseases in its state-of-the-art facilities.</p>
       </div>
       <!-- <div class="card-image-area">
         <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850977/CF%20Website/Home%20page/Home_page_no_copyright4_i8sc01.jpg" alt="">
@@ -40,7 +39,7 @@
     <div class="content-card bg-trans-white-green card-reverse">
       <div class="card-text-area">
         <div class="card-text">
-          <p class="text-larger text-bold">Research & Development</p>
+          <p class="text-larger text-bold">R&D</p>
           <p>Based on global market needs, 20+ inhaled generic products are under development, and 5+ consumer healthcare products are available. </p>
           <ul class="bulleted-list">
             <li><%= link_to "MDI", "#{dosage_forms_path}#MDI" %></li>
@@ -63,7 +62,7 @@
         <p>CF PharmTech focuses on the development of inhaled products for generic products and new drug products, as well as professional and practical medical care products for consumers.</p>
       </div>
       <div class="products-container">
-        <%= link_to generic_drug_products_path, :class=>"home-product-card bg-light-green" do %>
+        <%= link_to products_path, :class=>"home-product-card bg-light-green" do %>
           <p class="text-large text-bold ta-left">Pharmaceutical <br> Products</p>
           <div class="btn-hollow-white home-product-card-btn">Read More</div>
         <% end %>
