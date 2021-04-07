@@ -22,20 +22,13 @@
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .navigationbar-border {
   height: 6px;
   width: 100%;
   background: linear-gradient(90deg, #041661 0%, #2FBBE6 50%, #29B07A 100%), #C4C4C4;
-}
-
-.nav-down-arrow-container {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  width: 100%;
-  cursor: pointer;
 }
 
 .mobile-navbar {
@@ -65,6 +58,8 @@
   width: 0;
   overflow: hidden;
   justify-content: center;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
 .menu-icon:hover {
@@ -78,7 +73,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 78px;
+  max-height: 76px;
+  margin-left: 0.25rem;
 }
 
 .rotate-around {
@@ -92,17 +88,22 @@
 
 .navigationbar a {
   color: black;
-  height: max-content;
 }
 
 .navigationbar-list {
-  padding-bottom: 0.3rem;
-  text-align: center;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .flag-icon {
-  width: 36px;
-  max-height: 28px;
+  width: 3rem;
+  height: 30px;
+}
+
+.da-icon {
+  height: 30px;
 }
 
 .fixed-nav-padding {
@@ -137,7 +138,7 @@
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 0.6fr 7fr 0.4fr;
+    grid-template-columns: 0.6fr 7fr 0.6fr;
     align-items: flex-start;
     background: white;
     height: 100%;
@@ -151,37 +152,26 @@
     top: 0;
     background-color: white;
     z-index: 100;
+    box-shadow: 2px 2px 3px silver;
   }
 
-  .fullnav:hover {
-    max-height: max-content;
+  .navigationbar-list:hover {
+    height: max-content;
+    box-shadow: 0px 5px 8px -5px silver;
+    background-color: white;
     .navigationbar-list-item {
       display: block;
       height: inherit;
       width: inherit;
       overflow: wrap;
-    }
-  }
-
-  .navigationbar-extend {
-    height: max-content;
-  }
-
-  .navigationbar-extend {
-    .navigationbar-list{
-      display: block;
-    }
-    .navigationbar-list-item{
-      display: block;
-      height: inherit;
-      width: inherit;
-      overflow: wrap;
+      background-color: white;
     }
   }
 
   .navigationbar-list-container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr)
+    grid-template-columns: repeat(7, 1fr);
+    max-height: 78px;
   }
 
   .navigationbar-list {
@@ -206,6 +196,10 @@
   }
 
   .flag-icon {
+    height: 30px;
+  }
+
+  .da-icon {
     height: 30px;
   }
 

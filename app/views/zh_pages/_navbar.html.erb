@@ -1,6 +1,6 @@
-<div class="container-fluid" style="background-color: white;">
+<nav class="container-fluid" style="background-color: white;">
   <div class="row">
-    <span id="fullnav" class="fullwidth fullnav" onclick="navExtend()">
+    <span id="fullnav" class="fullwidth fullnav">
       <div id="expanding-nav" class="navigationbar navigationbar-hidden mobile-navbar">
         <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo", alt: "CF Logo"), zh_path %>
         <div id="mobile-navbar-list" class="navigationbar-list-container">
@@ -46,7 +46,8 @@
           <div class="menu-dropdown flag-container" id="flag-selector" onclick="flagExtend()">
             <div class="menu-dropdown-container">
               <span class="menu-dropdown-arrow-container">
-                <%= image_tag "china-flag.svg", class: "flag-icon"%><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div>
+                <%= image_tag "china-flag.svg", class: "flag-icon"%>
+                <%= image_tag "material-down-arrow", alt: "down arrow button" %>
               </span>
               <div class="menu-dropdown-content">
                 <% eng_page = request.original_fullpath.delete_prefix("/zh") %>
@@ -58,8 +59,6 @@
           <div id="menuIcon"><%= image_tag "menu", alt: "menu", class: "menu-icon" %></div>
         </div>
       </div>
-      <!-- <div class="nav-down-arrow-container"><div id="nav-arrow" class="material-icons">keyboard_arrow_down</div></div> -->
-      <div class="navigationbar-border"></div>
     </span>
   </div>
-</div>
+</nav>

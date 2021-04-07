@@ -2,12 +2,12 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-@navExtend = (e) ->
-  expandingNavbar = document.getElementById('expanding-nav')
+#@navExtend = (e) ->
+#  expandingNavbar = document.getElementById('expanding-nav')
 #  navArrow = document.getElementById('nav-arrow')
 
-  expandingNavbar.classList.toggle("navigationbar-extend")
-  expandingNavbar.classList.toggle("navigationbar-hidden")
+#  expandingNavbar.classList.toggle("navigationbar-extend")
+#  expandingNavbar.classList.toggle("navigationbar-hidden")
 #  navArrow.classList.toggle("rotate-around")
 
 @flagExtend = (e) ->
