@@ -28,6 +28,11 @@ ul {
   padding: 1rem;
 }
 
+ul, li {
+  margin-left: 5px;
+  padding-left: 0;
+}
+
 .fullwidth {
   width:100%;
 }
