@@ -46,13 +46,13 @@
           <div class="menu-dropdown flag-container" id="flag-selector" onclick="flagExtend()">
             <div class="menu-dropdown-container">
               <span class="menu-dropdown-arrow-container">
-                <%= image_tag "china-flag.svg", class: "flag-icon"%>
-                <%= image_tag "material-down-arrow", alt: "down arrow button" %>
+                <p class="flag-icon">中文简体</p>
+                <%= image_tag "material-down-arrow", class: "da-icon", alt: "down arrow button" %>
               </span>
-              <div class="menu-dropdown-content">
+              <div class="menu-dropdown-content flag-icon">
                 <% eng_page = request.original_fullpath.delete_prefix("/zh") %>
                 <% eng_page = root_path if request.original_fullpath.delete_prefix("/zh") == "" %>
-                <%= link_to (image_tag "us-flag.svg", class: "flag-icon"), "#{eng_page}" %>
+                <%= link_to ("English"), "#{eng_page}" %>
               </div>
             </div>
           </div>
