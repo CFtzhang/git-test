@@ -42,6 +42,12 @@ class ZhPagesController < ApplicationController
   def services
   end
 
+  def investors
+  end
+
+  def news
+  end
+
   def jean_marc_interview
   end
 

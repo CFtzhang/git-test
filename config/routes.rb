@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   get 'careers/kira-interview', to: 'pages#kira_interview'
   get 'careers/yiming-interview', to: 'pages#yiming_interview'
   get 'services', to: 'pages#services'
+  get 'investors', to: 'pages#investors'
+  get 'news', to: 'pages#news'
 
   get 'zh/contact-us', to: 'zh_pages#contact_us'
   get 'zh/', to: 'zh_pages#index'
@@ -37,6 +39,8 @@ Rails.application.routes.draw do
   get 'zh/careers/kira-interview', to: 'zh_pages#kira_interview'
   get 'zh/careers/yiming-interview', to: 'zh_pages#yiming_interview'
   get 'zh/services', to: 'zh_pages#services'
+  get 'zh/investors', to: 'zh_pages#investors'
+  get 'zh/news', to: 'zh_pages#news'
 
   get 'zh/products/:id', to: 'zh_pages#zh_show', as: 'zh_product'
   resources :products, only: [:show]
