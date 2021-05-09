@@ -11,6 +11,7 @@
 @media (min-width: 768px) {
   .content-card {
     min-height: 80vh;
+    flex-wrap: no-wrap;
   }
 }
 
