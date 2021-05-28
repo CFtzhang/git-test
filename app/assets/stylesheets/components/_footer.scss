@@ -9,11 +9,11 @@
     -ms-grid-columns: minmax(0, 1fr) [3];
     grid-template-columns: repeat(3, minmax(0, 1fr));
     -ms-grid-rows: ;
-        grid-template: "a b c";
+    grid-template: "a b c";
     margin-left: auto;
     margin-right: auto;
     -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
 }
 
 .cell-a{ -ms-grid-row: 1; -ms-grid-column: 1; grid-area: a; }
