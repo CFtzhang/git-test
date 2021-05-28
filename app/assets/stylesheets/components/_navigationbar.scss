@@ -171,7 +171,9 @@
   }
 
   .navigationbar-list-container {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (minmax(0, 1fr))[7];
     grid-template-columns: repeat(7, minmax(0, 1fr));
     height: 78px;
     padding-left: 1rem;
