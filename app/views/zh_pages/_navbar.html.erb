@@ -1,6 +1,10 @@
 <nav class="container-fluid" style="background-color: white;">
   <div class="row">
     <span id="fullnav" class="fullwidth fullnav">
+      <div class="overnav">
+        <div class="overnav-item"><%= link_to ("投资者关系"), zh_news_path %></div>
+        <div class="overnav-item"><%= link_to ("长风动态-新闻动态"), zh_investors_path %></div>
+      </div>
       <div id="expanding-nav" class="navigationbar navigationbar-hidden mobile-navbar">
         <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo", alt: "CF Logo"), zh_path %>
         <div id="mobile-navbar-list" class="navigationbar-list-container">
