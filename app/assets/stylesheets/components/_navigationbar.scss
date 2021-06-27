@@ -6,6 +6,11 @@
   display: none;
 }
 
+.navigationbar-item{
+  display: none;
+}
+
+/*For mobile*/
 .navigationbar-spacer {
   display: block;
   height: 2.8rem;
@@ -43,6 +48,11 @@
 
 .mobile-navigationbar-extend {
   .navigationbar-list{
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .navigationbar-item{
     display: block;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -193,6 +203,14 @@
     grid-template-areas: "a b c d e f g";
     height: 78px;
     padding-left: 1rem;
+  }
+
+  .navigationbar-item {
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
   }
 
   .cell-a{ -ms-grid-row: 1; -ms-grid-column: 1; grid-area: a; }
