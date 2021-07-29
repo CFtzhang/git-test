@@ -1,10 +1,6 @@
 <nav class="container-fluid" style="background-color: white;">
   <div class="row">
     <span id="fullnav" class="fullwidth fullnav">
-      <div class="overnav">
-        <div class="overnav-item"><%= link_to ("News"), news_path %></div>
-        <div class="overnav-item"><%= link_to ("Investors"), investors_path %></div>
-      </div>
       <div id="expanding-nav" class="navigationbar navigationbar-hidden mobile-navbar">
         <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo", alt: "CF Logo"), root_path %>
         <div id="mobile-navbar-list" class="navigationbar-list-container">
@@ -31,32 +27,38 @@
             <div class="navigationbar-list-item"><%= link_to ("Dosage Forms"), dosage_forms_path %></div>
             <div class="navigationbar-list-item"><%= link_to ("Quality System"), research_and_development_quality_system_path %></div>
           </div>
-          <div class="navigationbar-list cell-e">
+          <div class="navigationbar-item cell-e">
+            <div class="navigationbar-list-header"><%= link_to ("News"), news_path %></div>
+          </div>
+          <div class="navigationbar-list cell-f">
             <div class="navigationbar-list-header"><%= link_to ("Company"), company_path %></div>
             <div class="navigationbar-list-item"><%= link_to ("What We Do"), "#{company_path}#What-We-Do" %></div>
             <div class="navigationbar-list-item"><%= link_to ("Mission"), "#{company_path}#Our-Mission" %></div>
             <div class="navigationbar-list-item"><%= link_to ("Values"), "#{company_path}#Our-Values" %></div>
             <div class="navigationbar-list-item"><%= link_to ("History"), "#{company_path}#History" %></div>
           </div>
-          <div class="navigationbar-list cell-f">
+          <div class="navigationbar-list cell-g">
+            <div class="navigationbar-list-header"><%= link_to ("Investors"), investors_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Temporary Announcements"), "#{investors_path}#Temporary-Announcements" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Corporate Governance"), "#{investors_path}#Corporate-Governance" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Regular Announcements"), "#{investors_path}#Regular-Announcements" %></div>
+          </div>
+          <div class="navigationbar-list cell-h">
             <div class="navigationbar-list-header"><%= link_to ("Careers"), careers_path %></div>
             <div class="navigationbar-list-item"><%= link_to ("Life at CF Pharmtech"), "#{careers_path}#life-at-cf" %></div>
             <div class="navigationbar-list-item"><%= link_to ("Meet Us"), "#{careers_path}#Meet-Us" %></div>
             <div class="navigationbar-list-item"><%= link_to ("Opportunities"), "#{careers_path}#opportunities" %></div>
           </div>
-          <div class="navigationbar-item cell-g">
+          <div class="navigationbar-item cell-i">
             <div class="navigationbar-list-header"><%= link_to ("Contact"), contact_us_path %></div>
           </div>
         </div>
         <div class="navigationbar-list-header min-width hamburger-container">
-          <div class="menu-dropdown flag-container" id="flag-selector" onclick="flagExtend()">
-            <div class="menu-dropdown-container">
-              <span class="menu-dropdown-arrow-container">
-                <p class="flag-icon">English</p>
-                <%= image_tag "material-down-arrow", alt: "down arrow button", class: "da-icon" %>
-              </span>
-              <div class="menu-dropdown-content flag-icon"><%= link_to ("中文简体"), "#{zh_path + request.original_fullpath}" %></div>
+          <div class="menu-dropdown">
+            <div>
+              <p class="language-selector">English<span><%= image_tag "material-down-arrow", alt: "down arrow button", class: "da-icon" %></span></p>
             </div>
+            <div class="menu-dropdown-content"><%= link_to ("中文简体"), "#{zh_path + request.original_fullpath}" %></div>
           </div>
           <div id="menuIcon"><%= image_tag "menu", alt: "menu", class: "menu-icon" %></div>
         </div>

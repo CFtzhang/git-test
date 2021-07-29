@@ -172,7 +172,7 @@
     height: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.55rem;
   }
 
   .fullnav {
@@ -200,16 +200,19 @@
   .navigationbar-list-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(0, 1fr))[7];
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    grid-template-areas: "a b c d e f g";
+    -ms-grid-columns: (minmax(0, 1fr))[9];
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-areas: "a b c d e f g h i";
     height: 78px;
+    width: 90%;
+    min-width: 900px;
     padding-left: 1rem;
+    margin-left: auto;
   }
 
   .navigationbar-item {
     display: block;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
     text-align: left;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
@@ -222,18 +225,33 @@
   .cell-e{ -ms-grid-row: 1; -ms-grid-column: 5; grid-area: e; }
   .cell-f{ -ms-grid-row: 1; -ms-grid-column: 6; grid-area: f; }
   .cell-g{ -ms-grid-row: 1; -ms-grid-column: 7; grid-area: g; }
+  .cell-h{ -ms-grid-row: 1; -ms-grid-column: 8; grid-area: h; }
+  .cell-i{ -ms-grid-row: 1; -ms-grid-column: 9; grid-area: i; }
 
   .navigationbar-list {
     display: block;
   }
 
   .navigationbar-list-header {
-    display: block;
+    display: flex;
     height: 78px;
-    font-size: 0.8rem;
     padding-top: 1.5em;
     padding-bottom: 1em;
-    align-items: center;
+    align-items: flex-start;
+    font-size: 0.75rem;
+  }
+
+  .navigationbar-list-header a {
+    font-size: 0.75rem;
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+  }
+
+  .navigationbar-list-item {
+    padding-left: 0.05rem;
+    padding-right: 0.05rem;
+    padding-bottom: 0.05rem;
+    padding-top: 0.5rem;
   }
 
   .fixed-nav-padding {
@@ -246,27 +264,23 @@
   }
 
   .flag-icon {
-    height: 30px;
+    /*Height of nav header text*/
+    height: 22.5px;
+    font-size: 0.75rem;
   }
 
   .da-icon {
-    height: 30px;
+    height: 22.5px;
   }
 
   .hamburger-container {
     margin-top: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .navigationbar-spacer {
     display: none;
-  }
-
-  .overnav {
-    max-width: 1376px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
   }
 }
 
