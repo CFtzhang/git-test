@@ -1,13 +1,38 @@
+.homepage-banner-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.homepage-banner-bg {
+  /*Same height as homepage-banner*/
+  height: 67.5vh;
+  width: inherit;
+  background: rgb(49,90,137);
+  background: linear-gradient(90deg, rgba(49,90,137,1) 0%, rgba(49,90,137,0.8) 20%,rgba(49,90,137,0.6) 35%, rgba(49,90,137,0) 50%); 
+  position: absolute;
+  z-index: 3;
+}
+
 .homepage-banner {
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 75%;
   height: 200px;
   min-height: 67.5vh;
   text-align: center;
   align-items: center;
   justify-content: center;
   color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.homepage-banner-space {
+  width: 25%;
+  background: #315A89;
+  position: relative;
+  z-index: 0;
 }
 
 .homepage-banner h1 {
