@@ -6,10 +6,11 @@
 
 .homepage-banner-bg {
   /*Same height as homepage-banner*/
-  height: 67.5vh;
-  width: inherit;
+  height: calc(100vh - 2.8rem);
+  min-height: 400px;
+  width: 100%;
   background: rgb(49,90,137);
-  background: linear-gradient(90deg, rgba(49,90,137,1) 0%, rgba(49,90,137,0.8) 20%,rgba(49,90,137,0.6) 35%, rgba(49,90,137,0) 50%); 
+  background: linear-gradient(90deg, rgba(49,90,137,1) 0%, rgba(49,90,137,0.8) 35%,rgba(49,90,137,0.6) 65%, rgba(49,90,137,0) 100%); 
   position: absolute;
   z-index: 3;
 }
@@ -17,9 +18,9 @@
 .homepage-banner {
   display: -ms-flexbox;
   display: flex;
-  width: 75%;
-  height: 200px;
-  min-height: 67.5vh;
+  width: 100%;
+  height: calc(100vh - 2.8rem);
+  min-height: 400px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -28,25 +29,31 @@
   z-index: 0;
 }
 
-.homepage-banner-space {
-  width: 25%;
-  background: #315A89;
-  position: relative;
-  z-index: 0;
+.homepage-banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  /*Same height as homepage-banner*/
+  height: calc(100vh - 2.8rem);
+  min-height: 400px;
+  position: absolute;
+  z-index: 5;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.homepage-banner h1 {
+.homepage-banner-text h2 {
   font-size: 3rem;
   font-weight: 800;
-  margin: 0;
+  line-height: 100%;
+  padding-bottom: 1.5rem;
 }
 
-.homepage-banner h3 {
-  font-size: 5rem;
-  position: relative;
-  line-height: 100%;
-  margin: 0;
-  z-index: 10;
+.homepage-banner-text h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .homepage-banner-logo {
@@ -54,4 +61,19 @@
   top: -2rem;
   left: -1rem;
   z-index: 1;
+}
+
+@media (min-width: 1160px) {
+  .homepage-banner-bg {
+    background: rgb(49,90,137);
+    background: linear-gradient(90deg, rgba(49,90,137,1) 0%, rgba(49,90,137,0.8) 20%,rgba(49,90,137,0.6) 35%, rgba(49,90,137,0) 50%); 
+  }
+
+  .homepage-banner-text {
+    width: 50%;
+    /*Same height as homepage-banner*/
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
 }
