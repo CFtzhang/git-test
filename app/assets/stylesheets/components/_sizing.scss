@@ -1,0 +1,37 @@
+/*widths*/
+.w65 {
+  width: 65%;
+}
+
+.w35 {
+  width: 35%;
+}
+
+
+.w80 {
+  width: 80%;
+}
+
+.mr-w80 {
+  width: 100%;
+}
+
+/*heights*/
+.mh-mc {
+  max-height: min-content;
+}
+
+.maxh-300{
+  max-height: 300px;
+}
+
+.h300 {
+  min-height: 300px;
+}
+
+@media (min-width: 768px) {
+/*widths*/
+  .mr-w80 {
+    width: 80%;
+  }
+}

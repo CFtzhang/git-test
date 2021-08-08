@@ -9,85 +9,77 @@
   </div>
 </div>
 <!-- content -->
-<div class="container">
-  <div class="">
-    <div class="color-block bg-trans-white-green ta-left pad-tb-rem4">
-      <div class="color-block-text">
-        <p class="text-medium">CF PharmTech is an integrated specialty pharmaceutical company dedicated to providing <span class="text-bold">high-quality respiratory drugs</span> for the global market.</p>
-        <p class="text-medium">Managed by a high-caliber team with extensive experience in the industry, the company focuses on the development of drugs for the treatment of respiratory diseases in its state-of-the-art facilities.</p>
-      </div>
-      <!-- <div class="card-image-area">
-        <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850977/CF%20Website/Home%20page/Home_page_no_copyright4_i8sc01.jpg" alt="">
-      </div> -->
+<div class="bg-light-color">
+  <div class="content-card">
+    <div class="card-image-area">
+      <%= image_tag "home/what-we-do", alt: "alttext", class: "card-image" %>
     </div>
-    <div class="content-card">
-      <div class="card-image-area">
-        <%= image_tag "home/inhalation-product-technology", alt: "alttext", class: "card-image" %>
-      </div>
-      <div class="card-text-area">
-        <div class="card-text">
-          <p class="text-larger text-bold">What We Do</p>
-          <p>CF PharmTech focuses on the development of products for respiratory treatment, including:</p>
-          <ul class="bulleted-list">
-            <li><%= link_to "Asthma", "#{therapeutic_areas_path}#Asthma" %></li>
-            <li><%= link_to "COPD", "#{therapeutic_areas_path}#COPD" %></li>
-            <li><%= link_to "Rhinitis", "#{therapeutic_areas_path}#Rhinitis" %></li>
-            <li><%= link_to "Other Respiratory Diseases", "#{therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
-          </ul>
-          <div class="btn-area">
-              <%= link_to "Read More", company_path, class: "btn btn-flat" %>
-          </div>
+    <div class="card-text-area">
+      <div class="card-text">
+        <p class="text-larger text-bold">What We Do</p>
+        <p>CF PharmTech focuses on the development of products for respiratory treatment, including:</p>
+        <ul class="bulleted-list">
+          <li><%= link_to "Asthma", "#{therapeutic_areas_path}#Asthma" %></li>
+          <li><%= link_to "COPD", "#{therapeutic_areas_path}#COPD" %></li>
+          <li><%= link_to "Rhinitis", "#{therapeutic_areas_path}#Rhinitis" %></li>
+          <li><%= link_to "Other Respiratory Diseases", "#{therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
+        </ul>
+        <div class="btn-area">
+            <%= link_to "Read More", company_path, class: "btn btn-flat" %>
         </div>
       </div>
     </div>
-    <div class="content-card bg-trans-white-green card-reverse">
-      <div class="card-text-area">
-        <div class="card-text">
-          <p class="text-larger text-bold">R&D</p>
-          <p>Based on global market needs, 20+ inhaled generic products are under development, and 5+ consumer healthcare products are available. </p>
-          <ul class="bulleted-list">
-            <li><%= link_to "MDI", "#{dosage_forms_path}#MDI" %></li>
-            <li><%= link_to "Nasal Spray", "#{dosage_forms_path}#Nasal-Spray" %></li>
-            <li><%= link_to "Nebulizer", "#{dosage_forms_path}#Nebulizer" %></li>
-            <li><%= link_to "Dry Powder Inhaler", "#{dosage_forms_path}#DPI" %></li>
-          </ul>
-          <div class="btn-area">
-            <%= link_to "Read More", research_and_development_platform_path, class: "btn btn-flat" %>
-          </div>
+  </div>
+  <div class="content-card bg-home-rnd card-reverse">
+    <div class="card-text-area w35">
+      <div class="card-text">
+        <p class="text-larger text-bold">R&D</p>
+        <p>Based on global market needs, 20+ inhaled generic products are under development, and 5+ consumer healthcare products are available. </p>
+        <div class="btn-area">
+          <%= link_to "Read More", research_and_development_platform_path, class: "btn btn-flat" %>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "home/research-and-development", alt: "alttext", class: "card-image" %>
-      </div>
     </div>
-    <div class="home-products content-card ta-center flex-wrap justify-content-center align-items-center">
-      <div class="home-products-text-area">
-        <%= link_to "Our Products", products_path, class: "text-larger text-bold" %>
-        <p>CF PharmTech focuses on the development of inhaled products for generic products and new drug products, as well as professional and practical medical care products for consumers.</p>
-      </div>
-      <div class="products-container">
-        <%= link_to products_path, :class=>"home-product-card bg-light-green" do %>
-          <p class="text-large text-bold ta-left">Pharmaceutical <br> Products</p>
-          <div class="btn-hollow-white home-product-card-btn">Read More</div>
-        <% end %>
-        <%= link_to consumer_products_path, :class=>"home-product-card bg-light-blue" do %>
-          <p class="text-large text-bold ta-left">Consumer <br> Products</p>
-          <div class="btn-hollow-white home-product-card-btn">Read More</div>
-        <% end %>
-      </div>
-    </div>
-    <div class="content-card bg-trans-white-green card-reverse">
-      <div class="card-text-area">
-        <div class="card-text">
-          <p class="text-larger text-bold">Partnership</p>
-          <p>CF PharmTech has been building partnerships to develop innovative technologies and novel inhaled products with new chemical entities (NCEs) for the global market. In addition to codevelopment, we also provide development solutions and services to our partners to support your technology and product development programs.</p>
-          <div class="btn-area">
-            <%= link_to "Read More", partnership_path, class: "btn btn-flat" %>
-          </div>
+    <div class="card-image-area w65">
+      <div class="small-card-display">
+        <div class="small-card-display-row">
+          <div class="rnd-card"><%= link_to "MDI", "#{dosage_forms_path}#MDI" %></div>
+          <div class="rnd-card"><%= link_to "Nasal Spray", "#{dosage_forms_path}#Nasal-Spray" %></div>
+        </div>
+        <div class="small-card-display-row">
+          <div class="rnd-card"><%= link_to "Nebulizer", "#{dosage_forms_path}#Nebulizer" %></div>
+          <div class="rnd-card"><%= link_to "Dry Powder Inhaler", "#{dosage_forms_path}#DPI" %></div>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "home/partnership", alt: "alttext", class: "card-image" %>
+    </div>
+  </div>
+  <div class="home-products content-card ta-center flex-wrap justify-content-center align-items-center">
+    <div class="home-products-text-area">
+      <%= link_to "Our Products", products_path, class: "text-larger text-bold" %>
+      <p>CF PharmTech focuses on the development of inhaled products for generic products and new drug products, as well as professional and practical medical care products for consumers.</p>
+    </div>
+    <div class="products-container">
+      <%= link_to products_path, :class=>"home-product-card bg-light-green" do %>
+        <p class="text-large text-bold ta-left">Pharmaceutical <br> Products</p>
+        <div class="btn-hollow-white home-product-card-btn">Read More</div>
+      <% end %>
+      <%= link_to consumer_products_path, :class=>"home-product-card bg-light-blue" do %>
+        <p class="text-large text-bold ta-left">Consumer <br> Products</p>
+        <div class="btn-hollow-white home-product-card-btn">Read More</div>
+      <% end %>
+    </div>
+  </div>
+  <div class="content-card">
+    <div class="card-image-area">
+      <%= image_tag "home/partnership", alt: "alttext", class: "card-image" %>
+    </div>
+    <div class="card-text-area">
+      <div class="card-text">
+        <p class="text-larger text-bold">Partnership</p>
+        <p>CF PharmTech has been building partnerships to develop innovative technologies and novel inhaled products with new chemical entities (NCEs) for the global market. In addition to codevelopment, we also provide development solutions and services to our partners to support your technology and product development programs.</p>
+        <div class="btn-area">
+          <%= link_to "Read More", partnership_path, class: "btn btn-flat" %>
+        </div>
       </div>
     </div>
   </div>
