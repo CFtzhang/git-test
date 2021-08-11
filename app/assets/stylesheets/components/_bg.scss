@@ -48,3 +48,68 @@
 .bg-home-rnd {
   background: image-url('home/RD-bg-100') no-repeat 50% 50%; background-size: cover;
 }
+
+.footer-bg {
+  background: linear-gradient(rgba(0, 172, 195, 0.8), rgba(0, 172, 195, 0.8)), image-url('footer-bg') no-repeat 50% 50%; background-size: cover;
+}
+
+.home-banner-bg {
+  background: image-url('home/home-banner') no-repeat 50% 50%; background-size: cover;
+}
+
+.career-banner-bg {
+  background: image-url('career/career-banner') no-repeat 30% 35%; background-size: cover;
+}
+
+.company-banner-bg {
+  background-image: image-url('about-us-banner.png'); background-position: 50% 80%;
+}
+
+.contact-banner-bg {
+  background: url('contact/contact-banner') no-repeat 30% 45%; background-size: cover;
+}
+
+.partnership-banner-bg {
+  background: url('partnership/partnership-banner') no-repeat 30% 38%; background-size: cover;
+}
+
+.products-banner-bg {
+  background: url('products/products-banner') no-repeat 30% 23%; background-size: cover;
+}
+
+.research-and-development-banner-bg {
+  background: url('research-and-development/research-and-development-banner') no-repeat 30% 60%; background-size: cover;
+}
+
+.info-banner-bg {
+  background: url('info-banner') no-repeat 50% 100%; background-size: cover;
+}
+
+.history-banner-bg {
+  background: url('company/history-bg') no-repeat 50% 100%; background-size: cover;
+  color: white;
+}
+
+.jean-marc-interview-banner {
+  width: 60%;
+  height: 60vh;
+  background: url('career/meet-us-jean-marc') no-repeat 50% 25%; background-size: cover;
+}
+
+.gao-interview-banner {
+  width: 60%;
+  height: 60vh;
+  background: url('career/meet-us-gao') no-repeat 50% 25%; background-size: cover;
+}
+
+.kira-interview-banner {
+  width: 60%;
+  height: 60vh;
+  background: url('career/meet-us-kira') no-repeat 50% 25%; background-size: cover;
+}
+
+.yiming-interview-banner {
+  width: 60%;
+  height: 60vh;
+  background: url('career/meet-us-yiming') no-repeat 50% 20%; background-size: cover;
+}
