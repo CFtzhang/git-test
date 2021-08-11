@@ -43,12 +43,20 @@
     <div class="card-image-area w65">
       <div class="small-card-display">
         <div class="small-card-display-row">
-          <div class="rnd-card"><%= link_to "MDI", "#{dosage_forms_path}#MDI" %></div>
-          <div class="rnd-card"><%= link_to "Nasal Spray", "#{dosage_forms_path}#Nasal-Spray" %></div>
+          <%= link_to "#{dosage_forms_path}#MDI" do %>
+            <div class="rnd-card rnd-mdi-card-bg">Metered Dose Inhaler (MDI)</div>
+          <% end %>
+          <%= link_to "#{dosage_forms_path}#DPI" do %>
+            <div class="rnd-card rnd-dpi-card-bg">Dry Powder Inhaler (DPI)</div>
+          <% end %>
         </div>
         <div class="small-card-display-row">
-          <div class="rnd-card"><%= link_to "Nebulizer", "#{dosage_forms_path}#Nebulizer" %></div>
-          <div class="rnd-card"><%= link_to "Dry Powder Inhaler", "#{dosage_forms_path}#DPI" %></div>
+          <%= link_to "#{dosage_forms_path}#Nebulizer" do %>
+            <div class="rnd-card rnd-nebulizer-card-bg">Nebulizer</div>
+          <% end %>
+          <%= link_to "#{dosage_forms_path}#Nasal-Spray" do %>
+            <div class="rnd-card rnd-nasal-spray-card-bg">Nasal Spray</div>
+          <% end %>
         </div>
       </div>
     </div>

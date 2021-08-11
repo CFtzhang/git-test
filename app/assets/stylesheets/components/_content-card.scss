@@ -217,7 +217,7 @@
 }
 
 .rnd-card {
-  height: 10rem;
+  height: 12rem;
   width: 18rem;
   box-sizing: border-box;
   border: 1px solid silver;
@@ -225,4 +225,10 @@
   padding: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  font-weight: 800;
+  transition: background 1s;
+}
+
+.rnd-card:hover {
+  color: white;
 }
