@@ -32,6 +32,15 @@
   background-color: transparent;
 }
 
+.bg-teal {
+  background-color: #1ba3b8;
+  color: white;
+}
+
+.bg-trans-white {
+  background-color: rgba(256, 256, 256, 0.7);
+}
+
 .offset-30-bg {
   position: absolute;
   left: -30%;
@@ -133,4 +142,11 @@
 
 .rnd-nasal-spray-card-bg:hover {
   background: linear-gradient(rgba(0, 172, 195, 0.8), rgba(0, 172, 195, 0.8)), image-url('research-and-development/dosage-forms/nasal-spray') no-repeat 100% 40%; background-size: 300px;
+}
+
+/*bg pieces (logos, doodles, etc.)*/
+.career-bg-logo {
+  position: absolute;
+  right: 0;
+  z-index: 0;
 }

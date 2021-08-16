@@ -1,61 +1,40 @@
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
-    <h1>Career</h1>
+<div class="info-banner career-banner-bg">
+  <div class="info-banner-title career-title">
+    <h1>Careers</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
+<div class="bg-light-color">
+  <div class="info-container">
     <div id="life-at-cf" class="jump-anchor"></div>
-    <div class="content-card card-reverse">
-      <div class="card-text-area">
+    <div class="content-card card-reverse pr">
+      <%= image_tag "cf-logo-outline-white", class: "career-bg-logo" %>
+      <div class="card-image-area">
+        <%= image_tag "career/life-at-cf-jumping", alt: "excited employees", class: "card-image" %>
+      </div>
+      <div class="card-text-area pr z1">
         <div class="card-text">
-          <h4 class="text-larger text-bold">Life at CF PharmTech</h4>
+          <h4 class="text-larger text-bold text-light-blue">Life at CF PharmTech</h4>
           <p>CF PharmTech is a dynamic and fast-growing company to provide inhaled products globally with an experienced international team. Its headquarters is located in China and with a subsidiary in the USA. CF encourages diversity, throughout all levels of the company.</p>
           <p>Working at CF PharmTech, you will be encouraged to show off your talents and realize your personal value. It is a place where you will also be able to enjoy life with the CF team and make friends.</p>
         </div>
       </div>
-      <div class="card-image-area">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <%= image_tag("career/life-at-cf-1", class: "slide-pic d-block") %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("career/life-at-cf-2", class: "slide-pic d-block") %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("career/life-at-cf-3", class: "slide-pic d-block") %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("career/life-at-cf-4", class: "slide-pic d-block") %>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
     </div>
-    <div class="career-quote h300 d-flex align-items-center card-text pr bg-trans">
-      <%= image_tag "partnership/doodles", alt: "alttext", class: "doodles" %>
-      <div class="offset-30-bg bg-trans-white-green z0"></div>
-      <div class="pr mr-w80 ml-auto mr-auto margin-bot">
-        <p class="ml-auto mr-auto text-large bg-trans z1 ta-center pr">We believe that individual success depends on attitude, behavior, performance, and are committed to offering career opportunities for <span class="text-bold">individual growth</span>.</p>
-      </div>
+  </div>
+  <div class="color-block align-items-center pr bg-teal">
+    <%= image_tag "partnership/doodles", alt: "alttext", class: "doodles" %>
+    <div class="pr mr-w80 ml-auto mr-auto margin-bot margin-top">
+      <p class="ml-auto mr-auto text-large bg-trans z1 ta-center pr">We believe that individual success depends on attitude, behavior, performance, and are committed to offering career opportunities for <span class="text-bold">individual growth</span>.</p>
     </div>
+  </div>
+  <div class="info-container">
     <div id="Meet-Us" class="jump-anchor"></div>
     <div class="meet-us margin-top">
       <div>
-        <h4 class="text-larger text-bold ta-center margin-bot ml-auto mr-auto">Meet Us</h4>
+        <h4 class="text-larger text-bold ta-center margin-bot ml-auto mr-auto text-light-blue">Meet Us</h4>
         <div class="meet-us-card-container ml-auto mr-auto">
           <div class="meet-us-card-block">
             <%= link_to careers_jean_marc_interview_path, class: "meet-us-card meet-us-jean-marc" do %>
-              <div class="meet-us-nameplate">
+              <div class="meet-us-nameplate bg-trans-white">
                 <div>
                   <p class="text-bold">Jean-Marc</p>
                   <p class="subtext">CTO</p>
@@ -63,7 +42,7 @@
               </div>
             <% end %>
             <%= link_to careers_gao_interview_path, class: "meet-us-card meet-us-gao" do %>
-              <div class="meet-us-nameplate">
+              <div class="meet-us-nameplate bg-trans-white">
                 <div>
                   <p class="text-bold">Gao</p>
                   <p class="subtext">R&D Manager</p>
@@ -73,7 +52,7 @@
           </div>
           <div class="meet-us-card-block">
             <%= link_to careers_kira_interview_path, class: "meet-us-card meet-us-kira" do %>
-              <div class="meet-us-nameplate">
+              <div class="meet-us-nameplate bg-trans-white">
                 <div>
                   <p class="text-bold">Kira</p>
                   <p class="subtext">Business Development</p>
@@ -81,7 +60,7 @@
               </div>
             <% end %>
             <%= link_to careers_yiming_interview_path, class: "meet-us-card meet-us-yiming" do %>
-              <div class="meet-us-nameplate">
+              <div class="meet-us-nameplate bg-trans-white">
                 <div>
                   <p class="text-bold">Yiming</p>
                   <p class="subtext">Human Resources</p>
@@ -93,17 +72,17 @@
       </div>
     </div>
     <div id="opportunities" class="jump-anchor"></div>
-    <div class="content-card card-reverse bg-trans-white-green">
+    <div class="content-card card-reverse">
+      <div class="card-image-area">
+        <%= image_tag "career/opportunity", alt: "alttext", class: "card-image" %>
+      </div>
       <div class="card-text-area">
         <div class="card-text">
-          <p class="text-larger text-bold">Opportunity</p>
-          <h4 class="text-italics">Submit your resume</h4>
+          <p class="text-larger text-bold text-light-blue">Opportunity</p>
+          <h4 class="text-italics text-light-blue">Submit your resume</h4>
           <p>We are committed to creating a professional and amicable work environment, providing personal growth opportunities for all our employees and contributing to the company's growth. We welcome you to join us.</p>
           <p>If you are interested in joining the CF PharmTech Team, please <%= link_to "apply", "http://www.hotjob.cn/wt/cfpharmtech/web/index?brandCode=1" %>, send us an email (hr@cfpharmtech.com) or <%= link_to "Contact Us", contact_us_path %>.</p>
         </div>
-      </div>
-      <div class="card-image-area">
-        <%= image_tag "career/opportunity", alt: "alttext", class: "card-image" %>
       </div>
     </div>
   </div>

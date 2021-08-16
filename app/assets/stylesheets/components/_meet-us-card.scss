@@ -1,7 +1,7 @@
-.meet-us-card-container{
+.meet-us-card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 1rem 1rem 1rem 1rem;
   padding-bottom: 1rem;
   margin-left: auto;
@@ -44,6 +44,7 @@
 }
 
 .meet-us-nameplate {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,6 +56,11 @@
   line-height: 0.2rem;
   padding-top: 0.6rem;
   border-radius: 0 0 16px 16px;
+}
+
+.meet-us-nameplate:hover p {
+  color: #1ea6cd;
+  opacity: 1;
 }
 
 .meet-us-jean-marc {
@@ -75,6 +81,6 @@
 
 .subtext {
   margin-top: 0.2rem;
-  color: gray;
+  color: black;
   font-size: 0.8rem;
 }
