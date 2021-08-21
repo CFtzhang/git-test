@@ -4,7 +4,6 @@
   width: 100%;
   height: calc(100vh - 2.8rem);
   min-height: 400px;
-  text-align: center;
   align-items: center;
   justify-content: center;
   color: white;
@@ -15,7 +14,7 @@
 .info-banner h1 {
   color: white;
   margin-bottom: 0;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .info-banner-title {
@@ -25,6 +24,11 @@
 
 /*Page Specific CSS*/
 .career-title {
+  left: 7rem;
+  top: 17rem;
+}
+
+.company-title {
   left: 7rem;
   top: 17rem;
 }

@@ -59,10 +59,6 @@
 }
 
 /*home*/
-.bg-home-rnd {
-  background: image-url('home/RD-bg-100') no-repeat 50% 50%; background-size: cover;
-}
-
 .home-banner-bg {
   background: image-url('home/home-banner') no-repeat 50% 50%; background-size: cover;
 }
@@ -73,7 +69,7 @@
 }
 
 .company-banner-bg {
-  background-image: image-url('about-us-banner.png'); background-position: 50% 80%;
+  background-image: image-url('company/company-banner'); background-position: 50% 80%; background-size: cover
 }
 
 .contact-banner-bg {
@@ -128,6 +124,10 @@
 
 /*components*/
 /*home*/
+.bg-home-rnd {
+  background: image-url('home/RD-bg-100') no-repeat 50% 50%; background-size: cover;
+}
+
 .rnd-mdi-card-bg:hover {
   background: linear-gradient(rgba(0, 172, 195, 0.8), rgba(0, 172, 195, 0.8)), image-url('research-and-development/dosage-forms/mdi') no-repeat 50% 28%; background-size: cover;
 }
@@ -142,6 +142,10 @@
 
 .rnd-nasal-spray-card-bg:hover {
   background: linear-gradient(rgba(0, 172, 195, 0.8), rgba(0, 172, 195, 0.8)), image-url('research-and-development/dosage-forms/nasal-spray') no-repeat 100% 40%; background-size: 300px;
+}
+/*company*/
+.company-card-bg {
+  background: image-url('company/company-card-bg') no-repeat 50% 50%; background-size: cover;;
 }
 
 /*bg pieces (logos, doodles, etc.)*/

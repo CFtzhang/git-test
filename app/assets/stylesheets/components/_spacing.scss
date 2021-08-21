@@ -1,3 +1,7 @@
+.pad-t-rem2 {
+  padding-top: 2rem;
+}
+
 .pad-tb-rem4 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -13,9 +17,27 @@
   padding-right: 1rem;
 }
 
+.pad-lr-rem3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.pad-r-rem1 {
+  padding-right: 1rem;
+}
+
 .mar-lr-rem1{
   margin-left: 1rem;
   margin-right: 1rem
+}
+
+.mar-bot-0 {
+  margin-bottom: 0;
+}
+
+.mar-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .z1 {
@@ -24,4 +46,8 @@
 
 .z0 {
   z-index: 0;
+}
+
+.jc-space-between {
+  justify-content: space-between;
 }
