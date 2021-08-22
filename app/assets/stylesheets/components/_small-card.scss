@@ -37,3 +37,22 @@
   flex-direction: column;
   flex: 1 1 0px;
 }
+
+/*contact*/
+.contact-symbol-container {
+  display: flex;
+  width: 45%;
+  position: relative;
+  left: 45%;
+  bottom: 2.5rem;
+  align-items: center;
+}
+
+.contact-symbol-container p {
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+.contact-symbol {
+  height: 6rem;
+}
