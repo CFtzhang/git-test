@@ -61,6 +61,15 @@
   margin-right: auto;
 }
 
+.card-image-large {
+  display: block;
+  object-fit: cover;
+  max-height: calc(100% - 2rem);
+  max-width: calc(100% - 2rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .card-img-narrow {
   object-fit: cover;
   width: 75%;
