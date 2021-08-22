@@ -25,3 +25,15 @@
 .small-card img {
   height: 250px;
 }
+
+/*company*/
+.values-container {
+  display: flex;
+  position: relative;
+  left: -1.8rem;
+}
+.values-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0px;
+}

@@ -31,22 +31,49 @@
     </div>
   </div>
   <div id="Our-Values" class="content-card">
-    <div class="card-text-area">
+    <div class="card-image-area fg-2 w65 pr">
+      <%= image_tag "company/our-values-doodle", class: "pa z0 w45 top-rem2 left-rem2" %>
+      <%= image_tag "company/values", alt: "alttext", class: "card-image z1 pr" %>
+    </div>
+    <div class="card-text-area fg-1 w35">
       <div class="card-text pr">
         <p class="text-larger text-bold">Our values</p>
-        <p class="text-large">Integrity</p>
-        <p class="text-large">Patient Focus</p>
-        <p class="text-large">Science-led Innovation</p>
+        <div class="values-container">
+          <div class="values-card fg-1">
+            <div class="fg-4 hrem3 d-flex jc-center">
+              <%= image_tag "company/integrity", class: "wrem3 hrem3" %>
+            </div>
+            <div class="fg-1 ta-center">
+              <p class="text-very-small">Integrity</p>
+            </div>
+          </div>
+          <div class="values-card fg-1">
+            <div class="fg-4 hrem3 d-flex jc-center">
+              <%= image_tag "company/patient-focus", class: "wrem3 hrem3" %>
+            </div>
+            <div class="fg-1 ta-center">
+              <p class="text-very-small">Patient Focus</p>
+            </div>
+          </div>
+          <div class="values-card fg-1">
+            <div class="fg-4 hrem3 d-flex jc-center">
+              <%= image_tag "company/science-led-innovation", class: "wrem3 hrem3" %>
+            </div>
+            <div class="fg-1 ta-center">
+              <p class="text-very-small">Science-led Innovation</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-area">
+            <%= link_to "Read More", company_path, class: "btn btn-flat" %>
+        </div>
       </div>
-    </div>
-    <div class="card-image-area">
-      <%= image_tag "company/values", alt: "alttext", class: "card-image" %>
     </div>
   </div>
   <div id="History" class="content-card history-banner-bg">
-    <div class="card-text-area">
+    <div class="">
       <div class="card-text">
-        <h4 class="text-larger text-bold">Our History</h4>
+        <h4 class="text-larger text-bold ta-center pad-t-rem2">Our History</h4>
         <ul>
           <li><div class="list-section"><p><strong>2008</strong></p><p>CF PharmTech was founded under Wuxi "530” Sponsorship Program</p></div></li>
           <li><div class="list-section"><p><strong>2009</strong></p><p>Received Jiangsu Provincial Innovation Award, and Science and Technology Leader Team Award</p></div></li>
