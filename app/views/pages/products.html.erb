@@ -1,17 +1,21 @@
 <!-- Info Banner -->
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
+<div class="info-banner products-banner-bg">
+  <div class="info-banner-title info-title">
     <h1>Products</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
-    <div id="Pharmaceutical-Products" class="content-card card-reverse">
-      <div class="card-text-area">
+<div class="">
+  <div class="">
+    <div id="Pharmaceutical-Products" class="content-card card-reverse pr bg-light-color">
+      <%= image_tag "cf-logo-outline-white", class: "career-bg-logo z0" %>
+      <div class="card-image-area w65">
+        <%= image_tag "products/pharmaceutical-products", alt: "alttext", class: "card-image-large w80" %>
+      </div>
+      <div class="card-text-area w35 pad-l-0 pr z1">
         <div class="card-text">
-          <p class="text-larger text-bold">Pharmaceutical Products</p>
-          <p>CF PharmTech focuses on the development of inhaled products for generic products and new drug products, include dosage forms:</p>
-          <ul class="bulleted-list">
+          <p class="text-large teal-text text-bold">Pharmaceutical Products</p>
+          <p class="mar-bot-0">CF PharmTech focuses on the development of inhaled products for generic products and new drug products, include dosage forms:</p>
+          <ul class="bulleted-list mar-bot-0">
             <li><%= link_to "MDI", "#{dosage_forms_path}#MDI" %></li>
             <li><%= link_to "Nasal Spray", "#{dosage_forms_path}#Nasal-Spray" %></li>
             <li><%= link_to "Nebulizer", "#{dosage_forms_path}#Nebulizer" %></li>
@@ -22,17 +26,14 @@
           <p><%= link_to "Read More", generic_drug_products_path, class: "btn-flat" %></p>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "products/pharmaceutical-products", alt: "alttext", class: "card-image" %>
-      </div>
     </div>
     <div id="Consumer-Products" class="content-card">
-      <div class="card-image-area">
-        <%= image_tag "products/consumer-products", alt: "alttext", class: "card-image" %>
+      <div class="card-image-area w65">
+        <%= image_tag "products/consumer-products", alt: "alttext", class: "card-image-large w80" %>
       </div>
-      <div class="card-text-area">
+      <div class="card-text-area w35 pad-l-0">
         <div class="card-text">
-          <h4 class="text-larger text-bold">Consumer Healthcare</h4>
+          <h4 class="text-large teal-text text-bold">Consumer Healthcare</h4>
           <p>CF PharmTech can provide professional and practical medical care products for consumers.</p>
           <p>The AuroAir family <sup>TM</sup>, our medical care brand, has a full range of products, which can fully meet the market demand.</p>
           <p><%= link_to "Read More", consumer_products_path, class: "btn-flat" %></p>
