@@ -1,0 +1,18 @@
+.news-card-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 20rem;
+}
+
+.news-card {
+	display: flex;
+	position: relative;
+}
+
+.news-card-date {
+	width: 8rem;
+}
+
+.news-card-title {
+
+}
