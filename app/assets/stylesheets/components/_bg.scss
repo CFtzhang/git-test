@@ -91,6 +91,10 @@
   background: url('research-and-development/research-and-development-banner') no-repeat 30% 60%; background-size: cover;
 }
 
+.news-banner-bg {
+  background: url('news/news-banner') no-repeat 50% 50%; background-size: cover;
+}
+
 .info-banner-bg {
   background: url('info-banner') no-repeat 50% 100%; background-size: cover;
 }
@@ -152,7 +156,7 @@
 }
 
 /*bg pieces (logos, doodles, etc.)*/
-.career-bg-logo {
+.white-logo-bg {
   position: absolute;
   right: 0;
   z-index: 0;
