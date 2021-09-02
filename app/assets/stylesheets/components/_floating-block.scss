@@ -1,0 +1,11 @@
+.floating-block-container {
+	display: flex;
+	align-items: center;
+}
+
+.floating-block {
+	position: absolute;
+	padding: 1rem;
+	width: 30rem;
+	right: 3rem;
+}
