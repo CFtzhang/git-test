@@ -1,11 +1,15 @@
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
+<div class="info-banner research-and-development-banner-bg">
+  <div class="info-banner-title info-title">
     <h1>R&D</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
-    <div class="content-card card-reverse">
+<div class="">
+  <div class="bg-light-color pr of-hidden">
+    <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
+    <div class="content-card card-reverse pr">
+      <div class="card-image-area">
+        <%= image_tag "research-and-development/r-and-d-team", alt: "alttext", class: "card-image w100" %>
+      </div>
       <div class="card-text-area">
         <div class="card-text">
           <h4 class="text-larger text-bold">R&D Team</h4>
@@ -13,51 +17,50 @@
           <p>Relying on the international and domestic top academic and regulatory exchanges and technical cooperation, our R&D team has the professional knowledge and skills, capable of carrying out a full range of respiratory system drug delivery technology research and development work, to provide high-quality inhaled products for the global market.</p>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "research-and-development/r-and-d-team", alt: "alttext", class: "card-image" %>
-      </div>
     </div>
+  </div>
+  <div class="bg-offwhite">
     <div class="content-card">
-      <div class="card-image-area">
-        <%= image_tag "research-and-development/therapeutic-areas", alt: "alttext", class: "card-image" %>
+      <div class="card-image-area w35">
+        <%= image_tag "research-and-development/therapeutic-areas", alt: "alttext", class: "card-image w65" %>
       </div>
-      <div class="card-text-area">
+      <div class="card-text-area w65">
         <div class="card-text">
-          <h4 class="text-larger text-bold">Therapeutic Areas</h4>
+          <h4 class="text-larger text-bold teal-text">Therapeutic Areas</h4>
           <p>CF PharmTech focuses on the development of nasal and pulmonary delivery technology for respiratory disease treatments, including:</p>
-          <ul class="bulleted-list">
-            <li><%= link_to "Asthma", "#{therapeutic_areas_path}#Asthma" %></li>
-            <li><%= link_to "COPD", "#{therapeutic_areas_path}#COPD" %></li>
-            <li><%= link_to "Rhinitis", "#{therapeutic_areas_path}#Rhinitis" %></li>
-            <li><%= link_to "Other Respiratory Diseases", "#{therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
+          <ul class="bulleted-list text-large">
+            <li><%= link_to "Asthma", "#{therapeutic_areas_path}#Asthma", class: "teal-text" %></li>
+            <li><%= link_to "COPD", "#{therapeutic_areas_path}#COPD", class: "teal-text" %></li>
+            <li><%= link_to "Rhinitis", "#{therapeutic_areas_path}#Rhinitis", class: "teal-text" %></li>
+            <li><%= link_to "Other Respiratory Diseases", "#{therapeutic_areas_path}#Other-Respiratory-Diseases", class: "teal-text" %></li>
           </ul>
         </div>
-      </div>
-    </div>
-    <div class="content-card card-reverse">
-      <div class="card-text-area">
-        <div class="card-text">
-          <h4 class="text-larger text-bold">Dosage Forms</h4>
-          <p>CF PharmTech has a complete R&D platforms and manufacturing capabilities for the following dosage forms:</p>
-          <ul class="bulleted-list">
-            <li><%= link_to "Metered Dose Inhaler (MDI)", "#{dosage_forms_path}#MDI" %></li>
-            <li><%= link_to "Dry Powder Inhaler (DPI)", "#{dosage_forms_path}#DPI" %></li>
-            <li><%= link_to "Nebulizer", "#{dosage_forms_path}#Nebulizer" %></li>
-            <li><%= link_to "Nasal Spray", "#{dosage_forms_path}#Nasal-Spray" %></li>
-          </ul>
-        </div>
-      </div>
-      <div class="card-image-area">
-        <%= image_tag "research-and-development/dosage-forms", alt: "alttext", class: "card-image" %>
       </div>
     </div>
     <div class="content-card">
-      <div class="card-image-area">
-        <%= image_tag "research-and-development/quality-system", alt: "alttext", class: "card-image" %>
+      <div class="card-image-area w35">
+        <%= image_tag "research-and-development/dosage-forms", alt: "alttext", class: "card-image w65" %>
       </div>
-      <div class="card-text-area">
+      <div class="card-text-area w65">
         <div class="card-text">
-          <h4 class="text-larger text-bold">Quality System</h4>
+          <h4 class="text-larger text-bold teal-text">Dosage Forms</h4>
+          <p>CF PharmTech has a complete R&D platforms and manufacturing capabilities for the following dosage forms:</p>
+          <ul class="bulleted-list text-large">
+            <li><%= link_to "Metered Dose Inhaler (MDI)", "#{dosage_forms_path}#MDI", class: "teal-text" %></li>
+            <li><%= link_to "Dry Powder Inhaler (DPI)", "#{dosage_forms_path}#DPI", class: "teal-text" %></li>
+            <li><%= link_to "Nebulizer", "#{dosage_forms_path}#Nebulizer", class: "teal-text" %></li>
+            <li><%= link_to "Nasal Spray", "#{dosage_forms_path}#Nasal-Spray", class: "teal-text" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content-card">
+      <div class="card-image-area w35">
+        <%= image_tag "research-and-development/quality-system", alt: "alttext", class: "card-image w65" %>
+      </div>
+      <div class="card-text-area w65">
+        <div class="card-text">
+          <h4 class="text-larger text-bold teal-text">Quality System</h4>
           <p>Our quality team will ensure that all R&D activities are compliant with relevant regulations in China, USA, and Europe.</p>
           <ul class="bulleted-list">
             <li>Analytical method development and validation</li>
