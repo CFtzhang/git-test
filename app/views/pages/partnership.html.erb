@@ -5,12 +5,12 @@
   </div>
 </div>
 <div class="">
-  <div class="bg-light-color pr h-100vh">
+  <div class="bg-light-color pr h-100vh of-hidden">
     <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
     <div id="Collaborations" class="pr">
       <div class="floating-block-container pr">
         <%= image_tag "partnership/collaboration", alt: "alttext", class: "collaboration-image" %>
-        <div class="floating-block bg-teal">
+        <div class="floating-block bg-trans-teal">
           <h4 class="text-larger text-bold">Collaborations</h4>
           <p>In addition to our generic product development teams, we have dedicated experts and advanced inhaled product development capability to support your New Drug Product Development programs, including New Chemical Entities or New Devices, from the early stages, to manufacturing, and all of the way to market. </p>
           <p>We welcome many forms of collaborations, from coinvestment, codevelopment, or CDMO <%= link_to "services", services_path %>. </p>
@@ -18,17 +18,15 @@
         </div>
       </div>
     </div>
-    <!-- Table -->
-    <div id="Services" class="content-card bg-white">
-      <div class="card-text-area">
-        <div class="card-text">
-          <h4 class="text-larger text-bold ta-center">Service Scope</h4>
-          <div class="fw-display">
-            <div class="fw-display-card">
-              <%= image_tag "partnership/cro", alt: "alttext", class: "fw-pin" %>
-              <div class="fw-display-card-header">
-                <h4>CRO service</h4>
-              </div>
+  </div>
+  <!-- Table -->
+  <div id="Services" class="h-100vh">
+    <div class="">
+      <div class="">
+        <h4 class="text-larger text-bold ta-center pad-t-rem2">Service Scope</h4>
+        <div class="">
+          <div class="scope-display scope-bg">
+            <div class="fw-display-card scope-card-bg">
               <div class="fw-display-card-body">
                 <ul class="bulleted-list">
                   <li>feasibility analysis</li>
@@ -38,12 +36,13 @@
                   <li>process development</li>
                 </ul>
               </div>
-            </div>
-            <div class="fw-display-card">
-              <%= image_tag "partnership/cmo", alt: "alttext", class: "fw-pin" %>
-              <div class="fw-display-card-header">
-                <h4>CMO service</h4>
+              <div class="scope-card-header-border-blue">
+                <div class="fw-display-card-header teal-text">
+                  <h4>CRO<br>service</h4>
+                </div>
               </div>
+            </div>
+            <div class="fw-display-card scope-card-bg">
               <div class="fw-display-card-body">
                 <ul class="bulleted-list">
                   <li>preclinical batch</li>
@@ -52,12 +51,13 @@
                   <li>commerical batch</li>
                 </ul>
               </div>
-            </div>
-            <div class="fw-display-card">
-              <%= image_tag "partnership/other-services", alt: "alttext", class: "fw-pin" %>
-              <div class="fw-display-card-header">
-                <h4>Other services</h4>
+              <div class="scope-card-header-border-green">
+                <div class="fw-display-card-header teal-text">
+                  <h4>CMO service</h4>
+                </div>
               </div>
+            </div>
+            <div class="fw-display-card scope-card-bg">
               <div class="fw-display-card-body">
                 <ul class="bulleted-list">
                   <li>prescription analysis</li>
@@ -67,6 +67,11 @@
                   <li>stability testing</li>
                   <li>application and registration</li>
                 </ul>
+              </div>
+              <div class="scope-card-header-border-blue">
+                <div class="fw-display-card-header teal-text">
+                  <h4>Other services</h4>
+                </div>
               </div>
             </div>
           </div>
