@@ -1,0 +1,27 @@
+.investor-card {
+	display: flex;
+	flex-direction: column;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.investor-card-header {
+	padding: 1rem;
+	background-color: #c9caca;
+	width: 16rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.investor-card-body {
+	padding: 1rem;
+	background-color: #bcd5dd;
+	width: 16rem;
+	text-align: center;
+}
+
+.investor-card-body:hover {
+	background-color: #1ba3b8;
+	color: white;
+	transition: 0.3s ease; 
+}
