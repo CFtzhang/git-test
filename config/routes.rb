@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'services', to: 'pages#services'
   get 'investors', to: 'pages#investors'
   get 'news', to: 'pages#news'
+  get 'article', to: 'pages#article'
 
   get 'zh/contact-us', to: 'zh_pages#contact_us'
   get 'zh/', to: 'zh_pages#index'
