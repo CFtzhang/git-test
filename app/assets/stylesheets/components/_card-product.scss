@@ -1,27 +1,51 @@
+.card-product-container {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
 .card-product {
   position: relative;
   overflow: hidden;
-  height: 160px;
+  height: 22rem;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 12rem;
+  width: 26%;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 2rem;
+  border-radius: 25px;
+}
+
+.card-product:hover {
+  .card-product-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .card-product img {
   height: 100%;
-  width: 160px;
+  width: 100%;
   object-fit: cover;
 }
 
 .card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+  font-size: 1rem;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .card-product p {
@@ -32,8 +56,18 @@
   margin-top: 8px;
 }
 
-.card-product .card-product-infos {
+.card-product-overlay {
   padding: 16px;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  background-color: rgba(30, 166, 205, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
 }
 
 .bulleted-list {

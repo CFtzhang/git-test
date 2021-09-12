@@ -45,9 +45,8 @@
         <% @consumer_products.each do |e| %>
           <div class="card-product">
             <%= image_tag "#{e.imgurl}", alt: "product picture" %>
-            <div class="card-product-infos">
+            <div class="card-product-overlay">
               <h2><%= "#{e.product_family} #{e.product_name}" %></h2>
-              <p><%= e.short_description %></p>
               <div class="btn-area">
                 <%= link_to product_path(e) do %>
                   <div class="btn-flat btn-product">See More</div>
