@@ -78,3 +78,40 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/*consumer hc products*/
+.mall-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mall-card {
+  display: block;
+  min-width: 16rem;
+  width: 40%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.mall-card-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mall-card-text h3 {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.mall-card-text p {
+  font-size: 1.2rem;
+}
