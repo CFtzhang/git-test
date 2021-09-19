@@ -95,7 +95,7 @@
 
 .jump-anchor {
   position: relative;
-  top: -80px;
+  top: 0px;
 }
 
 .navigationbar a {
@@ -281,6 +281,10 @@
 
   .navigationbar-spacer {
     display: none;
+  }
+
+  .jump-anchor {
+    top: -80px;
   }
 }
 
