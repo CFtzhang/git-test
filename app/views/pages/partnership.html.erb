@@ -7,7 +7,8 @@
 <div class="">
   <div class="bg-light-color pr h-100vh of-hidden">
     <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
-    <div id="Collaborations" class="pr">
+    <div class="pr">
+      <div id="Collaborations" class="jump-anchor"></div>
       <div class="floating-block-container pr">
         <%= image_tag "partnership/collaboration", alt: "alttext", class: "collaboration-image" %>
         <div class="floating-block bg-trans-teal">
@@ -20,10 +21,11 @@
     </div>
   </div>
   <!-- Table -->
-  <div id="Services" class="h-100vh">
+  <div class="h-100vh">
+    <div id="Services" class="jump-anchor"></div>
     <div class="">
       <div class="">
-        <h4 class="text-larger text-bold ta-center pad-t-rem2">Service Scope</h4>
+        <h4 class="text-larger text-bold ta-center pad-t-rem2"><%= link_to "Service Scope", services_path %></h4>
         <div class="">
           <div class="scope-display scope-bg">
             <div class="fw-display-card scope-card-bg">
