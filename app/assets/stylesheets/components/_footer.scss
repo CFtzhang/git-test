@@ -18,10 +18,12 @@
 
 .footer a {
   color: #e5e5e5;
+  fill: #e5e5e5;
 }
 
 .footer a:hover{
-  color: #whitesmoke;
+  color: whitesmoke;
+  fill: whitesmoke;
 }
 
 .footer-container {
@@ -31,18 +33,27 @@
   padding-bottom: 1rem;
 }
 
+.footer-icon {
+  height: 1rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
 .footer-logo {
   height: 100%;
 }
 
 footer ul {
-  margin: 1rem;
-  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
   .footer-list-container {
-    max-width: 500px;
+    min-width: 600px;
+    position: relative;
+    left: 2.5rem;
   }
   .footer-container {
     width: 70%;
@@ -51,6 +62,6 @@ footer ul {
 
 @media (max-width: 280px) {
   .footer-list-container {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 }
