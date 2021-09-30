@@ -1,51 +1,44 @@
-<div class="info-banner" style="background-image: url(<%= asset_path 'about-us-banner.png' %>); background-position: 50% 80%;">
-  <div class="info-banner-title-blue">
-    <h1>Services</h1>
+<div class="info-banner services-banner-bg">
+  <div class="info-banner-title info-title-right">
+    <h1>服务</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
+<div class="bg-light-color pr of-hidden">
+  <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
+  <div class="info-container pr">
     <div class="content-card">
-      <div class="card-text-area">
+      <div class="card-text-area w35">
         <div class="card-text">
-          <h4>Our Services</h4>
-          <p>CF PharmTech is committed to creating a comprehensive and integrated R&D and technology platform, and providing our partners with full range services for inhaled product development.</p>
+          <h4 class="teal-text">服务</h4>
+          <p>长风药业致力于打造全方位一体化的研发生产技术平台，可以为合作伙伴提供吸入制剂一站式的CDMO服务。</p>
         </div>
       </div>
-      <div class="card-img-area">
-        <img class="card-img" src="<%= asset_path 'about-us-1.jpg' %>" alt="">
-      </div>
-    </div>
-    <div id="" class="content-card">
-      <div class="card-img-area">
-        <img class="card-img" src="<%= asset_path 'about-us-2.jpg' %>" alt="">
-      </div>
-      <div class="card-text-area">
-        <div class="card-text">
-          <h4>Development</h4>
-          <p><strong>CF PharmTech</strong> R&D and Technology center is located in Wuxi, Jiangsu, China. The laboratories are equipped with advanced testing equipment and instruments, including Andersen cascade impactor (ACI), Next Generation Pharmaceutical Impactor(NGI), automatic HPLC, breathing simulator, automatic high performance liquid chromatography, LSPSDA, Spray View. With our development capability and <%= link_to "experienced team of scientists", research_and_development_platform_path  %>, we will form a strong partnership to bring your product to the market sooner.</p>
-        </div>
-      </div>
-    </div>
-    <div id="" class="content-card">
-      <div class="card-text-area">
-        <div class="card-text">
-          <h4>Manufacturing</h4>
-          <p>Our manufacturing facility is located in Suzhou, Jiangsu, China, with 6 production lines, including Nebulizer, Metered Dose Inhaler, Nasal Spray, Dry Powder Inhaler products. QC testing laboratory is in site and is compliant with China, EU, and US FDA requirements. </p>
-        </div>
-      </div>
-      <div class="card-img-area">
-        <img class="card-img" src="<%= asset_path 'about-us-3.jpg' %>" alt="">
-      </div>
-    </div>
-    <div id="" class="content-card">
-      <div class="card-img-area">
-        <img class="card-img" src="<%= asset_path 'about-us-2.jpg' %>" alt="">
-      </div>
-      <div class="card-text-area">
-        <div class="card-text">
-          <h4>Regulatory Affairs</h4>
-          <p>CF PharmTech Regulatory Affairs Team has an extensive experience to work with Chinese, US FDA, and European regulatory authorities with inhaled product submissions. With our knowledge on the regulatory requirements for respiratory therapies, we are committed to supporting you and your new product development programs.</p>
+      <div class="w65 d-flex jc-center flex-d-column">
+        <div class="services-display">
+          <div class="services-display-text">
+            <div class="services-display-header">
+              <h3 class="teal-text">关于我们</h3>
+            </div>
+            <div class="services-display-body">
+              <p>药物研究院位于无锡市空港产业园，配套近百台吸入制剂研发和检测设备，如多级阶式碰撞器（ACI，NGI）、呼吸模拟器、高流量真空泵、全自动高效液相色谱、激光衍射粒度仪、SprayVIEW喷射模式和喷射形态测试系统等。</p>
+            </div>
+          </div>
+          <div class="services-display-text">
+            <div class="services-display-header">
+              <h3 class="teal-text">生产能力</h3>
+            </div>
+            <div class="services-display-body">
+              <p>苏州工厂位于苏州市相城经济开发区，配备有符合美国FDA GMP 要求的QC实验室和七条先进的生产车间，可以满足气雾剂，鼻喷剂，雾化吸入剂及粉雾剂等四大吸入制剂剂型的生产需求。</p>
+            </div>
+          </div>
+          <div class="services-display-text">
+            <div class="services-display-header">
+              <h3 class="teal-text">注册经验</h3>
+            </div>
+            <div class="services-display-body">
+              <p>注册团队在中国、美国和欧洲拥有丰富的吸入产品注册经验。我们致力于为您的新品开发计划提供支持。</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
