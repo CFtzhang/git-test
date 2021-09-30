@@ -1,39 +1,43 @@
 <!-- Info Banner -->
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
+<div class="info-banner products-banner-bg">
+  <div class="info-banner-title info-title">
     <h1>产品中心</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
-    <div class="content-card card-reverse">
-      <div class="card-text-area">
-        <div id="Pharmaceutical-Products" class="card-text">
-          <h4 class="text-larger text-bold">医药产品</h4>
-          <p>长风药业专注于吸入制剂领域的仿制药和新药产品的开发，主要剂型包括:</p>
-          <ul class="bulleted-list">
-            <li><%= link_to "气雾剂", "#{dosage_forms_path}#MDI" %></li>
-            <li><%= link_to "鼻喷剂", "#{dosage_forms_path}#Nasal-Spray" %></li>
-            <li><%= link_to "雾化剂", "#{dosage_forms_path}#Nebulizer" %></li>
-            <li><%= link_to "干粉剂", "#{dosage_forms_path}#DPI" %></li>
+<div class="">
+  <div class="">
+    <div id="Pharmaceutical-Products" class="jump-anchor"></div>
+    <div class="content-card card-reverse pr bg-light-color">
+      <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
+      <div class="card-image-area w65">
+        <%= image_tag "products/pharmaceutical-products", alt: "alttext", class: "card-image-large w80" %>
+      </div>
+      <div class="card-text-area w35 pad-l-0 pr z1">
+        <div class="card-text">
+          <h4 class="text-large teal-text text-bold">医药产品</h4>
+          <p class="mar-bot-0">长风药业专注于吸入制剂领域的仿制药和新药产品的开发，主要剂型包括:</p>
+          <ul class="bulleted-list mar-bot-0">
+            <li><%= link_to "MDI", "#{zh_dosage_forms_path}#MDI" %></li>
+            <li><%= link_to "Nasal Spray", "#{zh_dosage_forms_path}#Nasal-Spray" %></li>
+            <li><%= link_to "Nebulizer", "#{zh_dosage_forms_path}#Nebulizer" %></li>
+            <li><%= link_to "Dry Powder Inhaler", "#{zh_dosage_forms_path}#DPI" %></li>
           </ul>
           <p>长风研制的一些仿制药目前已在中国申报。</p>
           <p>长风的新药开发，包括新化合物研究(NCE)、新装置技术、新固定剂量复方制剂产品。</p>
-<!--           <p><%= link_to "更多", new_drug_products_path, class: "btn-flat" %></p> -->
           <p><%= link_to "更多", zh_generic_drug_products_path, class: "btn-flat" %></p>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "products/pharmaceutical-products", alt: "alttext", class: "card-image" %>
-      </div>
     </div>
+
+
+
     <div id="Consumer-Products" class="content-card">
-      <div class="card-image-area">
-        <%= image_tag "products/consumer-products", alt: "alttext", class: "card-image" %>
+      <div class="card-image-area w65">
+        <%= image_tag "products/consumer-products", alt: "alttext", class: "card-image-large w80" %>
       </div>
-      <div class="card-text-area">
+      <div class="card-text-area w35 pad-l-0">
         <div class="card-text">
-          <h4 class="text-larger text-bold">护理产品</h4>
+          <h4 class="text-large teal-text text-bold">护理产品</h4>
           <p>长风药业能为消费者提供专业、实用的呼吸系统护理产品。</p>
           <p>我们的护理品牌清氛<sup>TM</sup>系列种类齐全，能全方位满足市场的需求。</p>
           <p><%= link_to "更多", zh_consumer_products_path, class: "btn-flat" %></p>
