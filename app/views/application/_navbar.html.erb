@@ -53,10 +53,12 @@
             <div class="navigationbar-list-header"><%= link_to ("Contact"), contact_us_path %></div>
           </div>
         </div>
-        <div class="navigationbar-list-header min-width hamburger-container">
+        <div class="navigationbar-list-header hamburger-container">
           <div class="menu-dropdown">
             <div>
-              <p class="language-selector">English<span><%= image_tag "material-down-arrow", alt: "down arrow button", class: "da-icon" %></span></p>
+              <div>
+                <p class="language-selector">English<span><%= image_tag "material-down-arrow", alt: "down arrow button", class: "da-icon" %></span></p>
+              </div>
             </div>
             <div class="menu-dropdown-content"><%= link_to ("中文简体"), "#{zh_path + request.original_fullpath}" %></div>
           </div>
