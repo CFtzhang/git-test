@@ -1,16 +1,37 @@
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
+<div class="info-banner consumer-hc-banner-bg">
+  <div class="info-banner-title info-title">
     <h1>鼻腔护理产品</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
-    <p> 鼻腔喷雾器可用于鼻炎护理、日常护理、缓解鼻塞、重构鼻腔环境。</p>
-    <p><%= image_tag "products/jd", alt: "jd-logo", class: "shopping-logo" %><%= link_to "mall.jd.com", "https://mall.jd.com/index-10054849.html" %></p>
-    <p><%= image_tag "products/tmall", alt: "tmall-logo", class: "shopping-logo" %><%= link_to "cfair.tmall.com", "https://cfair.tmall.com/index.htm?spm=a1z10.3-b-s.w5002-23402793420.2.9a064681RKtBRK" %></p>
-    <div>
+<div class="">
+  <div class="container pad-t-rem2">
+    <div class="info-container">
+      <div class="mall-card-container">
+        <%= link_to "https://mall.jd.com/index-10054849.html", :class=>"mall-card" do %>
+          <%= image_tag "products/auro-air-jd", alt: "alttext", class: "w100" %>
+          <div class="mall-card-text">          
+            <h3>清氛官方旗舰店 - 京东 (jd.com)</h3>
+            <p>京东商城</p>
+          </div>
+        <% end %>
+        <%= link_to "https://cfair.tmall.com/index.htm", :class=>"mall-card" do %>
+          <%= image_tag "products/auro-air-tmall", alt: "alttext", class: "w100"%>
+          <div class="mall-card-text">          
+            <h3>首页-清氛旗舰店-天猫Tmall.com</h3>
+            <p>天猫商城</p>
+          </div>
+        <% end %>
+      </div>
+<!--         <p><strong>CF PharmTech</strong> provides professional and practical consumer healthcare products for daily care of your respiratory system. The <strong>AuroAir family</strong><sup>TM</sup>, our consumer healthcare brand has many products to meet your health needs.</p>
+        <p>Check out our products here:</p>
+        <p><%= image_tag "products/jd", alt: "jd-logo", class: "shopping-logo" %><%= link_to "mall.jd.com", "https://mall.jd.com/index-10054849.html" %></p>
+        <p><%= image_tag "products/tmall", alt: "tmall-logo", class: "shopping-logo" %><%= link_to "cfair.tmall.com", "https://cfair.tmall.com/index.htm?spm=a1z10.3-b-s.w5002-23402793420.2.9a064681RKtBRK" %></p> -->    
+    </div>
+  </div>
+  <div class="bg-light-color">
+    <div class="info-container">
       <div class="dropdown show">
-        <div class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="btn btn-secondary dropdown-toggle pad-lr-rem2 mar-lr-rem1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           选择一个产品
         </div>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -20,20 +41,20 @@
           <% end %>
         </div>
       </div>
-    </div>
-    <% @consumer_products.each do |e| %>
-        <div class="card-product">
-          <img src=<%= e.imgurl %> />
-          <div class="card-product-infos">
-            <h2><%= "#{e.zh_product_name}" %></h2>
-            <p><%= e.zh_short_description %></p>
-            <div class="btn-area">
-              <%= link_to zh_product_path(e) do %>
-                <div class="btn-flat btn-product">更多</div>
-              <% end %>
+      <div class="card-product-container pad-t-rem2">
+        <% @consumer_products.each do |e| %>
+          <div class="card-product">
+            <%= image_tag "#{e.imgurl}", alt: "product picture" %>
+            <div class="card-product-overlay">
+              <h2><%= "#{e.zh_product_name}" %></h2>
+              <div class="btn-area">
+                <%= link_to product_path(e) do %>
+                  <div class="btn-flat btn-product">更多</div>
+                <% end %>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
   </div>
 </div>
