@@ -9,83 +9,85 @@
   </div>
 </div>
 <!-- content -->
-<div class="zh-text container">
-  <div class="">
-    <div class="color-block bg-trans-white-green ta-left pad-tb-rem4">
-      <div class="color-block-text">
-        <p class="text-large">长风药业是一家致力于为全球市场提供高品质吸入类药物的综合性专业制药公司。</p><p>在拥有丰富行业经验的高素质团队的管理下，公司专注于在最先进的设备中开发治疗呼吸系统疾病的药物。</p>
-      </div>
-      <!-- <div class="card-img-area">
-        <img class="card-img" src="https://res.cloudinary.com/tichel/image/upload/v1598850977/CF%20Website/Home%20page/Home_page_no_copyright4_i8sc01.jpg" alt="">
-      </div> -->
+<div class="zh-text bg-light-color">
+  <div class="content-card">
+    <div class="card-image-area">
+      <%= image_tag "home/what-we-do", alt: "alttext", class: "card-image" %>
     </div>
-    <div class="content-card">
-      <div class="card-image-area">
-        <%= image_tag "home/what-we-do", alt: "alttext", class: "card-image" %>
-      </div>
-      <div class="card-text-area">
-        <div class="card-text">
-          <p class="text-larger text-bold">治疗领域</p>
-          <p>长风药业专注于呼吸系统治疗领域产品的开发，包括：</p>
-          <ul class="bulleted-list">
-            <li><%= link_to "哮喘", "#{zh_therapeutic_areas_path}#Asthma" %></li>
-            <li><%= link_to "COPD", "#{zh_therapeutic_areas_path}#COPD" %></li>
-            <li><%= link_to "鼻炎", "#{zh_therapeutic_areas_path}#Rhinitis" %></li>
-            <li><%= link_to "其他呼吸系统疾病", "#{zh_therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
-          </ul>
-          <div class="btn-area">
-              <%= link_to "更多", zh_company_path, class: "btn btn-flat" %>
-          </div>
+    <div class="card-text-area">
+      <div class="card-text">
+        <p class="text-larger text-bold">治疗领域</p>
+        <p>长风药业专注于呼吸系统治疗领域产品的开发，包括：</p>
+        <ul class="bulleted-list">
+          <li><%= link_to "哮喘", "#{zh_therapeutic_areas_path}#Asthma" %></li>
+          <li><%= link_to "COPD", "#{zh_therapeutic_areas_path}#COPD" %></li>
+          <li><%= link_to "鼻炎", "#{zh_therapeutic_areas_path}#Rhinitis" %></li>
+          <li><%= link_to "其他呼吸系统疾病", "#{zh_therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
+        </ul>
+        <div class="btn-area">
+            <%= link_to "更多", zh_company_path, class: "btn btn-flat" %>
         </div>
       </div>
     </div>
-    <div class="content-card bg-trans-white-green card-reverse">
-      <div class="card-text-area">
-        <div class="card-text">
-          <p class="text-larger text-bold">研发平台</p>
-          <p>根据全球市场需求，长风有20多个吸入仿制药正在开发中，还有多个护理产品可供消费者选择。</p>
-          <ul class="bulleted-list">
-            <li><%= link_to "气雾剂", "#{dosage_forms_path}#MDI" %></li>
-            <li><%= link_to "鼻喷剂", "#{dosage_forms_path}#Nasal-Spray" %></li>
-            <li><%= link_to "雾化剂", "#{dosage_forms_path}#Nebulizer" %></li>
-            <li><%= link_to "干粉剂", "#{dosage_forms_path}#DPI" %></li>
-          </ul>
-          <div class="btn-area">
-            <%= link_to "更多", zh_research_and_development_platform_path, class: "btn btn-flat" %>
-          </div>
+  </div>
+  <div class="content-card bg-home-rnd card-reverse">
+    <div class="card-text-area w35">
+      <div class="card-text">
+        <p class="text-larger text-bold">研发平台</p>
+        <p>根据全球市场需求，长风有20多个吸入仿制药正在开发中，还有多个护理产品可供消费者选择。</p>
+        <div class="btn-area">
+          <%= link_to "更多", zh_research_and_development_platform_path, class: "btn btn-flat" %>
         </div>
       </div>
-      <div class="card-image-area">
-      </div>
     </div>
-    <div class="home-products content-card ta-center flex-wrap justify-content-center align-items-center">
-      <div class="home-products-text-area">
-        <p class="text-larger text-bold">产品介绍</p>
-        <p>长风药业专注于开发非专利和新药的吸入产品，以及为消费者提供专业和实用的医疗产品。</p>
-      </div>
-      <div class="products-container">
-        <%= link_to zh_products_path, :class=>"home-product-card bg-light-green" do %>
-          <p class="text-large text-bold ta-left">医药产品</p>
-          <div class="btn-hollow-white home-product-card-btn">更多</div>
-        <% end %>
-        <%= link_to zh_consumer_products_path, :class=>"home-product-card bg-light-blue" do %>
-          <p class="text-large text-bold ta-left">护理产品</p>
-          <div class="btn-hollow-white home-product-card-btn">更多</div>
-        <% end %>
-      </div>
-    </div>
-    <div class="content-card bg-trans-white-green card-reverse">
-      <div class="card-text-area">
-        <div class="card-text">
-          <p class="text-larger text-bold">合作</p>
-          <p>长风药业已与多家公司建立了合作伙伴关系，将共同努力为全球市场开发新化合物创新技术和新型吸入制剂产品。此外，我们还为合作伙伴提供开发解决方案和服务，以支持您的技术和产品开发。</p>
-          <div class="btn-area">
-            <%= link_to "更多", zh_partnership_path, class: "btn btn-flat" %>
-          </div>
+    <div class="card-image-area w65">
+      <div class="small-card-display">
+        <div class="small-card-display-row">
+          <%= link_to "#{zh_dosage_forms_path}#MDI" do %>
+            <div class="rnd-card rnd-mdi-card-bg">气雾剂</div>
+          <% end %>
+          <%= link_to "#{zh_dosage_forms_path}#DPI" do %>
+            <div class="rnd-card rnd-dpi-card-bg">干粉剂</div>
+          <% end %>
+        </div>
+        <div class="small-card-display-row">
+          <%= link_to "#{zh_dosage_forms_path}#Nebulizer" do %>
+            <div class="rnd-card rnd-nebulizer-card-bg">雾化剂</div>
+          <% end %>
+          <%= link_to "#{zh_dosage_forms_path}#Nasal-Spray" do %>
+            <div class="rnd-card rnd-nasal-spray-card-bg">鼻喷剂</div>
+          <% end %>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "home/partnership", alt: "alttext", class: "card-image" %>
+    </div>
+  </div>
+  <div class="home-products content-card ta-center flex-wrap justify-content-center align-items-center">
+    <div class="home-products-text-area">
+      <%= link_to "产品介绍", zh_products_path, class: "text-larger text-bold" %>
+      <p>长风药业专注于开发非专利和新药的吸入产品，以及为消费者提供专业和实用的医疗产品。</p>
+    </div>
+    <div class="products-container">
+      <%= link_to zh_products_path, :class=>"home-product-card bg-light-green" do %>
+        <p class="text-large text-bold ta-left">医药产品</p>
+        <div class="btn-hollow-white home-product-card-btn">更多</div>
+      <% end %>
+      <%= link_to zh_consumer_products_path, :class=>"home-product-card bg-light-blue" do %>
+        <p class="text-large text-bold ta-left">护理产品</p>
+        <div class="btn-hollow-white home-product-card-btn">更多</div>
+      <% end %>
+    </div>
+  </div>
+  <div class="content-card">
+    <div class="card-image-area">
+      <%= image_tag "home/partnership", alt: "alttext", class: "card-image" %>
+    </div>
+    <div class="card-text-area">
+      <div class="card-text">
+        <p class="text-larger text-bold">合作</p>
+        <p>长风药业已与多家公司建立了合作伙伴关系，将共同努力为全球市场开发新化合物创新技术和新型吸入制剂产品。此外，我们还为合作伙伴提供开发解决方案和服务，以支持您的技术和产品开发。</p>
+        <div class="btn-area">
+          <%= link_to "更多", zh_partnership_path, class: "btn btn-flat" %>
+        </div>
       </div>
     </div>
   </div>
