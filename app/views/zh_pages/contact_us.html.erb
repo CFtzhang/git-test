@@ -1,39 +1,60 @@
 <!-- Info banner-->
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
+<div class="info-banner contact-banner-bg">
+  <div class="info-banner-title info-title">
     <h1>联系我们</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
-    <div><p>info@cfpharmtech.com</p></div>
-    <div class="content-card card-reverse">
-      <div class="card-text-area">
-        <div class="card-text">
-          <div class="location-card location-card-active" id="cf-suzhou" onclick="mapShowSuzhou()">
-            <p><strong>中国·苏州</strong></p>
+<div class="">
+  <div class="bg-light-color pr of-hidden">
+    <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
+    <div class="card-text location-card-container pad-t-rem4">
+      <div class="location-card location-card-active" id="cf-suzhou" onclick="mapShowSuzhou()">
+        <div class="location-card-title pr">
+          <div class="location-card-title-bg bg-teal"></div>
+          <p><strong>中国·苏州</strong></p>
+        </div>
+        <div class="location-card-content">
+          <div class="location-card-content-bg bg-white"></div>
+          <div class="location-card-content-text">
             <div class="list-section"><p><strong>地址：</strong></p><p>苏州市苏相合作开发区湖村荡路16号</p></div>
             <div class="list-section"><p><strong>电话：</strong></p><p>0512-86867555</p></div>
             <div class="list-section"><p><strong>传真：</strong></p><p>0512-86867355</p></div>
           </div>
-          <div class="location-card location-card-active" id="cf-wuxi" onclick="mapShowWuxi()">
-            <p><strong>中国·无锡</strong></p>
-            <div class="list-section"><p><strong>地址：</strong></p><p>无锡市滨湖区锦溪路99号江大科技园4号楼</p></div>
-            <div class="list-section"><p><strong>电话：</strong></p><p>0510-85180709</p></div>
-            <div class="list-section"><p><strong>传真：</strong></p><p>0510-85180709</p></div>
+        </div>
+      </div>
+      <div class="location-card location-card-active" id="cf-wuxi" onclick="mapShowWuxi()">
+        <div class="location-card-title pr">
+          <div class="location-card-title-bg bg-light-grey"></div>
+          <p><strong>中国·无锡</strong></p>
+        </div>
+        <div class="location-card-content">
+          <div class="location-card-content-bg bg-white"></div>
+          <div class="location-card-content-text">
+            <div class="list-section"><p><strong>地址：</strong></p><p>苏州市苏相合作开发区湖村荡路16号</p></div>
+            <div class="list-section"><p><strong>电话：</strong></p><p>0512-86867555</p></div>
+            <div class="list-section"><p><strong>传真：</strong></p><p>0512-86867355</p></div>
           </div>
-          <div class="location-card">
-            <p><strong>美国·CF PharmTech USA Inc.</strong></p>
+        </div>
+      </div>
+      <div class="location-card">
+          <div class="location-card-title pr">
+            <div class="location-card-title-bg bg-teal"></div>
+            <p class="ta-center"><strong>美国·CF PharmTech USA Inc.</strong></p>
+          </div>
+        <div class="location-card-content">
+          <div class="location-card-content-bg bg-white"></div>
+          <div class="location-card-content-text">
             <div class="list-section"><p><strong>地址：</strong></p><p>16714, East Johnson Drive, City of Industry, CA, 91745.</p></div>
             <div class="list-section"><p><strong>电话：</strong></p><p>+1-919-672-7655</p></div>
           </div>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "contact/contact", alt: "alttext", class: "card-image" %>
-      </div>
     </div>
-    <div class="map-container">
+    <div class="contact-symbol-container">
+      <div><%= image_tag "contact/contact-symbol", alt: "pin symbol", class: "contact-symbol" %></div>
+      <p class="teal-text text-large">如有任何问题，请发送至<span class="text-bold">info@cfpharmtech.com</span>.</p>
+    </div>
+    <div class="map-container bg-light-color">
       <%= image_tag "contact/cf-suzhou", class: "contact-map", id: "cf-suzhou-map"%>
       <%= image_tag "contact/cf-wuxi", class: "contact-map", id: "cf-wuxi-map"%>
     </div>
