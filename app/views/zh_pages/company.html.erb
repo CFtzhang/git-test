@@ -1,14 +1,15 @@
-<!-- Info banner-->
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
+<div class="info-banner company-banner-bg">
+  <div class="info-banner-title company-title">
     <h1>公司介绍</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
-    <div id="What-We-Do" class="content-card">
+<div>
+  <div class="company-card-bg">
+    <div class="content-card">
+      <div id="What-We-Do" class="jump-anchor"></div>
       <div class="card-text-area">
         <div class="card-text pr">
+          <p class="text-very-large teal-text mar-bot-0">2008</p>
           <p class="text-large">2008年，长风药业在江苏省无锡市成立</p>
           <p>并迅速成长为一家致力于为全球市场提供高品质吸入类药物的综合性专业制药公司。在拥有丰富行业经验的高素质团队的管理下，公司专注于在最先进的设备中开发治疗呼吸系统疾病的药物。</p>
         </div>
@@ -17,41 +18,77 @@
         <%= image_tag "company/company", alt: "alttext", class: "card-image" %>
       </div>
     </div>
-    <div id="Our-Mission" class="h300 d-flex align-items-center pr bg-trans">
+    <div id="Our-Mission" class="jump-anchor"></div>
+    <div class="h300 d-flex align-items-center pr">
       <%= image_tag "partnership/doodles", alt: "alttext", class: "doodles" %>
-      <div class="offset-30-bg bg-trans-white-green"></div>
-      <p class="ml-auto mr-auto text-large bg-trans z1 w80 ta-center">我们的使命是开发高质量、低成本的产品治疗呼吸系统疾病，帮助患者呼吸更轻松，生活更美好。</p>
+      <div class="d-flex pad-lr-rem3 mar-auto jc-space-between">
+        <div class="w35 pad-r-rem1">
+          <p class="text-small teal-text mar-bot-0">Our mission</p>
+          <p class="text-large mar-bot-0">A team with experience</p>
+          <p class="text-large pad-r-rem1 ta-right mar-bot-0">and a mission</p>
+        </div>
+        <p class="ml-auto mar-lr-rem1 z1 w45 mar-bot-0 pad-t-rem2">我们的使命是开发高质量、低成本的产品治疗呼吸系统疾病，帮助患者呼吸更轻松，生活更美好。</p>
+      </div>
     </div>
-    <div id="Our-Values" class="content-card">
-      <div class="card-text-area">
-        <div class="card-text pr">
-          <p class="text-larger text-bold">我们的价值观是</p>
-          <p class="text-large">诚信务实、</p>
-          <p class="text-large">以病人患者为中心、</p>
-          <p class="text-large">科学引领创新。</p>
+  </div>
+  <div class="content-card">
+    <div id="Our-Values" class="jump-anchor"></div>
+    <div class="card-image-area fg-2 w65 pr">
+      <%= image_tag "company/our-values-doodle", class: "pa z0 w45 top-rem2 left-rem2" %>
+      <%= image_tag "company/values", alt: "alttext", class: "card-image-large z1 pr w80" %>
+    </div>
+    <div class="card-text-area fg-1 w35">
+      <div class="card-text pr">
+        <p class="text-larger text-bold">我们的价值观是</p>
+        <div class="values-container">
+          <div class="values-card fg-1">
+            <div class="fg-4 hrem3 d-flex jc-center">
+              <%= image_tag "company/integrity", class: "wrem3 hrem3" %>
+            </div>
+            <div class="fg-1 ta-center">
+              <p class="text-very-small">诚信务实、</p>
+            </div>
+          </div>
+          <div class="values-card fg-1">
+            <div class="fg-4 hrem3 d-flex jc-center">
+              <%= image_tag "company/patient-focus", class: "wrem3 hrem3" %>
+            </div>
+            <div class="fg-1 ta-center">
+              <p class="text-very-small">以病人患者为中心、</p>
+            </div>
+          </div>
+          <div class="values-card fg-1">
+            <div class="fg-4 hrem3 d-flex jc-center">
+              <%= image_tag "company/science-led-innovation", class: "wrem3 hrem3" %>
+            </div>
+            <div class="fg-1 ta-center">
+              <p class="text-very-small">科学引领创新。</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-area">
+            <%= link_to "Read More", zh_company_path, class: "btn btn-flat" %>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "company/values", alt: "alttext", class: "card-image" %>
-      </div>
     </div>
-    <div id="History" class="content-card history-banner-bg">
-      <div class="card-text-area">
-        <div class="card-text">
-          <h4 class="text-larger text-bold">发展历程</h4>
-          <ul>
-            <li><div class="list-section"><p><strong>2008年</strong></p><p>在无锡市政府530项目支持下江阴长风医药科技有限公司成立</p></li>
-            <li><div class="list-section"><p><strong>2009年</strong></p><p>荣获江苏省创新创业高层次人才，科技领军型团队奖项</p></li>
-            <li><div class="list-section"><p><strong>2010年</strong></p><p>启动A轮融资，与北京双鹭药业签订合作协议</p></li>
-            <li><div class="list-section"><p><strong>2011年</strong></p><p>在无锡成立了全资子公司-江苏长风药业有限公司，申请五项国家专利</p></li>
-            <li><div class="list-section"><p><strong>2013年</strong></p><p>完成B轮融资计划，调整股权结构，成立苏州长风药业有限公司</p></li>
-            <li><div class="list-section"><p><strong>2014年</strong></p><p>完成苏州工厂的建设</p></li>
-            <li><div class="list-section"><p><strong>2015年</strong></p><p>完成C轮融资，建立鼻喷剂、粉雾剂等剂型的生产线</p></li>
-            <li><div class="list-section"><p><strong>2017年</strong></p><p>长风药业完成 4.4 亿元 D 轮融资，完成股份制改造</p></li>
-            <li><div class="list-section"><p><strong>2019年</strong></p><p>完成E轮6.3亿元融资</p></li>
-            <li><div class="list-section"><p><strong>2020年</strong></p><p>完成F轮3.6亿元融资</p></li>
+  </div>
+  <div class="content-card history-banner-bg">
+    <div id="History" class="jump-anchor"></div>
+    <div>
+      <div class="card-text">
+        <h4 class="text-larger text-bold ta-center pad-t-rem2">Our History</h4>
+        <ul>
+            <li><div class="list-section"><p><strong>2008</strong></p><p>在无锡市政府530项目支持下江阴长风医药科技有限公司成立</p></li>
+            <li><div class="list-section"><p><strong>2009</strong></p><p>荣获江苏省创新创业高层次人才，科技领军型团队奖项</p></li>
+            <li><div class="list-section"><p><strong>2010</strong></p><p>启动A轮融资，与北京双鹭药业签订合作协议</p></li>
+            <li><div class="list-section"><p><strong>2011</strong></p><p>在无锡成立了全资子公司-江苏长风药业有限公司，申请五项国家专利</p></li>
+            <li><div class="list-section"><p><strong>2013</strong></p><p>完成B轮融资计划，调整股权结构，成立苏州长风药业有限公司</p></li>
+            <li><div class="list-section"><p><strong>2014</strong></p><p>完成苏州工厂的建设</p></li>
+            <li><div class="list-section"><p><strong>2015</strong></p><p>完成C轮融资，建立鼻喷剂、粉雾剂等剂型的生产线</p></li>
+            <li><div class="list-section"><p><strong>2017</strong></p><p>长风药业完成 4.4 亿元 D 轮融资，完成股份制改造</p></li>
+            <li><div class="list-section"><p><strong>2019</strong></p><p>完成E轮6.3亿元融资</p></li>
+            <li><div class="list-section"><p><strong>2020</strong></p><p>完成F轮3.6亿元融资</p></li>
           </ul>
-        </div>
       </div>
     </div>
   </div>
