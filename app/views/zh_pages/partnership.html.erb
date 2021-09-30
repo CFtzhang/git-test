@@ -1,47 +1,34 @@
 <!-- Info banner-->
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
+<div class="info-banner partnership-banner-bg">
+  <div class="info-banner-title info-title-right">
     <h1>合作开发</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
-    <div id="Collaborations" class="content-card">
-      <div class="card-text-area">
-        <div class="card-text">
+<div class="">
+  <div class="bg-light-color pr h-100vh of-hidden">
+    <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
+    <div class="pr">
+      <div id="Collaborations" class="jump-anchor"></div>
+      <div class="floating-block-container pr">
+        <%= image_tag "partnership/collaboration", alt: "alttext", class: "collaboration-image" %>
+        <div class="floating-block bg-trans-teal">
           <h4 class="text-larger text-bold">协作</h4>
           <p>长风不仅拥有仿制药产品开发团队，还拥有一支专项技术核心团队，凭借高级吸入制剂产品的开发能力，全力支持您的新药开发项目，包括新化合物和新型吸入装置的早期研究、产品生产、产品上市，全流程为您提供优质的服务。</p>
-          <p>我们欢迎多种形式的合作，如共同投资，共同开发，或CDMO服务等。</p>
+          <p>我们欢迎多种形式的合作，如共同投资，共同开发，或CDMO服务等。 <%= link_to "services", zh_services_path %>. </p>
           <p>如果您有兴趣与我们合作，请<strong><%= link_to "联系我们", contact_us_path %></strong>。<br>(info@cfpharmtech.com)</p>
         </div>
-        <!-- <div class="fw-display-card-footer">
-          <p>1. Project leaders with years of experience in both the global and Chinese market.</p>
-          <p>2. Comprehensive GMP facility that is capable of manufacturing all forms of inhalation drug and meet GMP requirements.</p>
-          <p>3. Competitive price and high standards that provide significant cost saving and high quality.</p>
-        </div> -->
-      </div>
-      <div class="card-image-area">
-        <%= image_tag "partnership/collaboration", alt: "alttext", class: "card-image" %>
       </div>
     </div>
-    <div class="card-narrow bg-trans-white-green">
-      <div class="d-flex mb-2 px-4 flex-wrap align-items-center">
-        <%= image_tag "partnership/doodles", alt: "alttext", class: "doodles" %>
-        <%= image_tag "partnership/work-with-us", alt: "alttext" %>
-      </div>
-    </div>
-    <!-- Table -->
-    <div id="Services" class="content-card">
-      <div class="card-text-area">
-        <div class="card-text">
-          <h4 class="text-larger text-bold ta-center">服务</h4>
-          <p>长风药业致力于打造一个综合性的研发技术平台，为合作伙伴提供吸入制剂产品开发的全方位服务。</p>
-          <div class="fw-display">
-            <div class="fw-display-card">
-              <%= image_tag "partnership/cro", alt: "alttext", class: "fw-pin" %>
-              <div class="fw-display-card-header">
-                <h4>研发</h4>
-              </div>
+  </div>
+  <!-- Table -->
+  <div class="h-100vh">
+    <div id="Services" class="jump-anchor"></div>
+    <div>
+      <div>
+        <h4 class="text-larger text-bold ta-center pad-t-rem2"><%= link_to "服务", zh_services_path %></h4>
+        <div class="">
+          <div class="scope-display scope-bg">
+            <div class="fw-display-card scope-card-bg">
               <div class="fw-display-card-body">
                 <ul class="bulleted-list">
                   <li>可行性分析</li>
@@ -51,12 +38,13 @@
                   <li>工艺开发</li>
                 </ul>
               </div>
-            </div>
-            <div class="fw-display-card">
-              <%= image_tag "partnership/cmo", alt: "alttext", class: "fw-pin" %>
-              <div class="fw-display-card-header">
-                <h4>CMO服务</h4>
+              <div class="scope-card-header-border-blue">
+                <div class="fw-display-card-header teal-text">
+                  <h4>研发</h4>
+                </div>
               </div>
+            </div>
+            <div class="fw-display-card scope-card-bg">
               <div class="fw-display-card-body">
                 <ul class="bulleted-list">
                   <li>临床前研究批</li>
@@ -65,12 +53,13 @@
                   <li>商业批</li>
                 </ul>
               </div>
-            </div>
-            <div class="fw-display-card">
-              <%= image_tag "partnership/other-services", alt: "alttext", class: "fw-pin" %>
-              <div class="fw-display-card-header">
-                <h4>其他服务</h4>
+              <div class="scope-card-header-border-green">
+                <div class="fw-display-card-header teal-text">
+                  <h4>CMO服务</h4>
+                </div>
               </div>
+            </div>
+            <div class="fw-display-card scope-card-bg">
               <div class="fw-display-card-body">
                 <ul class="bulleted-list">
                   <li>处方分析</li>
@@ -80,6 +69,11 @@
                   <li>稳定性检测</li>
                   <li>申报注册</li>
                 </ul>
+              </div>
+              <div class="scope-card-header-border-blue">
+                <div class="fw-display-card-header teal-text">
+                  <h4>其他服务</h4>
+                </div>
               </div>
             </div>
           </div>
