@@ -1,28 +1,31 @@
-<div class="info-banner info-banner-bg">
-  <div class="info-banner-title">
+<div class="info-banner research-and-development-banner-bg">
+  <div class="info-banner-title info-title">
     <h1>研发平台</h1>
   </div>
 </div>
-<div class="container">
-  <div class="info-container bg-white">
-    <div class="content-card card-reverse">
+<div class="">
+  <div class="bg-light-color pr of-hidden">
+    <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
+    <div class="content-card card-reverse pr">
+      <div class="card-image-area">
+        <%= image_tag "research-and-development/r-and-d-team", alt: "alttext", class: "card-image w100" %>
+      </div>
       <div class="card-text-area">
         <div class="card-text">
           <h4 class="text-larger text-bold">研发团队</h4>
           <p>长风药业研发团队由具有丰富吸入制剂药物研发经验的科学家和多位资深人员组成。依托于国际、国内最顶尖的学术交流和技术合作，全力打造具备专业素质和一流技能的优秀团队，我们秉承坚定的信念与决心，投入呼吸系统给药技术的研发工作，力争为全球市场提供优质的吸入制剂产品。</p>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "research-and-development/r-and-d-team", alt: "alttext", class: "card-image" %>
-      </div>
     </div>
+  </div>
+  <div class="bg-offwhite">
     <div class="content-card">
-      <div class="card-image-area">
-        <%= image_tag "research-and-development/therapeutic-areas", alt: "alttext", class: "card-image" %>
+      <div class="card-image-area w35">
+        <%= image_tag "research-and-development/therapeutic-areas", alt: "alttext", class: "card-image w65" %>
       </div>
-      <div class="card-text-area">
+      <div class="card-text-area w65">
         <div class="card-text">
-          <h4 class="text-larger text-bold">治疗领域</h4>
+          <h4 class="text-larger text-bold teal-text">治疗领域</h4>
           <p>长风药业专注于开发治疗呼吸系统疾病的鼻腔和肺部给药技术产品，包括：</p>
           <ul class="bulleted-list">
             <li><%= link_to "哮喘", "#{zh_therapeutic_areas_path}#Asthma" %></li>
@@ -33,31 +36,30 @@
         </div>
       </div>
     </div>
-    <div class="content-card card-reverse">
-      <div class="card-text-area">
+    <div class="content-card">
+      <div class="card-image-area w35">
+        <%= image_tag "research-and-development/dosage-forms", alt: "alttext", class: "card-image w65" %>
+      </div>
+      <div class="card-text-area w65">
         <div class="card-text">
-          <h4 class="text-larger text-bold">剂型研发</h4>
+          <h4 class="text-larger text-bold teal-text">剂型研发</h4>
           <p> 长风药业拥有完整的剂型研发平台，目前有5个基本在研剂型：</p>
           <ul class="bulleted-list">
             <li><%= link_to "气雾剂 (MDI) ", "#{zh_dosage_forms_path}#MDI" %></li>
             <li><%= link_to "干粉剂 (DPI)", "#{zh_dosage_forms_path}#DPI" %></li>
             <li><%= link_to "雾化剂", "#{zh_dosage_forms_path}#Nebulizer" %></li>
             <li><%= link_to "鼻喷剂", "#{zh_dosage_forms_path}#Nasal-Spray" %></li>
-            <li><%= link_to "软雾剂 (SMI)", "#{zh_dosage_forms_path}#SMI" %></li>
           </ul>
         </div>
       </div>
-      <div class="card-image-area">
-        <%= image_tag "research-and-development/dosage-forms", alt: "alttext", class: "card-image" %>
-      </div>
     </div>
     <div class="content-card">
-      <div class="card-image-area">
-        <%= image_tag "research-and-development/quality-system", alt: "alttext", class: "card-image" %>
+      <div class="card-image-area w35">
+        <%= image_tag "research-and-development/quality-system", alt: "alttext", class: "card-image w65" %>
       </div>
-      <div class="card-text-area">
+      <div class="card-text-area w65">
         <div class="card-text">
-          <h4 class="text-larger text-bold">质量系统</h4>
+          <h4 class="text-larger text-bold teal-text">质量系统</h4>
           <p>我们的质量团队确保所有的研发活动符合中国、美国和欧洲的相关法规。</p>
           <ul class="bulleted-list">
             <li>分析方法开发和验证</li>
