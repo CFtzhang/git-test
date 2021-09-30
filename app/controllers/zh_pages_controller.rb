@@ -48,6 +48,9 @@ class ZhPagesController < ApplicationController
   def news
   end
 
+  def article
+  end
+  
   def jean_marc_interview
   end
 

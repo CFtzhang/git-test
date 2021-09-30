@@ -42,6 +42,7 @@ Rails.application.routes.draw do
   get 'zh/services', to: 'zh_pages#services'
   get 'zh/investors', to: 'zh_pages#investors'
   get 'zh/news', to: 'zh_pages#news'
+  get 'zh/article', to: 'zh_pages#article'
 
   get 'zh/products/:id', to: 'zh_pages#zh_show', as: 'zh_product'
   resources :products, only: [:show]
