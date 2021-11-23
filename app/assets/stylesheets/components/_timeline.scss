@@ -1,0 +1,46 @@
+.timeline-container{
+	margin-top: 2.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.timeline {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: #dfdfdf;
+	transition: transform 0.4s;
+	margin-bottom: 10em;
+}
+
+.timeline-point-container {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.timeline-point {
+	position: relative;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;	
+	border: 2px solid #dfdfdf;
+	background-color: #f8f8f8;
+	bottom: 5px;
+}
+
+.timeline-point span{
+	color: white;
+}
+
+.timeline-point-title {
+	position: absolute;
+	left: -220%;
+	top: -1.6rem;
+	font-weight: 800;
+	padding-bottom: 1rem;
+}
