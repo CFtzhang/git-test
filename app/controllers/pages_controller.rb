@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def index
+    @consumer_products = Product.where(product_type: 'Consumer')
   end
 
   def partnership

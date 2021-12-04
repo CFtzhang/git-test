@@ -63,18 +63,55 @@
   </div>
   <div class="home-products content-card ta-center flex-wrap justify-content-center align-items-center">
     <div class="home-products-text-area">
-      <%= link_to "Our Products", products_path, class: "text-larger text-bold" %>
+      <p class="text-larger text-bold">Our Products</p>
       <p>CF PharmTech focuses on the development of inhaled products for generic products and new drug products, as well as professional and practical medical care products for consumers.</p>
     </div>
-    <div class="products-container">
-      <%= link_to products_path, :class=>"home-product-card bg-light-green" do %>
-        <p class="text-large text-bold ta-left">Pharmaceutical <br> Products</p>
-        <div class="btn-hollow-white home-product-card-btn">Read More</div>
-      <% end %>
-      <%= link_to consumer_products_path, :class=>"home-product-card bg-light-blue" do %>
-        <p class="text-large text-bold ta-left">Consumer <br> Products</p>
-        <div class="btn-hollow-white home-product-card-btn">Read More</div>
-      <% end %>
+    <div class="btn-area btn-block">
+        <%= link_to "Read More", products_path, class: "btn btn-flat" %>
+    </div>
+    <div class="w100 tab-container">
+      <div id="product-tab-titles" class="products-container">
+        <p class="ta-left mar-lr-rem1 text-bold active-product-tab">Pharmaceutical<br>Products</p>
+        <p class="ta-left mar-lr-rem1 text-bold">Consumer Healthcare<br>Products</p>
+      </div>
+      <div id="product-tab-content" class="tab-product-content">
+        <div class="active-product-image-section tab-carousel">
+          <% @consumer_products.each do |e| %>
+          <div class="tab-card-product">
+            <%= image_tag "#{e.imgurl}", alt: "product picture" %>
+            <div class="card-product-overlay">
+              <h2><%= "#{e.product_family} #{e.product_name}" %></h2>
+              <div class="btn-area">
+                <%= link_to product_path(e) do %>
+                  <div class="btn-flat btn-product">See More</div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+          <% end %>
+          <div class="btn-area btn-block">
+            <%= link_to "Read More", products_path, class: "btn btn-flat" %>
+          </div>      
+        </div>
+        <div class="tab-carousel">
+          <% @consumer_products.each do |e| %>
+          <div class="tab-card-product">
+            <%= image_tag "#{e.imgurl}", alt: "product picture" %>
+            <div class="card-product-overlay">
+              <h2><%= "#{e.product_family} #{e.product_name}" %></h2>
+              <div class="btn-area">
+                <%= link_to product_path(e) do %>
+                  <div class="btn-flat btn-product">See More</div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+          <% end %>
+          <div class="btn-area btn-block">
+            <%= link_to "Read More", products_path, class: "btn btn-flat" %>
+          </div> 
+        </div>
+      </div>
     </div>
   </div>
   <div class="content-card">
