@@ -4,6 +4,10 @@
 
 .navigationbar-list {
   display: none;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
 .navigationbar-item{
@@ -110,12 +114,6 @@
   color: black;
 }
 
-.navigationbar-list {
-  padding-bottom: 0.5rem;
-  text-align: left;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-}
 
 .flag-icon {
   width: 4rem;
@@ -224,6 +222,7 @@
     text-align: left;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
+    height: min-content;
   }
 
   .cell-a{ -ms-grid-row: 1; -ms-grid-column: 1; grid-area: a; }
@@ -238,6 +237,7 @@
 
   .navigationbar-list {
     display: block;
+    height: min-content;
   }
 
   .navigationbar-list-header {
