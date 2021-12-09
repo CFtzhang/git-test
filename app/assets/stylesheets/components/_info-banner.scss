@@ -2,7 +2,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: calc(100vh - 2.8rem);
+  height: calc(100vh - 3.8rem);
   min-height: 400px;
   align-items: center;
   justify-content: center;
@@ -19,12 +19,16 @@
 
 .info-banner-title {
   position: absolute;
-
+  background: linear-gradient(90deg, rgba(27, 163, 184,0.8) 0%, rgba(27, 163, 184,0) 100%);
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 12rem;
 }
 
 .info-title {
-  left: 7rem;
-  bottom: 12rem;
+  left: 0;
+  bottom: 0;
 }
 
 .info-title-right {
