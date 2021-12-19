@@ -1,20 +1,44 @@
 <div class="info-banner products-banner-bg">
-  <div class="info-banner-title">
-    <h1>Generic Drug Development</h1>
+  <div class="info-banner-title info-title">
+    <h1>Pharmaceutical Products</h1>
   </div>
 </div>
 <div class="bg-light-color pr of-hidden pad-tb-rem5">
   <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
   <div class="container pr">
     <div class="info-container">
-      <h1 class="text-large text-bold teal-text">The following products have been filed in China:</h1>
+      <h1 class="text-large text-bold teal-text">The following products have been launched in China:</h1>
       <ul class="bulleted-list text-large">
         <li>Budesonide Suspension for Inhalation, Nebulizer</li>
-        <li>Salbutamol Sulfate Nebules Inhalation Solution, Nebulizer</li>
-        <li>Beclometasone Dipropionate Suspension Inhalation, Nebulizer</li>
-        <li>Levosalbutamol tartrate Inhalation Aerosol, Nebulizer</li>
-        <li>Salmeterol Xinafoate and Fluticasone Propionate Aerosol, Nebulizer</li>
-        <li>Azelastine Hydrochloride/Fluticasonpropionat Nasal Spray, Nebulizer</li>
+      </ul>
+      <div class="card-product-container pad-t-rem2">
+        <% @changqi.each do |e| %>
+          <div class="card-product">
+            <%= image_tag "#{e.imgurl}", alt: "product picture" %>
+            <div class="card-product-overlay">
+              <h2><%= "#{e.product_family}" %> &reg; <br><%="#{e.product_name}"%></h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <ul class="bulleted-list text-large">
+        <li>Salbutamol Sulfate Inhalation Solution, Nebulizer</li>
+      </ul>
+      <div class="card-product-container pad-t-rem2">
+        <% @changshu.each do |e| %>
+          <div class="card-product">
+            <%= image_tag "#{e.imgurl}", alt: "product picture" %>
+            <div class="card-product-overlay">
+              <h2><%= "#{e.product_family}" %> &reg; <br><%="#{e.product_name}"%></h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <h1 class="text-large text-bold teal-text">The following products have been filed in China:</h1>
+      <ul class="bulleted-list text-large">
+        <li>Levosalbutamol Tartrate Inhalation Aerosol, MDI</li>
+        <li>Azelastine Hydrochloride/Fluticasone Propionate, Nasal Spray</li>
+        <li>Salmeterol Xinafoate and Fluticasone Propionate Aerosol, MDI</li>
       </ul>
     </div>
   </div>

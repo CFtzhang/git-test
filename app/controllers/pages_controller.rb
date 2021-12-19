@@ -22,6 +22,9 @@ class PagesController < ApplicationController
   end
 
   def generic_drug_products
+    @pharma_products = Product.where(product_type: 'Pharmaceutical')
+    @changqi = @pharma_products.where(product_family: 'Changqi')
+    @changshu = @pharma_products.where(product_family: 'Changshu')
   end
 
   def new_drug_products

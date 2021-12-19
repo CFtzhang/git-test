@@ -7,7 +7,85 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Product.destroy_all
 
-product_list = [{ product_name: 'Physiological Seawater Nasal Spray 100ml',
+product_list = [
+                {
+                  product_name: 'Budesonide Suspension for Inhalation 30 x 2mL',
+                  product_family: 'Changqi',
+                  product_type: 'Pharmaceutical',
+                  imgurl: 'products/consumer-products',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+                
+                {
+                  product_name: 'Budesonide Suspension for Inhalation 10 x 2mL',
+                  product_family: 'Changqi',
+                  product_type: 'Pharmaceutical',
+                  imgurl: 'products/consumer-products',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Budesonide Suspension for Inhalation 5 x 2mL',
+                  product_family: 'Changqi',
+                  product_type: 'Pharmaceutical',
+                  imgurl: 'products/consumer-products',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Salbutamol Sulfate inhalation solution 30 x 2mL',
+                  product_family: 'Changshu',
+                  product_type: 'Pharmaceutical',
+                  imgurl: 'products/consumer-products',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Salbutamol Sulfate inhalation solution 20 x 2mL',
+                  product_family: 'Changshu',
+                  product_type: 'Pharmaceutical',
+                  imgurl: 'products/consumer-products',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Salbutamol Sulfate inhalation solution 10 x 2mL',
+                  product_family: 'Changshu',
+                  product_type: 'Pharmaceutical',
+                  imgurl: 'products/consumer-products',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Salbutamol Sulfate inhalation solution 5 x 2mL',
+                  product_family: 'Changshu',
+                  product_type: 'Pharmaceutical',
+                  imgurl: 'products/consumer-products',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                { product_name: 'Physiological Seawater Nasal Spray 100ml',
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
                   imgurl: 'products/consumer-products',
