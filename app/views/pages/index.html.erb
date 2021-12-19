@@ -6,10 +6,13 @@
     <h2>Breathe Easier.<br>Live Better.</h2>
     <h3>CF PharmTech is an integrated specialty pharmaceutical company dedicated to providing high-quality respiratory drugs for the global market.</h3>
     <h3>Managed by a high-caliber team with extensive experience in the industry, the company focuses on the development of drugs for the treatment of respiratory diseases in its state-of-the-art facilities.</h3>
+    <div class="btn-area">
+      <%= link_to "Read More", company_path, class: "btn btn-flat" %>
+    </div>
   </div>
 </div>
 <!-- content -->
-<div class="bg-light-color">
+<div class="">
   <div class="content-card">
     <div class="card-image-area">
       <%= image_tag "home/what-we-do", alt: "alttext", class: "card-image" %>
@@ -24,13 +27,10 @@
           <li><%= link_to "Rhinitis", "#{therapeutic_areas_path}#Rhinitis" %></li>
           <li><%= link_to "Other Respiratory Diseases", "#{therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
         </ul>
-        <div class="btn-area">
-            <%= link_to "Read More", company_path, class: "btn btn-flat" %>
-        </div>
       </div>
     </div>
   </div>
-  <div class="content-card bg-home-rnd card-reverse">
+  <div class="content-card card-reverse">
     <div class="card-text-area w35">
       <div class="card-text">
         <p class="text-larger text-bold">R&D</p>
@@ -66,9 +66,6 @@
       <p class="text-larger text-bold">Our Products</p>
       <p>CF PharmTech focuses on the development of inhaled products for generic products and new drug products, as well as professional and practical medical care products for consumers.</p>
     </div>
-    <div class="btn-area btn-block">
-        <%= link_to "Read More", products_path, class: "btn btn-flat" %>
-    </div>
     <div class="w100 tab-container">
       <div class="products-container">
         <p id="pharma-tab-title" class="product-tab-title ta-left mar-lr-rem1 text-bold active-product-tab">Pharmaceutical<br>Products</p>
@@ -76,21 +73,20 @@
       </div>
       <div id="product-tab-content" class="tab-product-content">
         <div class="active-product-image-section tab-carousel">
-          <% @consumer_products.each do |e| %>
           <div class="tab-card-product">
-            <%= image_tag "#{e.imgurl}", alt: "product picture" %>
+            <%= image_tag "#{@first_changqi.imgurl}", alt: "product picture" %>
             <div class="card-product-overlay">
-              <h2><%= "#{e.product_family} #{e.product_name}" %></h2>
-              <div class="btn-area">
-                <%= link_to product_path(e) do %>
-                  <div class="btn-flat btn-product">See More Pharma</div>
-                <% end %>
-              </div>
+              <h2><%= "#{@first_changqi.product_family}" %> &reg; <br><%="#{@first_changqi.product_name}"%></h2>
             </div>
           </div>
-          <% end %>
+          <div class="tab-card-product">
+            <%= image_tag "#{@first_changshu.imgurl}", alt: "product picture" %>
+            <div class="card-product-overlay">
+              <h2><%= "#{@first_changshu.product_family}" %> &reg; <br><%="#{@first_changshu.product_name}"%></h2>
+            </div>
+          </div>
           <div class="btn-area btn-block">
-            <%= link_to "See More", generic_drug_products_path, class: "btn btn-flat" %>
+            <%= link_to "See More Products", generic_drug_products_path, class: "btn btn-flat" %>
           </div>      
         </div>
         <div class="tab-carousel">
@@ -100,15 +96,12 @@
             <div class="card-product-overlay">
               <h2><%= "#{e.product_family} #{e.product_name}" %></h2>
               <div class="btn-area">
-                <%= link_to product_path(e) do %>
-                  <div class="btn-flat btn-product">See More Consumer Healthcare</div>
-                <% end %>
               </div>
             </div>
           </div>
           <% end %>
           <div class="btn-area btn-block">
-            <%= link_to "See More", consumer_products_path, class: "btn btn-flat" %>
+            <%= link_to "See More Products", consumer_products_path, class: "btn btn-flat" %>
           </div> 
         </div>
       </div>
