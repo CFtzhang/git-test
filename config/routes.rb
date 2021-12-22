@@ -17,7 +17,6 @@ Rails.application.routes.draw do
   get 'careers/gao-interview', to: 'pages#gao_interview'
   get 'careers/kira-interview', to: 'pages#kira_interview'
   get 'careers/yiming-interview', to: 'pages#yiming_interview'
-  get 'services', to: 'pages#services'
   get 'investors', to: 'pages#investors'
   get 'news', to: 'pages#news'
   get 'article', to: 'pages#article'
