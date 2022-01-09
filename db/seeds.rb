@@ -12,7 +12,7 @@ product_list = [
                   product_name: 'Budesonide Suspension for Inhalation 30 x 2mL',
                   product_family: 'Changqi',
                   product_type: 'Pharmaceutical',
-                  imgurl: 'products/consumer-products',
+                  imgurl: 'products/pharmaceutical/budesonide-30',
                   zh_product_name: '',
                   zh_product_family: '',
                   zh_product_type: '',
@@ -23,7 +23,7 @@ product_list = [
                   product_name: 'Budesonide Suspension for Inhalation 10 x 2mL',
                   product_family: 'Changqi',
                   product_type: 'Pharmaceutical',
-                  imgurl: 'products/consumer-products',
+                  imgurl: 'products/pharmaceutical/budesonide-10',
                   zh_product_name: '',
                   zh_product_family: '',
                   zh_product_type: '',
@@ -34,7 +34,7 @@ product_list = [
                   product_name: 'Budesonide Suspension for Inhalation 5 x 2mL',
                   product_family: 'Changqi',
                   product_type: 'Pharmaceutical',
-                  imgurl: 'products/consumer-products',
+                  imgurl: 'products/pharmaceutical/budesonide-5',
                   zh_product_name: '',
                   zh_product_family: '',
                   zh_product_type: '',
@@ -45,7 +45,7 @@ product_list = [
                   product_name: 'Salbutamol Sulfate inhalation solution 30 x 2mL',
                   product_family: 'Changshu',
                   product_type: 'Pharmaceutical',
-                  imgurl: 'products/consumer-products',
+                  imgurl: 'products/pharmaceutical/salbutamol-30',
                   zh_product_name: '',
                   zh_product_family: '',
                   zh_product_type: '',
@@ -56,7 +56,7 @@ product_list = [
                   product_name: 'Salbutamol Sulfate inhalation solution 20 x 2mL',
                   product_family: 'Changshu',
                   product_type: 'Pharmaceutical',
-                  imgurl: 'products/consumer-products',
+                  imgurl: 'products/pharmaceutical/salbutamol-20',
                   zh_product_name: '',
                   zh_product_family: '',
                   zh_product_type: '',
@@ -67,7 +67,7 @@ product_list = [
                   product_name: 'Salbutamol Sulfate inhalation solution 10 x 2mL',
                   product_family: 'Changshu',
                   product_type: 'Pharmaceutical',
-                  imgurl: 'products/consumer-products',
+                  imgurl: 'products/pharmaceutical/salbutamol-20',
                   zh_product_name: '',
                   zh_product_family: '',
                   zh_product_type: '',
@@ -78,32 +78,103 @@ product_list = [
                   product_name: 'Salbutamol Sulfate inhalation solution 5 x 2mL',
                   product_family: 'Changshu',
                   product_type: 'Pharmaceutical',
-                  imgurl: 'products/consumer-products',
+                  imgurl: 'products/pharmaceutical/salbutamol-5',
                   zh_product_name: '',
                   zh_product_family: '',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
 
-                { product_name: 'Physiological Seawater Nasal Spray 100ml',
+                {
+                  product_name: 'Electric Nasal Cleaner',
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
-                  imgurl: 'products/consumer-products',
-                  short_description: 'Rhinitis care, daily care, relieve nasal congestion, reconstruct nasal environment',
-                  zh_product_name: '清氛 TM 生理性海水鼻腔喷雾器（铝罐，100ml/罐）',
-                  zh_product_family: '清氛',
-                  zh_product_type: 'Consumer',
-                  zh_short_description: '鼻腔喷雾器可用于鼻炎护理、日常护理、缓解鼻塞、重构鼻环境。鼻腔黏膜为传染病病毒主要侵入源，70%病毒由鼻部进入，外出后使用鼻腔喷雾器清洗鼻腔，能赶走细菌，有效预防。鼻腔喷雾器采用无菌生理海水作用方式，使用时不刺激，能够避免细胞破裂，安全有效。' },
+                  imgurl: 'products/consumer/electric-nasal-cleaner',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
 
-                { product_name: 'Physiological Sea Water Nasal Spray 60ml',
+                {
+                  product_name: 'Physiological Seawater Nasal Cleaner',
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
-                  imgurl: 'products/sea-water-nasal-spray',
-                  short_description: 'Rhinitis care, daily care, relieve nasal congestion, reconstruct nasal environment',
-                  zh_product_name: '清氛 TM 生理性海水鼻腔喷雾器（塑罐，60ml/罐）',
-                  zh_product_family: '清氛',
-                  zh_product_type: 'Consumer',
-                  zh_short_description: '鼻腔喷雾器可用于鼻炎护理、日常护理、缓解鼻塞、重构鼻环境。鼻腔黏膜为传染病病毒主要侵入源，70%病毒由鼻部进入，外出后使用鼻腔喷雾器清洗鼻腔，能赶走细菌，有效预防。鼻腔喷雾器采用无菌生理海水作用方式，使用时不刺激，能够避免细胞破裂，安全有效。' },
+                  imgurl: 'products/consumer/seawater-nasal-cleaner',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Physiological Seawater Nasal Cleaner Children',
+                  product_family: 'AuroAir',
+                  product_type: 'Consumer',
+                  imgurl: 'products/consumer/seawater-nasal-cleaner-children',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+
+                {
+                  product_name: 'Physiological Seawater Nasal Cleaning Fluid NaCl 0.9%',
+                  product_family: 'AuroAir',
+                  product_type: 'Consumer',
+                  imgurl: 'products/consumer/seawater-nasal-cleaning-fluid-nacl0-9',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Physiological Seawater Nasal Cleaning Fluid NaCl 2.3%',
+                  product_family: 'AuroAir',
+                  product_type: 'Consumer',
+                  imgurl: 'products/consumer/seawater-nasal-cleaning-fluid-nacl2-3',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Medical Compression Nebulizer',
+                  product_family: 'AuroAir',
+                  product_type: 'Consumer',
+                  imgurl: 'products/consumer/medical-compression-nebulizer',
+                  zh_product_name: '',
+                  zh_product_family: '',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+
+
+
+
+                # { product_name: 'Physiological Seawater Nasal Spray 100ml',
+                #   product_family: 'AuroAir',
+                #   product_type: 'Consumer',
+                #   imgurl: 'products/consumer-products',
+                #   short_description: 'Rhinitis care, daily care, relieve nasal congestion, reconstruct nasal environment',
+                #   zh_product_name: '清氛 TM 生理性海水鼻腔喷雾器（铝罐，100ml/罐）',
+                #   zh_product_family: '清氛',
+                #   zh_product_type: 'Consumer',
+                #   zh_short_description: '鼻腔喷雾器可用于鼻炎护理、日常护理、缓解鼻塞、重构鼻环境。鼻腔黏膜为传染病病毒主要侵入源，70%病毒由鼻部进入，外出后使用鼻腔喷雾器清洗鼻腔，能赶走细菌，有效预防。鼻腔喷雾器采用无菌生理海水作用方式，使用时不刺激，能够避免细胞破裂，安全有效。' },
+
+                # { product_name: 'Physiological Sea Water Nasal Spray 60ml',
+                #   product_family: 'AuroAir',
+                #   product_type: 'Consumer',
+                #   imgurl: 'products/sea-water-nasal-spray',
+                #   short_description: 'Rhinitis care, daily care, relieve nasal congestion, reconstruct nasal environment',
+                #   zh_product_name: '清氛 TM 生理性海水鼻腔喷雾器（塑罐，60ml/罐）',
+                #   zh_product_family: '清氛',
+                #   zh_product_type: 'Consumer',
+                #   zh_short_description: '鼻腔喷雾器可用于鼻炎护理、日常护理、缓解鼻塞、重构鼻环境。鼻腔黏膜为传染病病毒主要侵入源，70%病毒由鼻部进入，外出后使用鼻腔喷雾器清洗鼻腔，能赶走细菌，有效预防。鼻腔喷雾器采用无菌生理海水作用方式，使用时不刺激，能够避免细胞破裂，安全有效。' },
 
                 # { product_name: 'Nebulizer',
                 #   product_family: 'AuroAir',
@@ -183,14 +254,16 @@ product_list = [
                 #   zh_product_type: 'Consumer',
                 #   zh_short_description: '清氛 TM 抗过敏柔肤可湿水面纸（3层40抽/包）' },
 
-                { product_name: 'Mouthwash 10ml',
-                  product_family: 'AuroAir',
-                  product_type: 'Consumer',
-                  imgurl: 'products/clearfun',
-                  zh_product_name: '清氛 TM 口腔清洁漱口水',
-                  zh_product_family: '清氛',
-                  zh_product_type: 'Consumer',
-                  zh_short_description: '清氛 TM 口腔清洁漱口水（10ml/支）' }]
+                # { product_name: 'Mouthwash 10ml',
+                #   product_family: 'AuroAir',
+                #   product_type: 'Consumer',
+                #   imgurl: 'products/clearfun',
+                #   zh_product_name: '清氛 TM 口腔清洁漱口水',
+                #   zh_product_family: '清氛',
+                #   zh_product_type: 'Consumer',
+                #   zh_short_description: '清氛 TM 口腔清洁漱口水（10ml/支）' }
+
+                ]
 
 product_list.each do |e|
   Product.create(e)
