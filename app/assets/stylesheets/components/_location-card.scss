@@ -29,7 +29,7 @@
 }
 
 .location-card-title {
-  width: 12rem;
+  width: 20rem;
 }
 
 .location-card-title-bg {
@@ -44,11 +44,12 @@
 
 .location-card-title p {
   margin-bottom: 0;
+  width: 65%;
   position: absolute;
   top: 50%;
   left: 50%;
   color: white;
-  transform: translate(-50%, -50%);
+  transform: translate(-40%, -50%);
 }
 
 .location-card-content {
