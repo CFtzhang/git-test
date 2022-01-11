@@ -185,13 +185,16 @@
 }
 /*company*/
 .company-card-bg {
-  background: image-url('company/company-card-bg') no-repeat 50% 50%; background-size: cover;;
+  background: image-url('company/company-card-bg') no-repeat 50% 50%; background-size: cover;
 }
 
 /*partnership*/
 .scope-bg {
   background-image: url('partnership/scope-world-bg');
+  background-size: fit;
+  background-repeat: no-repeat;
   background-color: white;
+  background-position: center;
 }
 
 .scope-card-bg {
