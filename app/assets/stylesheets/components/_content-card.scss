@@ -228,6 +228,21 @@
   margin-bottom: 1rem;
 }
 
+.small-card-icon {
+  height: 50px;
+  width: 50px;
+  display: block;
+  padding-bottom: 3rem;
+}
+
+.small-card-icon svg {
+  height: 50px;
+}
+
+.thick-icon {
+  stroke: #ddd; stroke-width: 2px; fill: #ddd;
+}
+
 .rnd-card {
   height: 12rem;
   width: 18rem;
@@ -237,10 +252,23 @@
   padding: 1rem;
   font-weight: 800;
   transition: background 1s;
+  fill: silver;
 }
 
 .rnd-card:hover {
   color: white;
+}
+
+.rnd-card:hover svg{
+  fill: white;
+}
+
+.rnd-card:hover .thick-icon {
+  stroke: #fff; stroke-width: 2px; fill: #fff;
+}
+
+.rnd-card:hover path{
+  fill: white;
 }
 
 .collaboration-image {
