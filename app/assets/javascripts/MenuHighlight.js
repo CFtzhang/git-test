@@ -14,5 +14,4 @@ const MenuHighlight = function(e) {
 
 document.addEventListener("turbolinks:load", function() {
   MenuHighlight()
-  console.log("whaddup")
 })
