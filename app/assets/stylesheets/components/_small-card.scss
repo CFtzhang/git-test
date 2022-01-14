@@ -28,14 +28,17 @@
 
 /*company*/
 .values-container {
-  display: flex;
-  position: relative;
-  left: -1.8rem;
 }
+
 .values-card {
   display: flex;
-  flex-direction: column;
   flex: 1 1 0px;
+}
+
+.values-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*contact*/

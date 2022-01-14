@@ -43,32 +43,29 @@
         <p class="text-larger text-bold">Our values</p>
         <div class="values-container">
           <div class="values-card fg-1">
-            <div class="fg-4 hrem3 d-flex jc-center">
+            <div class="hrem3">
               <%= image_tag "company/integrity", class: "wrem3 hrem3" %>
             </div>
-            <div class="fg-1 ta-center">
-              <p class="text-very-small">Integrity</p>
+            <div class="ta-center">
+              <p class="pad-lr-rem1 values-text">Integrity</p>
             </div>
           </div>
           <div class="values-card fg-1">
-            <div class="fg-4 hrem3 d-flex jc-center">
+            <div class="hrem3">
               <%= image_tag "company/patient-focus", class: "wrem3 hrem3" %>
             </div>
-            <div class="fg-1 ta-center">
-              <p class="text-very-small">Patient Focus</p>
+            <div class="ta-center">
+              <p class="pad-lr-rem1 values-text">Patient Focus</p>
             </div>
           </div>
           <div class="values-card fg-1">
-            <div class="fg-4 hrem3 d-flex jc-center">
+            <div class="hrem3">
               <%= image_tag "company/science-led-innovation", class: "wrem3 hrem3" %>
             </div>
-            <div class="fg-1 ta-center">
-              <p class="text-very-small">Science-led Innovation</p>
+            <div class="ta-center">
+              <p class="pad-lr-rem1 values-text">Science-led Innovation</p>
             </div>
           </div>
-        </div>
-        <div class="btn-area">
-            <%= link_to "Read More", company_path, class: "btn btn-flat" %>
         </div>
       </div>
     </div>
@@ -85,29 +82,64 @@
               <a href="#2009"><div class="timeline-point"><span class="timeline-point-title">2009</span></div></a>
               <a href="#2010"><div class="timeline-point"><span class="timeline-point-title">2010</span></div></a>
               <a href="#2011"><div class="timeline-point"><span class="timeline-point-title">2011</span></div></a>
-              <a href="#2012"><div class="timeline-point"><span class="timeline-point-title">2012</span></div></a>
               <a href="#2013"><div class="timeline-point"><span class="timeline-point-title">2013</span></div></a>
               <a href="#2014"><div class="timeline-point"><span class="timeline-point-title">2014</span></div></a>
               <a href="#2015"><div class="timeline-point"><span class="timeline-point-title">2015</span></div></a>
               <a href="#2017"><div class="timeline-point"><span class="timeline-point-title">2017</span></div></a>
-              <a href="#2019"><div class="timeline-point"><span class="timeline-point-title">2019</span></div></a>
+              <a href="#2018"><div class="timeline-point"><span class="timeline-point-title">2018</span></div></a>
               <a href="#2020"><div class="timeline-point"><span class="timeline-point-title">2020</span></div></a>
+              <a href="#2021"><div class="timeline-point"><span class="timeline-point-title">2021</span></div></a>
             </div>
           </div>
         </section>
-        <ul>
-          <li><div id="2008"class="jump-anchor"></div><div class="list-section"><p><strong>2008</strong></p><p>CF PharmTech was founded under Wuxi "530” Sponsorship Program</p></div></li>
-          <li><div id="2009"class="jump-anchor"></div><div class="list-section"><p><strong>2009</strong></p><p>Received Jiangsu Provincial Innovation Award, and Science and Technology Leader Team Award</p></div></li>
-          <li><div id="2010"class="jump-anchor"></div><div class="list-section"><p><strong>2010</strong></p><p>Secured a A-series capital investment, signed strategic partnership deal with Beijing SL Pharmaceutical</p></div></li>
-          <li><div id="2011"class="jump-anchor"></div><div class="list-section"><p><strong>2011</strong></p><p>Wholly-owned subsidiary-Jiangsu CF PharmTech was set up in Wuxi; Filed 5 patents in China</p></div></li>
-          <li><div id="2012"class="jump-anchor"></div><div class="list-section"><p><strong>2012</strong></p><p>Signed strategic partnership deal with Beijing SL Pharmaceutical; The team was honored by China National “1000 Elite” program</p></div></li>
-          <li><div id="2013"class="jump-anchor"></div><div class="list-section"><p><strong>2013</strong></p><p>Secured a B-series capital investment, startup Suzhou CF PharmTech</p></div></li>
-          <li><div id="2014"class="jump-anchor"></div><div class="list-section"><p><strong>2014</strong></p><p>Completed the construction of Suzhou CF PharmTech</p></div></li>
-          <li><div id="2015"class="jump-anchor"></div><div class="list-section"><p><strong>2015</strong></p><p>Secured a C-series capital investment, established the nasal spray and DPI production line</p></div></li>
-          <li><div id="2017"class="jump-anchor"></div><div class="list-section"><p><strong>2017</strong></p><p>Secured a D-series capital investment of USD65 million</p></div></li>
-          <li><div id="2019"class="jump-anchor"></div><div class="list-section"><p><strong>2019</strong></p><p>Secured a E-series capital investment of USD94 million</p></div></li>
-          <li><div id="2020"class="jump-anchor"></div><div class="list-section"><p><strong>2020</strong></p><p>Secured a F-series capital investment of USD50 million</p></div></li>
-        </ul>
+        <div class="container">
+          <ul>
+            <li><div id="2008"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2008", alt: "CF lobby", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2008</strong></p><p>CF PharmTech was founded under Wuxi "530” Sponsorship Program</p></div>
+            </div></li>
+            <li><div id="2009"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2009", alt: "Scientist looking through microscope", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2009</strong></p><p>Received Jiangsu Provincial Innovation Award, and Science and Technology Leader Team Award</p></div>
+            </div></li>
+            <li><div id="2010"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2010", alt: "handshake", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2010</strong></p><p>Secured a A-series capital investment, signed strategic partnership deal with Beijing SL Pharmaceutical</p></div>
+            </div></li>
+            <li><div id="2011"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2011", alt: "People in CF", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2011</strong></p><p>Wholly-owned subsidiary-Jiangsu CF PharmTech was set up in Wuxi; Filed 5 patents in China</p></div>
+            </div></li>
+            <li><div id="2013"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2013", alt: "New CF lobby", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2013</strong></p><p>Secured a B-series capital investment, startup Suzhou CF PharmTech</p></div>
+            </div></li>
+            <li><div id="2014"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2014", alt: "CF Factory", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2014</strong></p><p>Completed the construction of Suzhou CF PharmTech</p></div>
+            </div></li>
+            <li><div id="2015"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2015", alt: "Production line", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2015</strong></p><p>Secured a C-series capital investment, established the nasal spray and DPI production line</p></div>
+            </div></li>
+            <li><div id="2017"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2017", alt: "CF team 1", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2017</strong></p><p>Secured a D-series capital investment of USD65 million</p></div>
+            </div></li>
+            <li><div id="2018"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2018", alt: "CF team 2", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2018</strong></p><p>Secured a E-series capital investment of USD94 million</p></div>
+            </div></li>
+            <li><div id="2020"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2020", alt: "CF team 3", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2020</strong></p><p>Secured a F-series capital investment of USD50 million</p></div>
+            </div></li>
+            <li><div id="2021"class="jump-anchor"></div><div class="list-section">
+              <div class="timeline-card-image-area"><%= image_tag "company/2021", alt: "CF Product", class: "timeline-card-image"  %></div>
+              <div class="timeline-card-content"><p class="text-large teal-text"><strong>2021</strong></p><p>Budesonide Suspension for Inhalation and Salbutamol Sulfate inhalation solution were approved for market.</p></div>
+            </div></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
