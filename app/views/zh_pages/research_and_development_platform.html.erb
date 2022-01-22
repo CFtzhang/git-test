@@ -13,7 +13,7 @@
       <div class="card-text-area">
         <div class="card-text">
           <h4 class="text-larger text-bold">研发团队</h4>
-          <p>长风药业研发团队由具有丰富吸入制剂药物研发经验的科学家和多位资深人员组成。依托于国际、国内最顶尖的学术交流和技术合作，全力打造具备专业素质和一流技能的优秀团队，我们秉承坚定的信念与决心，投入呼吸系统给药技术的研发工作，力争为全球市场提供优质的吸入制剂产品。</p>
+          <p> 长风研发团队由拥有丰富吸入制剂药物研发经验的科学家和多位资深人员组成。依托于国际、国内最顶尖的学术交流和技术合作，全力打造具备专业素质和一流技能的优秀团队，我们秉承坚定的信念与决心，投入呼吸系统给药技术的研发工作，力争为全球市场提供优质的吸入制剂产品。</p>
         </div>
       </div>
     </div>
@@ -43,10 +43,10 @@
       <div class="card-text-area w65">
         <div class="card-text">
           <h4 class="text-larger text-bold teal-text">剂型研发</h4>
-          <p> 长风药业拥有完整的剂型研发平台，目前有5个基本在研剂型：</p>
+          <p>长风药业拥有完整的剂型研发平台，目前有4个基本在研剂型：</p>
           <ul class="bulleted-list">
-            <li><%= link_to "气雾剂 (MDI) ", "#{zh_dosage_forms_path}#MDI" %></li>
-            <li><%= link_to "干粉剂 (DPI)", "#{zh_dosage_forms_path}#DPI" %></li>
+            <li><%= link_to "气雾剂", "#{zh_dosage_forms_path}#MDI" %></li>
+            <li><%= link_to "干粉剂", "#{zh_dosage_forms_path}#DPI" %></li>
             <li><%= link_to "雾化剂", "#{zh_dosage_forms_path}#Nebulizer" %></li>
             <li><%= link_to "鼻喷剂", "#{zh_dosage_forms_path}#Nasal-Spray" %></li>
           </ul>
@@ -60,12 +60,8 @@
       <div class="card-text-area w65">
         <div class="card-text">
           <h4 class="text-larger text-bold teal-text">质量系统</h4>
-          <p>我们的质量团队确保所有的研发活动符合中国、美国和欧洲的相关法规。</p>
-          <ul class="bulleted-list">
-            <li>分析方法开发和验证</li>
-            <li>建立质量标准</li>
-            <li>通过官方和客户审计核查，严格确保文件质量</li>
-          </ul>
+          <p>长风致力于为全球市场提供高质量、安全和有效的产品；<br>通过完善的质量体系确保药品质量并有效的满足客户和监管的要求。</p>
+          <%= link_to "更多", zh_research_and_development_quality_system_path, class: "btn btn-flat" %>
         </div>
       </div>
     </div>
