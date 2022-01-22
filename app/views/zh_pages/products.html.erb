@@ -17,10 +17,10 @@
           <h4 class="text-large teal-text text-bold">医药产品</h4>
           <p class="mar-bot-0">长风药业专注于吸入制剂领域的仿制药和新药产品的开发，主要剂型包括:</p>
           <ul class="bulleted-list mar-bot-0">
-            <li><%= link_to "MDI", "#{zh_dosage_forms_path}#MDI" %></li>
-            <li><%= link_to "Nasal Spray", "#{zh_dosage_forms_path}#Nasal-Spray" %></li>
-            <li><%= link_to "Nebulizer", "#{zh_dosage_forms_path}#Nebulizer" %></li>
-            <li><%= link_to "Dry Powder Inhaler", "#{zh_dosage_forms_path}#DPI" %></li>
+            <li><%= link_to "气雾剂", "#{zh_dosage_forms_path}#MDI" %></li>
+            <li><%= link_to "鼻喷剂", "#{zh_dosage_forms_path}#Nasal-Spray" %></li>
+            <li><%= link_to "雾化剂", "#{zh_dosage_forms_path}#Nebulizer" %></li>
+            <li><%= link_to "干粉剂", "#{zh_dosage_forms_path}#DPI" %></li>
           </ul>
           <p>长风研制的一些仿制药目前已在中国申报。</p>
           <p>长风的新药开发，包括新化合物研究(NCE)、新装置技术、新固定剂量复方制剂产品。</p>
@@ -28,9 +28,6 @@
         </div>
       </div>
     </div>
-
-
-
     <div id="Consumer-Products" class="content-card">
       <div class="card-image-area w65">
         <%= image_tag "products/consumer-products", alt: "alttext", class: "card-image-large w80" %>
