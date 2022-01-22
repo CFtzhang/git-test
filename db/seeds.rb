@@ -13,8 +13,8 @@ product_list = [
                   product_family: 'Changqi',
                   product_type: 'Pharmaceutical',
                   imgurl: 'products/pharmaceutical/budesonide-30',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '吸入用布地奈德混悬液 30 x 2mL',
+                  zh_product_family: '畅起',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -24,8 +24,8 @@ product_list = [
                   product_family: 'Changqi',
                   product_type: 'Pharmaceutical',
                   imgurl: 'products/pharmaceutical/budesonide-10',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '吸入用布地奈德混悬液 10 x 2mL',
+                  zh_product_family: '畅起',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -35,8 +35,8 @@ product_list = [
                   product_family: 'Changqi',
                   product_type: 'Pharmaceutical',
                   imgurl: 'products/pharmaceutical/budesonide-5',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '吸入用布地奈德混悬液 5 x 2mL',
+                  zh_product_family: '畅起',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -46,8 +46,8 @@ product_list = [
                   product_family: 'Changshu',
                   product_type: 'Pharmaceutical',
                   imgurl: 'products/pharmaceutical/salbutamol-30',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '吸入用硫酸沙丁胺醇溶液 30 x 2mL',
+                  zh_product_family: '畅抒',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -57,8 +57,8 @@ product_list = [
                   product_family: 'Changshu',
                   product_type: 'Pharmaceutical',
                   imgurl: 'products/pharmaceutical/salbutamol-20',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '吸入用硫酸沙丁胺醇溶液 20 x 2mL',
+                  zh_product_family: '畅抒',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -68,8 +68,8 @@ product_list = [
                   product_family: 'Changshu',
                   product_type: 'Pharmaceutical',
                   imgurl: 'products/pharmaceutical/salbutamol-20',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '吸入用硫酸沙丁胺醇溶液 10 x 2mL',
+                  zh_product_family: '畅抒',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -79,8 +79,8 @@ product_list = [
                   product_family: 'Changshu',
                   product_type: 'Pharmaceutical',
                   imgurl: 'products/pharmaceutical/salbutamol-5',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '吸入用硫酸沙丁胺醇溶液 5 x 2mL',
+                  zh_product_family: '畅抒',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -90,8 +90,8 @@ product_list = [
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
                   imgurl: 'products/consumer/electric-nasal-cleaner',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '电动洗鼻器',
+                  zh_product_family: '清氛',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -101,8 +101,8 @@ product_list = [
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
                   imgurl: 'products/consumer/seawater-nasal-cleaner',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '海水鼻腔喷雾器',
+                  zh_product_family: '清氛',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -112,8 +112,8 @@ product_list = [
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
                   imgurl: 'products/consumer/seawater-nasal-cleaner-children',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '生理性海水鼻腔喷雾器',
+                  zh_product_family: '清氛',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -124,8 +124,8 @@ product_list = [
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
                   imgurl: 'products/consumer/seawater-nasal-cleaning-fluid-nacl0-9',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '生理性海水鼻腔清洗液',
+                  zh_product_family: '清氛',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -135,8 +135,8 @@ product_list = [
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
                   imgurl: 'products/consumer/seawater-nasal-cleaning-fluid-nacl2-3',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '高渗生理性海水鼻腔清洗液',
+                  zh_product_family: '清氛',
                   zh_product_type: '',
                   zh_short_description: ''
                 },
@@ -146,11 +146,11 @@ product_list = [
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
                   imgurl: 'products/consumer/medical-compression-nebulizer',
-                  zh_product_name: '',
-                  zh_product_family: '',
+                  zh_product_name: '医用压缩式雾化器',
+                  zh_product_family: '清氛',
                   zh_product_type: '',
                   zh_short_description: ''
-                },
+                }
 
 
 
