@@ -1,5 +1,5 @@
 <div class="info-banner products-banner-bg">
-  <div class="info-banner-title">
+  <div class="info-banner-title info-title">
     <h1>仿制药</h1>
   </div>
 </div>
@@ -7,14 +7,40 @@
   <%= image_tag "cf-logo-outline-white", class: "white-logo-bg" %>
   <div class="container pr">
     <div class="info-container">
-      <h1 class="text-large text-bold teal-text">长风药业研制的以下产品已在中国申报：</h1>
+      <h1 class="text-large text-bold teal-text">已在中国获批上市的产品：</h1>
       <ul class="bulleted-list text-large">
         <li>吸入用布地奈德混悬液, 雾化剂</li>
-        <li>硫酸沙丁胺醇雾化吸入溶液, 雾化剂</li>
-        <li>丙酸倍氯米松气雾剂, 气雾剂</li>
-        <li>酒石酸左沙丁胺醇吸入气雾剂, 气雾剂</li>
-        <li>沙美特罗替卡松吸入气雾剂, 气雾剂</li>
-        <li>盐酸氮卓斯汀丙酸氟替卡松鼻喷雾剂, 鼻喷剂</li>
+      </ul>
+      <div class="card-product-container pad-t-rem2">
+        <% @changqi.each do |e| %>
+          <div class="card-product">
+            <%= image_tag "#{e.imgurl}", alt: "product picture" %>
+            <div class="card-product-overlay">
+              <h2><%= "#{e.zh_product_family}" %> &reg; <br><%="#{e.zh_product_name}"%></h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <ul class="bulleted-list text-large">
+        <li>吸入用硫酸沙丁胺醇溶液, 雾化剂</li>
+      </ul>
+      <div class="card-product-container pad-t-rem2">
+        <% @changshu.each do |e| %>
+          <div class="card-product">
+            <%= image_tag "#{e.imgurl}", alt: "product picture" %>
+            <div class="card-product-overlay">
+              <h2><%= "#{e.zh_product_family}" %> &reg; <br><%="#{e.zh_product_name}"%></h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <h1 class="text-large text-bold teal-text">已在中国申报的产品：</h1>
+      <ul class="bulleted-list text-large">
+        <li>酒石酸左沙丁胺醇气雾剂</li>
+        <li>盐酸氮卓斯汀丙酸氟替卡松鼻喷雾剂</li>
+        <li>沙美特罗替卡松气雾剂</li>
+        <li>硫酸特布他林雾化吸入用溶液</li>
+        <li>吸入用盐酸氨溴索溶液</li>
       </ul>
     </div>
   </div>
