@@ -90,6 +90,8 @@ html {
   font-style: italic;
 }
 
+
+/*text decoration*/
 .zh-text {
   font-family: sans-serif;
 }
@@ -98,3 +100,6 @@ html {
   text-decoration: underline #1ea6cd;
 }
 
+.thick-underline {
+  text-decoration-thickness: 0.4rem;
+}

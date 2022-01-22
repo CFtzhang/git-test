@@ -1,5 +1,9 @@
 class ZhPagesController < ApplicationController
   def index
+    @consumer_products = Product.where(product_type: 'Consumer')
+    @pharma_products = Product.where(product_type: 'Pharmaceutical')
+    @first_changqi = @pharma_products.where(product_family: 'Changqi').first()
+    @first_changshu = @pharma_products.where(product_family: 'Changshu').first()
   end
 
   def partnership
