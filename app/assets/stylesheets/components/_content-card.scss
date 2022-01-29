@@ -262,14 +262,15 @@
 }
 
 .small-card-icon {
-  height: 50px;
-  width: 50px;
+  height: 90px;
+  width: 60px;
   display: block;
   padding-bottom: 3rem;
 }
 
 .small-card-icon svg {
-  height: 50px;
+  height: 80px;
+  max-width: 60px;
 }
 
 .thick-icon {
