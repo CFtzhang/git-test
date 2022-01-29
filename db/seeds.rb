@@ -97,6 +97,28 @@ product_list = [
                 },
 
                 {
+                  product_name: 'Physiological Seawater Nasal Cleaning Fluid NaCl 0.9%',
+                  product_family: 'AuroAir',
+                  product_type: 'Consumer',
+                  imgurl: 'products/consumer/seawater-nasal-cleaning-fluid-nacl0-9',
+                  zh_product_name: '生理性海水鼻腔清洗液',
+                  zh_product_family: '清氛',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+
+                {
+                  product_name: 'Medical Compression Nebulizer',
+                  product_family: 'AuroAir',
+                  product_type: 'Consumer',
+                  imgurl: 'products/consumer/medical-compression-nebulizer',
+                  zh_product_name: '医用压缩式雾化器',
+                  zh_product_family: '清氛',
+                  zh_product_type: '',
+                  zh_short_description: ''
+                },
+                
+                {
                   product_name: 'Physiological Seawater Nasal Cleaner',
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
@@ -120,17 +142,6 @@ product_list = [
 
 
                 {
-                  product_name: 'Physiological Seawater Nasal Cleaning Fluid NaCl 0.9%',
-                  product_family: 'AuroAir',
-                  product_type: 'Consumer',
-                  imgurl: 'products/consumer/seawater-nasal-cleaning-fluid-nacl0-9',
-                  zh_product_name: '生理性海水鼻腔清洗液',
-                  zh_product_family: '清氛',
-                  zh_product_type: '',
-                  zh_short_description: ''
-                },
-
-                {
                   product_name: 'Physiological Seawater Nasal Cleaning Fluid NaCl 2.3%',
                   product_family: 'AuroAir',
                   product_type: 'Consumer',
@@ -139,18 +150,8 @@ product_list = [
                   zh_product_family: '清氛',
                   zh_product_type: '',
                   zh_short_description: ''
-                },
-
-                {
-                  product_name: 'Medical Compression Nebulizer',
-                  product_family: 'AuroAir',
-                  product_type: 'Consumer',
-                  imgurl: 'products/consumer/medical-compression-nebulizer',
-                  zh_product_name: '医用压缩式雾化器',
-                  zh_product_family: '清氛',
-                  zh_product_type: '',
-                  zh_short_description: ''
                 }
+
 
 
 
