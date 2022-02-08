@@ -3,9 +3,9 @@
   <div class="homepage-banner-bg"></div>
   <div class="homepage-banner home-banner-bg"></div>
   <div class="homepage-banner-text">
-    <h2>关注呼吸  关爱生命</h2>
-    <h3>长风药业是一家致力于为全球市场提供高品质吸入类药物的综合性专业制药公司。</h3>
-    <h3>拥有丰富的行业经验，高素质的管理团队以及最先进的设备，致力于开发治疗呼吸系统疾病的药物。</h3>
+    <h2>关注呼吸&nbsp;&nbsp;关爱生命</h2>
+    <h3>长风药业是一家致力于为全球市场提供<br><strong>高品质吸入类药物的综合性专业制药公司。</strong></h3>
+    <h4 class="text-small">拥有丰富的行业经验，高素质的管理团队以及最先进的设备，致力于开发治疗呼吸系统疾病的药物。</h4>
     <div class="btn-area">
         <%= link_to "更多", zh_company_path, class: "btn btn-flat" %>
     </div>
@@ -34,7 +34,7 @@
     <div class="card-text-area w35">
       <div class="card-text">
         <p class="text-larger text-bold">研发平台</p>
-        <p>治疗哮喘和慢性阻塞性肺病（COPD）, 通过口腔直接吸入气道、起效迅速、全身副作用少。</p>
+        <p>根据全球市场需求，长风有20多个吸入仿制药正在开发中还有多个护理产品可供消费者选择。</p>
         <div class="btn-area">
           <%= link_to "更多", zh_research_and_development_platform_path, class: "btn btn-flat" %>
         </div>
@@ -80,13 +80,13 @@
           <div class="tab-card-product">
             <%= image_tag "#{@first_changqi.imgurl}", alt: "product picture" %>
             <div class="card-product-overlay">
-              <h2><%= "#{@first_changqi.zh_product_family}" %> &reg; <br><%="#{@first_changqi.zh_product_name}"%></h2>
+              <h2><%= "#{@first_changqi.zh_product_family}" %><sup>&reg;</sup> <br><%="#{@first_changqi.zh_product_name}"%></h2>
             </div>
           </div>
           <div class="tab-card-product">
             <%= image_tag "#{@first_changshu.imgurl}", alt: "product picture" %>
             <div class="card-product-overlay">
-              <h2><%= "#{@first_changshu.zh_product_family}" %> &reg; <br><%="#{@first_changshu.zh_product_name}"%></h2>
+              <h2><%= "#{@first_changshu.zh_product_family}" %><sup>&reg;</sup> <br><%="#{@first_changshu.zh_product_name}"%></h2>
             </div>
           </div>
           <div class="btn-area btn-block">
@@ -98,7 +98,7 @@
           <div class="tab-card-product">
             <%= image_tag "#{e.imgurl}", alt: "product picture" %>
             <div class="card-product-overlay">
-              <h2><%= "#{e.zh_product_family}" %> &reg; <br><%= "#{e.zh_product_name}" %></h2>
+              <h2><%= "#{e.zh_product_family}" %><sup>&reg;</sup> <br><%= "#{e.zh_product_name}" %></h2>
               <div class="btn-area">
               </div>
             </div>
