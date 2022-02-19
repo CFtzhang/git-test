@@ -320,20 +320,19 @@
 /*Investors*/
 .announcement-container {
   display: flex;
-  justify-content: space-around;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
 .announcement-card {
-  position: relative;
   display: flex;
   background-color: white;
-  width: 50%;
-  min-height: 400px;
-  height: 40%;
+  width: 100%;
+  min-height: 264px;
+  height: 100%;
+  min-width: 300px;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-left: 3rem;
+  position: relative;
 }
