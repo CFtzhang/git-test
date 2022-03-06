@@ -284,7 +284,7 @@
 }
 
 .thick-icon {
-  stroke: #ddd; stroke-width: 2px; fill: #ddd;
+  stroke: #fff; stroke-width: 1px; fill: #fff;
 }
 
 .rnd-card {
@@ -295,9 +295,14 @@
   border-radius: 10px;
   padding: 1rem;
   font-weight: 800;
-  transition: background 1s;
-  fill: silver;
+  fill: white;
+  color: white;
 }
+
+.rnd-card path{
+  fill: white;
+}
+
 
 .rnd-card:hover {
   color: white;
@@ -308,7 +313,7 @@
 }
 
 .rnd-card:hover .thick-icon {
-  stroke: #fff; stroke-width: 2px; fill: #fff;
+  stroke: #fff; stroke-width: 1px; fill: #fff;
 }
 
 .rnd-card:hover path{
