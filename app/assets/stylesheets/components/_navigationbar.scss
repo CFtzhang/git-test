@@ -171,8 +171,7 @@
     max-width: 1376px;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
-    grid-template-columns: 0.6fr 7fr 0.6fr;
+    display: flex;
     align-items: flex-start;
     background: white;
     height: 100%;
@@ -191,29 +190,27 @@
 
   .navigationbar-list:hover {
     height: max-content;
-    box-sizing: content-box;
+    box-sizing: border-box;
     box-shadow: 0px 5px 8px -5px silver;
     background-color: white;
     .navigationbar-list-item {
       display: block;
       height: inherit;
-      width: inherit; 
+      width: 100px; 
       overflow: wrap;
       background-color: white;
     }
   }
 
   .navigationbar-list-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(0, 1fr))[9];
-    grid-template-columns: repeat(9, minmax(0, 1fr));
-    grid-template-areas: "a b c d e f g h i";
+    display: flex;
     height: 78px;
-    width: 90%;
+    width: 81%;
     min-width: 900px;
     padding-left: 1rem;
     margin-left: auto;
+    justify-content: space-between;
+    box-sizing: border-box;
   }
 
   .navigationbar-item {
@@ -223,6 +220,7 @@
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     height: min-content;
+    width: 110px;
   }
 
   .cell-a{ -ms-grid-row: 1; -ms-grid-column: 1; grid-area: a; }
@@ -238,6 +236,8 @@
   .navigationbar-list {
     display: block;
     height: min-content;
+    width: 110px;
+    flex-shrink: 0;
   }
 
   .navigationbar-list-header {
@@ -247,6 +247,7 @@
     padding-bottom: 1em;
     align-items: flex-start;
     font-size: 0.75rem;
+    justify-content: center;
   }
 
   .navigationbar-list-header a {
