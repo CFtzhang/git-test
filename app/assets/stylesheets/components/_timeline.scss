@@ -24,6 +24,7 @@
 }
 
 .timeline-point {
+	display: none;
 	position: relative;
 	height: 12px;
 	width: 12px;
@@ -43,4 +44,10 @@
 	top: -1.6rem;
 	font-weight: 800;
 	padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+	.timeline-point {
+		display: flex;
+	}
 }

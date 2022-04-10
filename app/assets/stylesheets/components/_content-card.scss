@@ -224,9 +224,16 @@
   margin-top: 2rem;
   border-radius: 1rem;
   padding: 2rem;
+  flex-wrap: wrap;
 
   p {
     margin-bottom: 0.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-section {
+    flex-wrap: nowrap;
   }
 }
 
@@ -269,6 +276,7 @@
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .small-card-icon {
