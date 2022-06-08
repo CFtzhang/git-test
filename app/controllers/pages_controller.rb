@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_action :redirect_to_locale, only: :index
+
   def index
     @consumer_products = Product.where(product_type: 'Consumer').first(4)
     @pharma_products = Product.where(product_type: 'Pharmaceutical')
@@ -70,4 +72,9 @@ class PagesController < ApplicationController
   def yiming_interview
   end
 
+  private
+
+  def redirect_to_locale
+    
+  end
 end

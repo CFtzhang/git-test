@@ -41,6 +41,8 @@ gem 'normalize-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'http_accept_language'
+
 gem 'execjs'
 
 # Reduces boot times through caching; required in config/boot.rb
