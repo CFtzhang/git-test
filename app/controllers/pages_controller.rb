@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :redirect_to_locale, only: :index
+  #around_action :switch_locale
 
   def index
     @consumer_products = Product.where(product_type: 'Consumer').first(4)
@@ -74,7 +74,8 @@ class PagesController < ApplicationController
 
   private
 
-  def redirect_to_locale
-    
-  end
+  # def switch_locale(&action)
+  #   locale = params[:locale] || I18n.default_locale
+  #   I18n.with_locale(locale, &action)
+  # end
 end

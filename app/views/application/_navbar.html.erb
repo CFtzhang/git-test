@@ -8,8 +8,6 @@
           </div>
           <div class="navigationbar-item cell-a">
             <div class="navigationbar-list-header"><%= link_to ("Home"), root_path %></div>
-            <!-- <div class="navigationbar-list-item"><%= link_to ("News"), news_path %></div>
-            <div class="navigationbar-list-item"><%= link_to ("Investors"), investors_path %></div> -->
           </div>
           <div class="navigationbar-list cell-b">
             <div class="navigationbar-list-header"><%= link_to ("Products"), products_path  %></div>
@@ -61,7 +59,9 @@
                 <p class="language-selector">English<span><%= image_tag "material-down-arrow", alt: "down arrow button", class: "da-icon" %></span></p>
               </div>
             </div>
-            <div class="menu-dropdown-content"><%= link_to ("中文简体"), "#{zh_path + request.original_fullpath}" %></div>
+            <div class="menu-dropdown-content flag-icon">
+              <%= link_to ("中文简体"), { :locale => "zh" } %>
+            </div>
           </div>
           <div id="menuIcon"><%= image_tag "menu", alt: "menu", class: "menu-icon" %></div>
         </div>

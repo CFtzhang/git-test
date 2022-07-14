@@ -1,0 +1,70 @@
+<nav class="container-fluid" style="background-color: white;">
+  <div class="row">
+    <span id="fullnav" class="fullwidth fullnav">
+      <div id="expanding-nav" class="navigationbar navigationbar-hidden mobile-navbar">
+        <%= link_to (image_tag "cf-logo.svg", class: "navigationbar-logo", alt: "CF Logo"), root_path %>
+        <div id="mobile-navbar-list" class="navigationbar-list-container">
+          <div class="navigationbar-spacer">
+          </div>
+          <div class="navigationbar-item cell-a">
+            <div class="navigationbar-list-header"><%= link_to ("主页"), root_path %></div>
+          </div>
+          <div class="navigationbar-list cell-b">
+            <div class="navigationbar-list-header"><%= link_to ("产品中心"), products_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("医药产品"),  "#{generic_drug_products_path}" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("健康护理"), consumer_products_path %></div>
+          </div>
+          <div class="navigationbar-list cell-c">
+            <div class="navigationbar-list-header"><%= link_to ("研发平台"), research_and_development_platform_path  %></div>
+            <div class="navigationbar-list-item"><%= link_to ("治疗领域"), therapeutic_areas_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("技术平台"), dosage_forms_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("质量体系"), research_and_development_quality_system_path %></div>
+          </div>
+          <div class="navigationbar-list cell-d">
+            <div class="navigationbar-list-header"><%= link_to ("合作服务"), partnership_path  %></div>
+            <div class="navigationbar-list-item"><%= link_to ("协作"), "#{partnership_path}#Collaborations" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("服务"), "#{partnership_path}#Services" %></div>
+          </div>
+          <div class="navigationbar-item cell-e">
+            <div class="navigationbar-list-header"><%= link_to ("新闻动态"), news_path %></div>
+          </div>
+          <div class="navigationbar-list cell-f">
+            <div class="navigationbar-list-header"><%= link_to ("公司介绍"), company_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("公司简介"), "#{company_path}#What-We-Do" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("公司使命"), "#{company_path}#Our-Mission" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("公司价值观"), "#{company_path}#Our-Values" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("发展历程"), "#{company_path}#History" %></div>
+          </div>
+          <div class="navigationbar-list cell-g">
+            <div class="navigationbar-list-header"><%= link_to ("社会责任"), investors_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("社会活动"), "#{investors_path}#Social-Activity" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("公益新闻"), "#{investors_path}#Public-Service" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("环境保护"), "#{investors_path}#Environment" %></div>
+          </div>
+          <div class="navigationbar-list cell-h">
+            <div class="navigationbar-list-header"><%= link_to ("职业发展"), careers_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("加入长风"), "#{careers_path}#life-at-cf" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("遇见我们"), "#{careers_path}#Meet-Us" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("成长机会"), "#{careers_path}#opportunities" %></div>
+          </div>
+          <div class="navigationbar-item cell-i">
+            <div class="navigationbar-list-header"><%= link_to ("联系我们"), contact_us_path %></div>
+          </div>
+        </div>
+        <div class="navigationbar-list-header hamburger-container">
+          <div class="menu-dropdown">
+            <div>
+              <div>
+                <p class="language-selector">中文简体<span><%= image_tag "material-down-arrow", alt: "down arrow button", class: "da-icon" %></span></p>
+              </div>
+            </div>
+            <div class="menu-dropdown-content flag-icon">
+              <%= link_to ("English"), { :locale => "en" } %>
+            </div>
+          </div>
+          <div id="menuIcon"><%= image_tag "menu", alt: "menu", class: "menu-icon" %></div>
+        </div>
+      </div>
+    </span>
+  </div>
+</nav>

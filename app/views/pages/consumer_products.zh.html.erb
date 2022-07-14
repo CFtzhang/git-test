@@ -21,26 +21,11 @@
             <p>天猫商城</p>
           </div>
         <% end %>
-      </div>
-<!--         <p><strong>CF PharmTech</strong> provides professional and practical consumer healthcare products for daily care of your respiratory system. The <strong>AuroAir family</strong><sup>TM</sup>, our consumer healthcare brand has many products to meet your health needs.</p>
-        <p>Check out our products here:</p>
-        <p><%= image_tag "products/jd", alt: "jd-logo", class: "shopping-logo" %><%= link_to "mall.jd.com", "https://mall.jd.com/index-10054849.html" %></p>
-        <p><%= image_tag "products/tmall", alt: "tmall-logo", class: "shopping-logo" %><%= link_to "cfair.tmall.com", "https://cfair.tmall.com/index.htm?spm=a1z10.3-b-s.w5002-23402793420.2.9a064681RKtBRK" %></p> -->    
+      </div> 
     </div>
   </div>
   <div class="bg-light-color">
     <div class="info-container">
-      <!-- <div class="dropdown show">
-        <div class="btn btn-secondary dropdown-toggle pad-lr-rem2 mar-lr-rem1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          选择一个产品
-        </div>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item">Choose a product</a>
-          <% @consumer_products.each do |e| %>
-            <a class="dropdown-item" href=<%= "products/#{e.id}" %>><%= "#{e.zh_product_name}" %></a>
-          <% end %>
-        </div>
-      </div> -->
       <div class="card-product-container pad-t-rem2">
         <% @consumer_products.each do |e| %>
           <div class="card-product">
