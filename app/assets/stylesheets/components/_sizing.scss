@@ -3,6 +3,17 @@
   width: 65%;
 }
 
+.responsive.w65 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .responsive.w65 {
+    width: 65%
+  }
+}
+
+
 .w35 {
   width: 35%;
 }
