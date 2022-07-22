@@ -48,6 +48,8 @@
 
 .mobile-navigationbar-extend {
   height: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mobile-navigationbar-extend {
@@ -139,7 +141,8 @@
 
 .hamburger-container {
   display: flex;
-  justify-content: space-between;
+  position: absolute;
+  right: 0.5rem;
   align-items: center;
   margin-top: 14px;
 }
@@ -283,6 +286,9 @@
   }
 
   .hamburger-container {
+    position: static;
+    display: flex;
+    justify-content: space-between;
     margin-top: 0;
     justify-content: center;
     align-items: center;
