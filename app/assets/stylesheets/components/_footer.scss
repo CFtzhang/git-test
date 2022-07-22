@@ -4,10 +4,17 @@
 }
 
 .footer-list-container {
-    display: flex;
     margin-left: auto;
     margin-right: auto;
+    min-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .footer-list-container {
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 
