@@ -7,7 +7,7 @@
 .homepage-banner-bg {
   /*Same height as homepage-banner*/
   height: calc(100vh - 2.8rem);
-  min-height: 750px;
+  min-height: 820px;
   width: 100%;
   background: rgb(49,90,137);
   background: linear-gradient(90deg, rgba(49,90,137,1) 0%, rgba(49,90,137,0.8) 35%,rgba(49,90,137,0.6) 65%, rgba(49,90,137,0) 100%); 
@@ -20,7 +20,7 @@
   display: flex;
   width: 100%;
   height: calc(100vh - 2.8rem);
-  min-height: 750px;
+  min-height: 820px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
   width: 100%;
   /*Same height as homepage-banner*/
   height: calc(100vh - 2.8rem);
-  min-height: 750px;
+  min-height: 820px;
   position: absolute;
   z-index: 5;
   color: white;
