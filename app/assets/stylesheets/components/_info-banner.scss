@@ -14,7 +14,8 @@
 .info-banner h1 {
   color: white;
   margin-bottom: 0;
-  font-size: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .info-banner-title {
@@ -45,6 +46,12 @@
     padding-top: 1rem;
     padding-right: 12rem;
   }
+
+  .info-banner h1 {
+    font-size: 4rem;
+    font-weight: normal;
+  }
+
 }
 
 /*Page Specific CSS*/
