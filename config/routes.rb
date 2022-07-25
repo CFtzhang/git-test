@@ -22,5 +22,6 @@ Rails.application.routes.draw do
     get 'investors', to: 'pages#investors'
     get 'news', to: 'pages#news'
     get 'article', to: 'pages#article'
+    get 'article-7-25-22' => 'pages#article_7_25_22'
   end
 end

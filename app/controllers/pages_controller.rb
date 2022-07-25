@@ -57,9 +57,14 @@ class PagesController < ApplicationController
   def news
   end
 
+  #News Articles
   def article
   end
 
+  def article_7_25_22
+  end
+
+  #Company Info Interviews
   def jean_marc_interview
   end
 
