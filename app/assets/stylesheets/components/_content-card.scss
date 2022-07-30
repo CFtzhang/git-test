@@ -63,6 +63,12 @@
   max-width: 100vw;
 }
 
+@media (min-width: 768px) {
+  .card-image-area img {
+    width: 80%;
+  }
+}
+
 .card-image-area .w45 {
   width: 45%;
 }
