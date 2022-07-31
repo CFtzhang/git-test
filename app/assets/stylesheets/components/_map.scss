@@ -1,13 +1,39 @@
 .map-container {
+  width: 300px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.map-image-container {
+  height: auto;
+  position: relative;
+  overflow: auto;
 }
 
 .contact-map {
-  padding: 16px 16px 16px 16px;
   width: 100%;
+  min-width: 768px;
+  height: auto;
+  position: relative;
+  left: -35%;
   display: none;
 }
 
 .contact-map-toggle {
   display: block;
-  height: 700px;
+}
+
+div.outer {
+    width: 300px; /* some width amount needed */
+    margin: 0 auto; 
+    overflow: visible;
+}
+div.inner {
+    position:relative;
+    float: right; /* this was added and display removed */
+    right: 50%;
+}
+div.inner img {
+    position: relative; 
+    right:-50%; /* this was changed from "left" in original */
 }
