@@ -7,12 +7,31 @@
 .news-card {
 	display: flex;
 	position: relative;
+	flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+	.news-card {
+		flex-wrap: nowrap;
+	}
 }
 
 .news-card-date {
-	width: 8rem;
+	width: 6rem;
+  flex-shrink: 0;
+}
+
+.news-card-date p {
+  margin-bottom: 0;
 }
 
 .news-card-title {
+}
 
+@media (min-width: 768px) {
+  .news-card-title {
+    margin-left: 1rem;
+  }
 }
