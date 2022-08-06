@@ -7,7 +7,8 @@
 .investor-card-header {
 	padding: 1rem;
 	background-color: #c9caca;
-	width: 16rem;
+	min-width: 13rem;
+	width: 100%;
 	text-align: center;
 	margin-bottom: 1rem;
 }
@@ -15,12 +16,72 @@
 .investor-card-body {
 	padding: 1rem;
 	background-color: #bcd5dd;
-	width: 16rem;
+	min-width: 13rem;
+	width: 100%;
 	text-align: center;
 }
 
 .investor-card-body:hover {
 	background-color: #1ba3b8;
 	color: white;
-	transition: 0.3s ease; 
+	transition: 0.3s ease;
 }
+
+/*Investors*/
+.announcement-container {
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.announcement-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.announcement-card-header-container {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+  .announcement-card-container {
+    flex-wrap: nowrap;
+  }
+  .announcement-card-header-container {
+		flex-grow: 1;
+		flex-shrink: 4;
+	}
+
+}
+
+.announcement-card {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  min-height: 13rem;
+  min-width: 14rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.announcement-card p {
+	margin: 1rem;
+}
+
+/*May need more tuning for tablet sized screens*/
+@media (min-width: 768px) {
+  .announcement-card {
+  	/*height minus header*/
+    height: calc(100% - 5.4rem)	; 
+    min-width: 280px;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 3rem; 
+    position: relative; 
+    margin-top: 0rem;
+    flex-grow: 4;
+    flex-shrink: 1;
+  }
+}
+
