@@ -358,10 +358,17 @@
 }
 
 .collaboration-image {
-  padding-top: 4rem;
-  padding-left: 4rem;
-  padding-bottom: 4rem;
   box-sizing: content-box;
-  height: 75vh;
+  width: 100%;
 }
 
+@media (min-width: 768px) {
+  .collaboration-image {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+    box-sizing: content-box;
+    width: auto;
+    height: 75vh;
+  }
+}
