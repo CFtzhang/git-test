@@ -257,18 +257,31 @@
 }
 
 .timeline-card-image-area {
-  width: 25%;
-  min-width: 200px;
-  max-width: 400px;
-  max-height: 400px;
+  width: 100%;
+  min-width: 8rem;
+  max-height: 20rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .timeline-card-image-area {
+    width: 25%;
+  }
 }
 
 
 .timeline-card-content {
-  margin-left: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .timeline-card-content {
+    margin-left: 2rem;
+  }
 }
 
 .timeline-card-image {
