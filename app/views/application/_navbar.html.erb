@@ -11,12 +11,12 @@
           </div>
           <div class="navigationbar-list cell-b">
             <div class="navigationbar-list-header"><%= link_to ("Products"), products_path  %></div>
-            <div class="navigationbar-list-item"><%= link_to ("Pharmaceutical Products"), "#{generic_drug_products_path}" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Pharmaceutical Products"), "#{pharmaceutical_products_path}" %></div>
             <div class="navigationbar-list-item"><%= link_to ("Consumer Healthcare"), consumer_products_path %></div>
           </div>
           <div class="navigationbar-list cell-c">
             <div class="navigationbar-list-header"><%= link_to ("R&D"), research_and_development_platform_path  %></div>
-            <div class="navigationbar-list-item"><%= link_to ("R&D Focus Areas"), therapeutic_areas_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("R&D Focus Areas"), focus_areas_path %></div>
             <div class="navigationbar-list-item"><%= link_to ("Dosage Forms"), dosage_forms_path %></div>
             <div class="navigationbar-list-item"><%= link_to ("Quality System"), research_and_development_quality_system_path %></div>
           </div>
@@ -37,10 +37,10 @@
             <div class="navigationbar-list-item"><%= link_to ("History"), "#{company_path}#History" %></div>
           </div>
           <div class="navigationbar-list cell-g">
-            <div class="navigationbar-list-header"><%= link_to ("Responsibility"), investors_path %></div>
-            <div class="navigationbar-list-item"><%= link_to ("Social Activity"), "#{investors_path}#Social-Activity" %></div>
-            <div class="navigationbar-list-item"><%= link_to ("Public Service"), "#{investors_path}#Public-Service" %></div>
-            <div class="navigationbar-list-item"><%= link_to ("Environment"), "#{investors_path}#Environment" %></div>
+            <div class="navigationbar-list-header"><%= link_to ("Responsibility"), responsibility_path %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Social Activity"), "#{responsibility_path}#Social-Activity" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Public Service"), "#{responsibility_path}#Public-Service" %></div>
+            <div class="navigationbar-list-item"><%= link_to ("Environment"), "#{responsibility_path}#Environment" %></div>
           </div>
           <div class="navigationbar-list cell-h">
             <div class="navigationbar-list-header"><%= link_to ("Careers"), careers_path %></div>
@@ -49,7 +49,7 @@
             <div class="navigationbar-list-item"><%= link_to ("Opportunity"), "#{careers_path}#opportunities" %></div>
           </div>
           <div class="navigationbar-item cell-i">
-            <div class="navigationbar-list-header"><%= link_to ("Contact"), contact_us_path %></div>
+            <div class="navigationbar-list-header"><%= link_to ("Contact"), contact_path %></div>
           </div>
         </div>
         <div class="navigationbar-list-header navigationbar-item hamburger-container">

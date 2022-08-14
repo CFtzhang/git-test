@@ -26,10 +26,10 @@
         <p class="text-larger text-bold">What We Do</p>
         <p>CF PharmTech focuses on the development of products for respiratory treatment, including:</p>
         <ul class="bulleted-list">
-          <li><%= link_to "Asthma", "#{therapeutic_areas_path}#Asthma" %></li>
-          <li><%= link_to "COPD", "#{therapeutic_areas_path}#COPD" %></li>
-          <li><%= link_to "Rhinitis", "#{therapeutic_areas_path}#Rhinitis" %></li>
-          <li><%= link_to "Other Respiratory Diseases", "#{therapeutic_areas_path}#Other-Respiratory-Diseases" %></li>
+          <li><%= link_to "Asthma", "#{focus_areas_path}#Asthma" %></li>
+          <li><%= link_to "COPD", "#{focus_areas_path}#COPD" %></li>
+          <li><%= link_to "Rhinitis", "#{focus_areas_path}#Rhinitis" %></li>
+          <li><%= link_to "Other Respiratory Diseases", "#{focus_areas_path}#Other-Respiratory-Diseases" %></li>
         </ul>
       </div>
     </div>
@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="btn-area btn-block">
-            <%= link_to "See More Products", generic_drug_products_path, class: "btn btn-flat" %>
+            <%= link_to "See More Products", pharmaceutical_products_path, class: "btn btn-flat" %>
           </div>      
         </div>
         <div class="tab-carousel">
