@@ -67,6 +67,9 @@ class PagesController < ApplicationController
   def article_2022_11_07
   end
 
+  def article_2022_11_17
+  end
+
   #Company Info Interviews
   def jean_marc_interview
   end

@@ -24,5 +24,6 @@ Rails.application.routes.draw do
     get 'article', to: 'pages#article'
     get 'article-7-25-22' => 'pages#article_7_25_22'
     get 'article-2022-11-07' => 'pages#article_2022_11_07'
+    get 'article-2022-11-17' => 'pages#article_2022_11_17'
   end
 end

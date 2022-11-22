@@ -55,6 +55,15 @@
   margin-right: auto;
 }
 
+/*news*/
+.news-highlighted-section {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #26aaee;
+}
+
 @media (min-width: 480px) {
   .contact-symbol-container {
     flex-wrap: nowrap;
